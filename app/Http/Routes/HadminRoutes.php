@@ -17,8 +17,14 @@ class HadminRoutes
             //开放路由
             $router->group(['middleware' => 'web'], function ($router)
             {
-                    //登录及首页/*********************************************/
-                    $router->any('admin/hlogin',            'Admin\HloginController@Login');                //登录页  
+                    //后台路由/*********************************************/
+                    $router->get('admin/index',            'Admin\AdminController@index');  
+                    $router->any('admin/indexV1','Admin\AdminController@indexV1');              
+
+
+
+
+                      //登录页  
             });
 
          
