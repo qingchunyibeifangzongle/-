@@ -15,7 +15,8 @@ class FrontendRoutes
 	    {
 		        $router->group(['middleware' => 'web'], function ($router)
 		        {
-		             	$router->any('frontend/index', 					'Frontend\IndexController@Show');						 	//前台首页
+		             	$router->get('frontend/index', 	'Frontend\IndexController@index');						 	//前台首页
+		             	$router->get('frontend/login', 	'Frontend\Login\LoginController@index');						 	//前台首页
 		        });
 	    }
 }

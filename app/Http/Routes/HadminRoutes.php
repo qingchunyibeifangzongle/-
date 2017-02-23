@@ -18,13 +18,9 @@ class HadminRoutes
             $router->group(['middleware' => 'web'], function ($router)
             {
                     //后台路由/*********************************************/
-                    $router->get('admin/index',            'Admin\AdminController@index');  
+                    $router->get('admin/index',  'Admin\AdminController@index');  
                     $router->any('admin/indexV1','Admin\AdminController@indexV1');              
-
-
-
-
-                      //登录页  
+                    
             });
 
          
