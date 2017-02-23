@@ -683,7 +683,7 @@
                 </div>
             
             <div class="uc">
-                <a class="" href="">
+                <a class="" href="login">
                     我的
                     <div class="app-guide">
                         <div class="guide-ewm">
