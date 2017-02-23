@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="format-detection" content="telephone=no">
-<title>欢迎来校园二货网</title>
+<title>[校园] 二货网</title>
 <link href="favicon.ico?v=4.6.0" type="image/x-icon" rel="shortcut icon">
 <link href="Content/css.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" href="Content/uploadify.css" type="text/css">
