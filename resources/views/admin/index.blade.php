@@ -44,7 +44,87 @@
                         </div>
                     </li>
                     <li class="hidden-folded padder m-t m-b-sm text-muted text-xs">
-                        <span class="ng-scope">分类</span>
+                        <span class="ng-scope">用户管理</span>
+                    </li>
+                    <li>
+                        <a class="J_menuItem" href="indexV1">
+                            <i class="fa fa-home"></i>
+                            <span class="nav-label">主页</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa fa-bar-chart-o"></i>
+                            <span class="nav-label">统计图表</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a class="J_menuItem" href="graph_echarts.html">百度ECharts</a>
+                            </li>
+                            <li>
+                                <a class="J_menuItem" href="graph_flot.html">Flot</a>
+                            </li>
+                            <li>
+                                <a class="J_menuItem" href="graph_morris.html">Morris.js</a>
+                            </li>
+                            <li>
+                                <a class="J_menuItem" href="graph_rickshaw.html">Rickshaw</a>
+                            </li>
+                            <li>
+                                <a class="J_menuItem" href="graph_peity.html">Peity</a>
+                            </li>
+                            <li>
+                                <a class="J_menuItem" href="graph_sparkline.html">Sparkline</a>
+                            </li>
+                            <li>
+                                <a class="J_menuItem" href="graph_metrics.html">图表组合</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="line dk"></li>        
+                    <li class="hidden-folded padder m-t m-b-sm text-muted text-xs">
+                        <span class="ng-scope">商品管理</span>
+                    </li>
+                    <li>
+                        <a class="J_menuItem" href="indexV1">
+                            <i class="fa fa-home"></i>
+                            <span class="nav-label">主页</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa fa-bar-chart-o"></i>
+                            <span class="nav-label">统计图表</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a class="J_menuItem" href="graph_echarts.html">百度ECharts</a>
+                            </li>
+                            <li>
+                                <a class="J_menuItem" href="graph_flot.html">Flot</a>
+                            </li>
+                            <li>
+                                <a class="J_menuItem" href="graph_morris.html">Morris.js</a>
+                            </li>
+                            <li>
+                                <a class="J_menuItem" href="graph_rickshaw.html">Rickshaw</a>
+                            </li>
+                            <li>
+                                <a class="J_menuItem" href="graph_peity.html">Peity</a>
+                            </li>
+                            <li>
+                                <a class="J_menuItem" href="graph_sparkline.html">Sparkline</a>
+                            </li>
+                            <li>
+                                <a class="J_menuItem" href="graph_metrics.html">图表组合</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="line dk"></li>        
+                    <li class="hidden-folded padder m-t m-b-sm text-muted text-xs">
+                        <span class="ng-scope">代理商管理</span>
                     </li>
                     <li>
                         <a class="J_menuItem" href="indexV1">
@@ -84,7 +164,7 @@
                     </li>
                     <li class="line dk"></li>
                     <li class="hidden-folded padder m-t m-b-sm text-muted text-xs">
-                        <span class="ng-scope">分类</span>
+                        <span class="ng-scope">权限管理</span>
                     </li>
                     <li>
                         <a href="mailbox.html"><i class="fa fa-envelope"></i> <span class="nav-label">信箱 </span><span class="label label-warning pull-right">16</span></a>
@@ -225,7 +305,7 @@
                     </li>
                     <li class="line dk"></li>
                     <li class="hidden-folded padder m-t m-b-sm text-muted text-xs">
-                        <span class="ng-scope">分类</span>
+                        <span class="ng-scope">资金管理</span>
                     </li>
                     <li>
                         <a href="#"><i class="fa fa-flask"></i> <span class="nav-label">UI元素</span><span class="fa arrow"></span></a>
@@ -318,7 +398,7 @@
                     </li>
                     <li class="line dk"></li>
                     <li class="hidden-folded padder m-t m-b-sm text-muted text-xs">
-                        <span class="ng-scope">分类</span>
+                        <span class="ng-scope">网站设置</span>
                     </li>
                     <li>
                         <a href="#"><i class="fa fa-picture-o"></i> <span class="nav-label">相册</span><span class="fa arrow"></span></a>
