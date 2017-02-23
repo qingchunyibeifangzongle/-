@@ -23,7 +23,7 @@ class AdminController extends Controller
         } 
 
 
-        //退出   
+        //退出
         public function Out(Request $request)
         {
                 $request->session()->forget('admin_user');

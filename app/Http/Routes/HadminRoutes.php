@@ -19,8 +19,12 @@ class HadminRoutes
             {
                     //后台路由/*********************************************/
                     $router->get('admin/index',  'Admin\AdminController@index');  
-                    $router->any('admin/indexV1','Admin\AdminController@indexV1');              
-                    
+                    $router->any('admin/indexV1','Admin\AdminController@indexV1');
+
+                //    #############################################################
+                $router->get('admin/userSelect',  'Admin\AdminController@index');
+                $router->get('admin/roleSelect',  'Admin\AdminController@roleSelect');
+                $router->get('admin/powerSelect',  'Admin\AdminController@powerSelect');
             });
 
          
