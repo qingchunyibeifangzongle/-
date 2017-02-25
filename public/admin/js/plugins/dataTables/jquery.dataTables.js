@@ -6337,7 +6337,7 @@
 	 * @ignore
 	 */
 	var _toSettings = function ( mixed )
-	{
+	{  
 		var idx, jq;
 		var settings = DataTable.settings;
 		var tables = $.map( settings, function (el, i) {

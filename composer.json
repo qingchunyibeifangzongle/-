@@ -6,7 +6,10 @@
     "type": "project",
     "require": {
         "php": ">=5.5.9",
-        "laravel/framework": "5.2.*"
+        "laravel/framework": "5.2.*",
+        "predis/predis": "^1.1"
+        "laravel/framework": "5.0.*",  
+        "predis/predis": "~1.1@dev"  
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
@@ -46,5 +49,9 @@
     },
     "config": {
         "preferred-install": "dist"
-    }
+    },
+    "repositories": [  
+            {"type": "composer", "url": "http://packagist.phpcomposer.com"},  
+            {"packagist": false}  
+    ]  
 }
