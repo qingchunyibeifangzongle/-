@@ -18,7 +18,57 @@
 		 * @return
 		 */
 		public function index()
-		{
-			return view('admin.webconfig.webconfig');
+		{  
+			$config =  file_exists( base_path('config/webconfig.php') ) ? config('webconfig') :  []; 
+			return view('admin.webconfig.webconfig',compact("config"));
 		}
+
+
+		/**
+		 *-----------------------------------------------
+		 * 添加网站配置文件
+		 *-----------------------------------------------
+		 * @param
+		 * @return
+		 */
+		public function webAdd(Request $request)
+		{   
+			$data = $request->input();
+            unset($data['_token'],$data['file']);
+
+            $file = base_path('config/webconfig.php');
+            
+            file_put_contents($file, "<?php".PHP_EOL."return [ ".PHP_EOL);
+
+            foreach ($data as $key => $value) {
+            	file_put_contents($file, "'".$key."' => '".$value."'," .PHP_EOL, FILE_APPEND);
+            }
+            file_put_contents($file, "] ; ".PHP_EOL,FILE_APPEND);
+
+            echo 1;
+
+		}
+
+
+
+		/**
+		 *-----------------------------------------------
+		 * 删除 log 图片地址
+		 *-----------------------------------------------
+		 * @param
+		 * @return
+		 */
+		public function deleteLog(Request $request)
+		{
+			$imgpath = $request->input('img');
+			$file = dirname( $_SERVER['SCRIPT_FILENAME'])."/admin/bannerimg/".$imgpath;
+
+			if(file_exists($file)){
+				unlink($file);
+				echo 0;
+			}else{
+				echo 1;
+			}
+		}
+
 	}

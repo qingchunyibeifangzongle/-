@@ -53,7 +53,10 @@ class HadminRoutes
             $router->get('delete', 'WebNavController@delete');  
             //网站配置  添加配置文件
             $router->get('webAdd', 'WebConfigController@index');  
-
+            //删除log 地址图片
+            $router->get('deleteLog', 'WebConfigController@deleteLog');  
+            //添加网站配置文件
+            $router->post('webAdd', 'WebConfigController@webAdd');  
 
         }); 
 
