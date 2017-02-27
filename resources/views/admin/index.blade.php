@@ -145,11 +145,6 @@
                                 <a class="J_menuItem" href="{{URL('admin/bannerAdd')}}">添加轮播图</a>
                             </li>
                         </ul>
-                        <ul class="nav nav-second-level">
-                            <li>
-                                <a class="J_menuItem" href="{{URL('admin/bannerShow')}}">查看轮播图</a>
-                            </li>
-                        </ul>
                     </li>
                     <li>
                         <a href="#">
