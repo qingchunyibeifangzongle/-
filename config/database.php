@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'fetch' => PDO::FETCH_CLASS,  //assoc
+    'fetch' => PDO::FETCH_ASSOC,  //assoc
 
     /*
     |--------------------------------------------------------------------------
@@ -61,7 +61,7 @@ return [
             'password' => env('DB_PASSWORD', ''),
             'charset' => 'utf8',
             'collation' => 'utf8_unicode_ci',
-            'prefix' => 'navacate_',
+            'prefix' => 'school_',
             'strict' => false,
             'engine' => null,
         ],
