@@ -92,7 +92,7 @@ $(function(){
 	        return false;  
 	    }  else {
 	    	$('#filePicker').hide();
-	    	$("input[name='log']").show();
+	    	$("#log").show();
 	    	$("input[name='log']").val(data.file);
 	    }
 	}); 
@@ -116,7 +116,107 @@ $(function(){
 
 	}); //ajax 文件上传完成
 
+	/**
+	 *-----------------------------------------------
+	 * 重新上传  后台删除log 图片
+	 *-----------------------------------------------
+	 * @param
+	 * @return
+	 */
+	$("#deletelog").click(function(){
+		var imgpath = $("input[name='log']").val();
+		// 删除后台log 图片
+		$.ajax({
+		   type: "get",
+		   url: "../admin/deleteLog",
+		   data: "img="+imgpath,
+		   success: function(msg){
+		   		if(msg==1){
+		   			$('#filePicker').show();
+		   			$("#log").hide();
+		   			$("input[name='log']").val('');
+		   		}
+		   }
+		});
+	})//重新上传文件
 
+	/**
+	 *-----------------------------------------------
+	 *  点击提交配置文件
+	 *-----------------------------------------------
+	 * @param
+	 * @return
+	 */
+
+	//自定义手机格
+	jQuery.validator.addMethod("mobile", function (value, element) {
+	    var mobile = /^1[3|4|5|7|8]\d{9}$/;
+		return this.optional(element) || (mobile.test(value));
+	}, "手机格式不对");
+	jQuery.validator.addMethod("tm", function (value, element) {
+	    var tm = /^[1-9]\d{6,9}$/;
+		return this.optional(element) || (tm.test(value));
+	}, "手机格式不对");
+	jQuery.validator.addMethod("img", function (value, element) {
+		 var img = /\.(gif|jpg|jpeg|png|GIF|JPG|PNG)$/;
+		return this.optional(element) || (img.test(value));
+	}, "图片格式不获赠却");
+
+	$("#webconfig").validate({
+
+
+	   focusInvalid : true, 
+	    // 定义规则
+	    rules:{
+	        webname:{
+	         required:true, 
+	        },
+	        log:{
+	         required:true, 
+	         img:true,
+	        },
+	        tel:{
+	         required:true, 
+	         mobile:true,
+	        },
+	        qq:{
+	         required:true, 
+	         tm:true,
+	        },
+
+	    },
+
+	    // 定义错误消息
+	    messages:{
+	        webname:{
+	            required:"不能为空",
+	        },
+	        log:{
+	        	required:"不能为空",
+	        	img:"图片格式不正确必须(gif|jpg|jpeg|png|GIF|JPG|PNG)",
+	        },
+	        tel:{
+	        	required:"不能为空",
+	        	mobile:'手机格式不对',
+	        },
+	        qq:{
+	         	required:"不能为空",
+	         	tm:"必须是7-10位的数字",
+	        },
+
+	    } ,   
+
+	    submitHandler : function(form) {  //验证通过后的执行方法
+	       //当前的form通过ajax方式提交（用到jQuery.Form文件）
+	       $(form).ajaxSubmit({
+	       		// 成功
+	            success:function( msg ){
+	               alert("修改成功");
+	            },
+	        }); 
+	    }, 
+
+	})//添加结束
 
 
 })
