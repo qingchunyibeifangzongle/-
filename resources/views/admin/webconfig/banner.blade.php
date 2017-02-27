@@ -51,7 +51,7 @@
                             <button class="btn btn-primary btn-block">提    交</button>
                         </form>
                         <div class="hr-line-dashed"></div>
-                        <div id="thelist" class="uploader-list"></div>  
+                            <div id="thelist" class="uploader-list"></div>  
                         <div class="clearfix"></div>
                     </div>
                 </div>

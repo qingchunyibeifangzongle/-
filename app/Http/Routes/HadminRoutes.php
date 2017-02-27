@@ -51,6 +51,8 @@ class HadminRoutes
             $router->get('update', 'WebNavController@update');  
             //删除
             $router->get('delete', 'WebNavController@delete');  
+            //网站配置  添加配置文件
+            $router->get('webAdd', 'WebConfigController@index');  
 
 
         }); 
