@@ -14,10 +14,10 @@
     <!--[if lt IE 9]>  
     <meta http-equiv="refresh" content="0;ie.html" />
     <![endif]-->
-
+    
     <link rel="shortcut icon" href="favicon.ico"> <link href="css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
-    <link href="admin/css/font-awesome.min.css?v=4.4.0" rel="stylesheet">
-    <link href="admin/css/animate.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css?v=4.4.0" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
     <link href="css/style.css?v=4.1.0" rel="stylesheet">
 </head>
 
@@ -88,10 +88,10 @@
                         </a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a class="J_menuItem" href="{{URL('admin/otherbuy')}}">代步,代购资金管理</a>
+                                <a class="J_menuItem" href="{{URL('admin/otherBuy')}}">代步,代购资金管理</a>
                             </li>
                             <li>
-                                <a class="J_menuItem" href="{{URL('admin/erhuomoney')}}">校园二货资金管理</a>
+                                <a class="J_menuItem" href="{{URL('admin/erhuoMoney')}}">校园二货资金管理</a>
                             </li>
                         </ul>
                     </li>
