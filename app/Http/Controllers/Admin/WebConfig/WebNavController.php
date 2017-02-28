@@ -53,13 +53,10 @@
 		 */
 		public function show()
 		{  
-			//查询所有导航信息
-        	// DB::enableQueryLog();
+
 			$obj = new Nav;
-			$data = $obj -> orderBy('sort','desc')->where(['name'=>111]) -> get();
+			$data = $obj -> orderBy('sort','desc') -> get();
 			$data = $data -> toArray();
-        	// echo $sql = $obj -> toSql(); die;
-			// return response()->json(DB::getQueryLog());
 			return view("admin.webconfig.nav",compact("data"));
 
 		}
