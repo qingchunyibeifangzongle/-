@@ -18,8 +18,8 @@ Route::group(['middleware' => ['web']], function ()
  {
 
 	    Route::get('/', function ()
-	     {
-	        return redirect();
+	    {  
+	    	return redirect("frontend/index");
 	    });
 	
 
@@ -33,3 +33,5 @@ Route::group(['middleware' => ['web']], function ()
 		//ceishi 题  模拟app 端7天免登陆问题
 		// Route::get('admin/login', 'Admin\LoginController@login');              
 		// Route::get('admin/jianlogin', 'Admin\LoginController@jianlogin');       
+
+
