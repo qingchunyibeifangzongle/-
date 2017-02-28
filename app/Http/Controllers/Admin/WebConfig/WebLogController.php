@@ -3,9 +3,11 @@
     use Illuminate\Http\Request;
     use App\Http\Requests;                                    // 引用请求插件类
     use App\Http\Controllers\Controller;                      // 引用控制器类
-    use App\Model\Admin\WebConfig\Nav;
     use DB;
+
     use Log;
+    use App\User;
+    use App\Http\Controllers\Controller;
 
     class WebLogController extends Controller
     {
@@ -17,11 +19,10 @@
          * @param
          * @return
          */
-        public function  index()
+        public function  index($id=1)
         { 
-            $monolog = \Log::getMonolog();
-            $data = \Log::emergency();
-            var_dump($data);
+            Log::info('Showing user profile for user: '.$id);
+            return view('user.profile', ['user' => User::findOrFail($id)]);
         }  
 
     }
