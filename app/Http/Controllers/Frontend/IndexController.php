@@ -64,7 +64,7 @@ class IndexController extends Controller
 * @param 
 * @return 
 */    
-         public function Show(Request $request)
+         public function index(Request $request)
         {
         	return view('frontend.index');
         }
