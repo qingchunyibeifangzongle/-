@@ -111,11 +111,6 @@
                                 <a class="J_menuItem" href="{{URL('admin/webAdd')}}">添加配置</a>
                             </li>
                         </ul>
-                         <ul class="nav nav-second-level">
-                            <li>
-                                <a class="J_menuItem" href="{{URL('admin/webShow')}}">查看配置</a>
-                            </li>
-                        </ul>
                     </li>
                     <li>
                         <a href="#">
@@ -126,6 +121,11 @@
                         <ul class="nav nav-second-level">
                             <li>
                                 <a class="J_menuItem" href="{{URL('admin/navAdd')}}">添加导航</a>
+                            </li>
+                        </ul>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a class="J_menuItem" href="{{URL('admin/navShow')}}">添加导航</a>
                             </li>
                         </ul>
                     </li>
