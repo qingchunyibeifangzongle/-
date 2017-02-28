@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>导航展示</title>
+    <title>友情链接展示</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
 
@@ -49,7 +49,7 @@
                             <thead>
                                 <tr>
                                     <th>排序</th>
-                                    <th>导航名称</th>
+                                    <th>友情链接名称</th>
                                     <th>链接地址</th>
                                    <th>排序</th>
                                     <th>操作</th>
@@ -83,7 +83,7 @@
                                         <span style="display:none; ">
                                              <input type="text" name='sort' navname="sort" class="confirmsave">
                                         </span>
-                                   </td>
+                                   </td> 
                                    <td class="center">
                                        <a href="javascript:void(0)" class="delete">删除</a>
                                    </td>  
@@ -123,7 +123,7 @@
     <!-- 自定义js -->
     <script src="js/content.js?v=1.0.0"></script>
     <!-- 即点即改js 文件 -->
-    <script src='js/nav.js'></script>
+    <script src='js/blogrollshow.js'></script>
 
 
     <!-- Page-Level Scripts -->
