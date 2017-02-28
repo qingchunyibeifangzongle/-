@@ -10,9 +10,6 @@
 |
 */
 
-
-
-
 //中间件
 Route::group(['middleware' => ['web']], function ()
  {

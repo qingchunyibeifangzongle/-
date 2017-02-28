@@ -5,10 +5,6 @@
     use App\Http\Controllers\Controller;                      // 引用控制器类
     use DB;
 
-    use Log;
-    use App\User;
-    use App\Http\Controllers\Controller;
-
     class WebLogController extends Controller
     {
 
@@ -19,10 +15,9 @@
          * @param
          * @return
          */
-        public function  index($id=1)
+        public function  index()
         { 
-            Log::info('Showing user profile for user: '.$id);
-            return view('user.profile', ['user' => User::findOrFail($id)]);
+
         }  
 
     }
