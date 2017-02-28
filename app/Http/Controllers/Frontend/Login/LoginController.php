@@ -12,25 +12,25 @@ use App\Http\Models\Login;
 class LoginController extends Controller
 {
 
-/**
-*前台登录页面
-*
-* @author  JINLONG
-* @param 
-* @return 
-*/    
+		/**
+		*前台登录页面
+		*
+		* @author  JINLONG
+		* @param 
+		* @return 
+		*/    
          public function index(Request $request)
         {
 
-                return view('frontend.login.login');
+            return view('frontend.login.login');   
         }
 
-/**
-*
-*前台登录
-*用户名密码登录
-*
-*/
+		/**
+		*
+		*前台登录
+		*用户名密码登录
+		*
+		*/
 		public function loginDO(Request $request)
 		{
 			//接受用户名密码信息
@@ -61,6 +61,35 @@ class LoginController extends Controller
         	$oauth->qq_login();
 		}
 
-	
+		/**
+        *前台QQ绑定注册
+        *
+        * @author  ZHANGTAO
+        * @param 
+        * @return 
+        */ 
+		public function qqRegist()
+		{  
+			
+
+			 return view('frontend.login.qqregister');   
+		}
+
+
+		/**
+        *前台注册
+        *
+        * @author  ZHANGTAO
+        * @param 
+        * @return 
+        */ 
+		public function regist()
+		{  
+			
+
+			 return view('frontend.login.register');   
+		}
+
+
 }
 ?>
