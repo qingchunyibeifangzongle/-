@@ -87,7 +87,33 @@ body, #header { padding-right: 0; }
                     <a href="http://101.201.66.123/ThinkSNS/index.php?app=public&mod=Passport&act=findPassword" class="login-fgetpwd">忘记密码？
                     </a>
                 </div>
-                <div class="third-party"><dl><dd><a href="http://demo.thinksns.com/ts4/index.php?app=public&amp;mod=Widget&amp;act=displayAddons&amp;type=sina&amp;addon=Login&amp;hook=login_sync_other" class="ico-sina"></a></dd><dd><a href="http://demo.thinksns.com/ts4/index.php?app=public&amp;mod=Widget&amp;act=displayAddons&amp;type=qzone&amp;addon=Login&amp;hook=login_sync_other" class="ico-qzone"></a></dd><dd><a href="http://demo.thinksns.com/ts4/index.php?app=public&amp;mod=Widget&amp;act=displayAddons&amp;type=weixin&amp;addon=Login&amp;hook=login_sync_other" class="ico-weixin_"></a></dd></dl></div>
+                <div class="third-party"><dl><dd><a href="http://demo.thinksns.com/ts4/index.php?app=public&amp;mod=Widget&amp;act=displayAddons&amp;type=sina&amp;addon=Login&amp;hook=login_sync_other" class="ico-sina"></a></dd><dd><a href="http://demo.thinksns.com/ts4/index.php?app=public&amp;mod=Widget&amp;act=displayAddons&amp;type=qzone&amp;addon=Login&amp;hook=login_sync_other" class="ico-qzone"></a></dd>
+                  <dd>
+                    <span class="ico-weixin_"></span>
+                  </dd>
+                </dl>
+<!-- <img src='picture/weixin.png' alt="" /> -->
+    <script src="js/jquery.min.js?v=2.1.4"></script>
+    <script src="js/bootstrap.min.js?v=3.3.6"></script>
+    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="js/plugins/layer/layer.min.js"></script>
+                <script>
+                    $(document).on('click', '.ico-weixin_',function()
+                    {
+                        var data = "<img src='picture/weixin.png'  />"
+                       
+                        layer.alert(data+'亲,请扫码关注校园二货网;',
+                         {
+                           skin: 'layui-layer-molv', //样式类名
+                           closeBtn: 0,
+                           anim: 100 ,
+                           width:300,
+                         })
+                                     
+                    })
+                </script>
+              </div>
                 <div class="hasno-account">
                 <p>还没有帐号？</p>
                 <div class="other-but">
@@ -129,7 +155,8 @@ $(function(){
     });
 
     //背景图制作
-    var bg = "Images/login_bj.jpg";
+    var bg = "Images/login.jpg";
+     // var bg = "Images/login.png";
     $('body').css('background','url('+bg+')');
     $('body').css('background-repeat','no-repeat');
     $('body').css('background-position','center');
