@@ -16,11 +16,18 @@ class HadminRoutes
        
         //开放路由
         $router->group(['middleware' => 'web'], function ($router)
-        {
+        {  
+        
             //后台路由/*********************************************/
+
+            $router->get('admin/login',  'Admin\LoginController@login');
+            $router->post('admin/postLogin',  'Admin\LoginController@postLogin');      
+
              $router->get('admin/login',  'Admin\LoginController@login');
              $router->post('admin/postLogin',  'Admin\LoginController@postLogin');      
+
         });
+
         
         //资金管理路由
         $router->group(['middleware' => 'web'], function ($router)
@@ -81,9 +88,11 @@ class HadminRoutes
             //删除
             $router->get('blogrollDelete', 'BlogrollController@delete');  
 
+            //网站日志文件
+            $router->get('WebLog', 'WebLogController@index');  
+
         }); 
 
-        // $router->group(['middleware' => ['web','admin.login']], function ($router) {
 
         $router->group(['middleware' => ['web']], function ($router)
         {
