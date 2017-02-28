@@ -687,7 +687,7 @@
                     我的
                     <div class="app-guide">
                         <div class="guide-ewm">
-                            <img src="picture/ewm-app-2_3.png" alt="校园app下载">
+                            <img src="picture/weixin.png" alt="关注公共号">
                         </div>
                         <div class="guide-txt">
                             <p class="guide-txt-1">下载APP使用更多功能</p>
@@ -722,10 +722,10 @@
             <div class="w">
 
                 <a class="fr app-web" baidu_alog="pc_index_top_tab&click&pc_index_top_tab_appdownload_c"
-                   target="_blank" href="/zq_app/" data-gzlog="tracking_type=click&eventid=0010190000000012" title="校园直卖网APP">APP下载
+                   target="_blank" href="/zq_app/" data-gzlog="tracking_type=click&eventid=0010190000000012" title="校园直卖网APP">关注公众号
                     <div class="app-guide">
                         <div class="guide-ewm">
-                            <img src="picture/ewm-app-2_3.png" alt="校园app下载">
+                            <img src="picture/weixin.png" alt="关注公共号">
                         </div>
                         <div class="guide-txt">
                             <p class="guide-txt-1">下载APP使用更多功能</p>
@@ -1160,7 +1160,7 @@
         <!--banner -->
         <div class="op-slide" data-widget="app/ms_v2/widget/slide.js" data-slide-fn="app/ms_v2/self_service/page/promotion_index.js#slideFn" data-interval="3000">
             <div data-role="list">
-                                                            <div class="slide-li" data-role="item" style="background: url('images/d81ce58e495ba1bb8eeb8398ae2b1a2c_3.png@base@tag=imgscale&w=860&h=305&q=88') center center no-repeat;" baidu_alog='banner&&click&&index_top_banner_0'>
+                                                            <div class="slide-li" data-role="item" style="background: url('picture/erhuo.jpg') center center no-repeat;" baidu_alog='banner&&click&&index_top_banner_0'>
                             <a rel="nofollow" baidu_alog='pc_index_topYunying&click&pc_index_topYunying_banner_0_c' gjalog="" target="_blank" href="http://www.guazi.com/zq_article/4248/" class="ban_a"></a>
                         </div>
                                             <div class="slide-li" data-role="item" style="background: url('images/9b219d62e4d8ea5be68193b0a8830582_3.jpg@base@tag=imgscale&w=860&h=305&q=88') center center no-repeat;" baidu_alog='banner&&click&&index_top_banner_1'>
@@ -1172,7 +1172,7 @@
                                             <div class="slide-li" data-role="item" style="background: url('images/7aacc59e725836520fa3fd375cfb689f_3.png@base@tag=imgscale&w=860&h=305&q=88') center center no-repeat;" baidu_alog='banner&&click&&index_top_banner_3'>
                             <a rel="nofollow" baidu_alog='pc_index_topYunying&click&pc_index_topYunying_banner_3_c' gjalog="" target="_blank" href="https://www.guazi.com/zq_article/4329/" class="ban_a"></a>
                         </div>
-                                            <div class="slide-li" data-role="item" style="background: url('images/168ffa787ab61fe2eba30b4beee2d345_3.png@base@tag=imgscale&w=860&h=305&q=88') center center no-repeat;" baidu_alog='banner&&click&&index_top_banner_4'>
+                                            <div class="slide-li" data-role="item" style="background: url('picture/erhuo.jpg') center center no-repeat;" baidu_alog='banner&&click&&index_top_banner_4'>
                             <a rel="nofollow" baidu_alog='pc_index_topYunying&click&pc_index_topYunying_banner_4_c' gjalog="pc_index_topYunying_banenr_1_c" target="_blank" href="http://jr.guazi.com/bj/" class="ban_a"></a>
                         </div>
                                                 </div>
@@ -2744,9 +2744,9 @@
         </p>
         <p>售后服务专线：400-066-8780  </p>
     </div>
-    <img src="picture/ewm-wx-2_3.png" alt="" class="gz-ewm">
+    <img src="picture/weixin.png" alt="" class="gz-ewm">
     <p class="ewm-tit">关注微信</p>
-    <img src="picture/ewm-app-2_3.png" alt="" class="gz-ewm">
+    <img src="picture/weixin.png" alt="" class="gz-ewm">
     <p class="ewm-tit">下载APP</p>
     <div class="basic-info">
         <div class="info-link">
@@ -2998,13 +2998,13 @@
                 </div>
                 <a rel="nofollow" data-gzlog="tracking_type=click&eventid=0200000000000087" href="javascript:void(0);" class="ewm-wx" baidu_alog="xuanfu&click&index_xuanfu_gongzhonghao_c">公众号
         <span class="ewm-box">
-          <img src="picture/ewm-wx-2_3.png" alt="">
+          <img src="picture/weixin.png" alt="">
           <i></i><em></em>
         </span>
                 </a>
                 <a rel="nofollow" data-gzlog="tracking_type=click&eventid=0200190000000086" href="javascript:void(0);" class="ewm-app" baidu_alog="xuanfu&click&index_xuanfu_appdownload_c">APP
         <span class="ewm-box">
-          <img src="picture/ewm-app-2_3.png" alt="">
+          <img src="picture/weixin.png" alt="">
           <i></i><em></em>
         </span>
                 </a>
