@@ -44,15 +44,16 @@ class LoginController extends Controller
 		}
 
 
-/**
-*前台QQ登录
-*
-* @author  ZHANGTAO
-* @param 
-* @return 
-*/  
+        /**
+        *前台QQ登录
+        *
+        * @author  ZHANGTAO
+        * @param 
+        * @return 
+        */  
 		public function qqLogin()
-		{
+		{  
+
 			//引入QQ类文件
 			require_once app_path().'/class/Connect2.1/API/qqConnectAPI.php';
 			$oauth = new \Oauth();
