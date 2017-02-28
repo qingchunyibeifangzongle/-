@@ -84,7 +84,8 @@ class HadminRoutes
 
         }); 
 
-        $router->group(['middleware' => ['web','admin.login']], function ($router) {
+        $router->group(['middleware' => ['web']], function ($router) {
+        // $router->group(['middleware' => ['web','admin.login']], function ($router) {
 
 
             $router->get('admin/index',  'Admin\AdminController@index');
