@@ -231,7 +231,7 @@
                         <span class="ng-scope"><h3><strong>日志管理</strong></h3></span>
                     </li>
                     <li>
-                        <a class="J_menuItem" href="indexV1">
+                        <a class="J_menuItem" href="{{URL('admin/WebLog')}}">
                             <i class="fa fa-home"></i>
                             <span class="nav-label">查看日志文件</span>
                         </a>
