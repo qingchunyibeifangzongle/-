@@ -1,4 +1,8 @@
 /node_modules
 Homestead.yaml
 Homestead.json
+<<<<<<< HEAD
 .env
+=======
+.env
+>>>>>>> 0e00f31b2f309821ebb003811f5889e3fccbef91
