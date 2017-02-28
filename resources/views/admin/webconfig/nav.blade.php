@@ -83,7 +83,7 @@
                                         <span style="display:none; ">
                                              <input type="text" name='sort' navname="sort" class="confirmsave">
                                         </span>
-                                   </td> -->
+                                   </td>
                                    <td class="center">
                                        <a href="javascript:void(0)" class="delete">删除</a>
                                    </td>  
