@@ -89,19 +89,22 @@ body, #header { padding-right: 0; }
                     </a>
                 </div>
 
-                <div class="third-party">
-                <dl>
-                  <dd>
-                    <a href="" class="ico-sina"></a></dd>
-                  <dd>
-                  <a href="qq" class="ico-qzone"></a></dd>
-                  <dd><a href="http://demo.thinksns.com/ts4/index.php?app=public&amp;mod=Widget&amp;act=displayAddons&amp;type=weixin&amp;addon=Login&amp;hook=login_sync_other" class="ico-weixin_"></a></dd></dl></div>
+               
 
-                <div class="third-party"><dl><dd><a href="http://demo.thinksns.com/ts4/index.php?app=public&amp;mod=Widget&amp;act=displayAddons&amp;type=sina&amp;addon=Login&amp;hook=login_sync_other" class="ico-sina"></a></dd><dd><a href="http://demo.thinksns.com/ts4/index.php?app=public&amp;mod=Widget&amp;act=displayAddons&amp;type=qzone&amp;addon=Login&amp;hook=login_sync_other" class="ico-qzone"></a></dd>
-                  <dd>
+                <div class="third-party">
+                  <dl>
+                      <dd>
+                        <a href="http://demo.thinksns.com/ts4/index.php?app=public&amp;mod=Widget&amp;act=displayAddons&amp;type=sina&amp;addon=Login&amp;hook=login_sync_other" class="ico-sina"></a>
+                      </dd>
+                     
+                      <dd>
+                        <a href="qq" class="ico-qzone"></a>
+                      </dd>
+                     <dd>
                     <span class="ico-weixin_"></span>
                   </dd>
                 </dl>
+
 <!-- <img src='picture/weixin.png' alt="" /> -->
     <script src="js/jquery.min.js?v=2.1.4"></script>
     <script src="js/bootstrap.min.js?v=3.3.6"></script>
@@ -130,15 +133,12 @@ body, #header { padding-right: 0; }
                 <div class="other-but">
                 <a  onclick="javascript:window.open('?url=login/register/uid/','_self')" class="white-but fl"><i class="arow-left"></i>去注册</a> 
                 <a href="?url=snsindex/indexshowsee/uid/ " class="white-but fr">先看看<i class="arow-right"></i></a> 
-               
                </div>
-                    
             </form>
-
     </div>
     <div id="js_login_input" class="error-box" >
           <p id="message"></p>
-                    </div>
+   </div>
   </div>
 
 </div>
