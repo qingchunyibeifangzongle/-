@@ -58,6 +58,17 @@ class HadminRoutes
             //添加网站配置文件
             $router->post('webAdd', 'WebConfigController@webAdd');  
 
+            //友情链接
+            $router->get('blogrollAdd', 'BlogrollController@index'); 
+            //添加 
+            $router->post('blogrollAdd', 'BlogrollController@index');
+            //查看修改友情链接  
+            $router->get('blogrollShow', 'BlogrollController@show');  
+            //修改
+            $router->get('blogrollUpdate', 'BlogrollController@update');  
+            //删除
+            $router->get('blogrollDelete', 'BlogrollController@delete');  
+
         }); 
 
 

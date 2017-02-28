@@ -128,11 +128,6 @@
                                 <a class="J_menuItem" href="{{URL('admin/navAdd')}}">添加导航</a>
                             </li>
                         </ul>
-                        <ul class="nav nav-second-level">
-                            <li>
-                                <a class="J_menuItem" href="{{URL('admin/navShow')}}">查看导航</a>
-                            </li>
-                        </ul>
                     </li>
                     <li>
                         <a href="#">
@@ -154,12 +149,12 @@
                         </a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a class="J_menuItem" href="{{URL('admin/bannerAdd')}}">添加友链</a>
+                                <a class="J_menuItem" href="{{URL('admin/blogrollAdd')}}">添加友链</a>
                             </li>
                         </ul>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a class="J_menuItem" href="{{URL('admin/bannerShow')}}">查看友链</a>
+                                <a class="J_menuItem" href="{{URL('admin/blogrollShow')}}">查看友链</a>
                             </li>
                         </ul>
                     </li>
