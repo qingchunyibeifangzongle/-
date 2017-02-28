@@ -48,7 +48,7 @@ class IndexController extends Controller
 			$user = session("qq"); 
         	if ($user['code']==1) {
         		//跳绑定账号页面
-        		return view();
+        		return view('frontend.login.qqregister');
         	}else{
         		//跳主页面
         		return redirect("frontend/index");
