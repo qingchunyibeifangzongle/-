@@ -14,7 +14,6 @@ class HadminRoutes
     public function map(Registrar $router)
     {
             
-
         //开放路由
         $router->group(['middleware' => 'web'], function ($router)
         {
@@ -26,16 +25,15 @@ class HadminRoutes
         //资金管理路由
         $router->group(['middleware' => 'web'], function ($router)
         {
-                //二货资金管理路由
-                $router->get('admin/erhuoMoney',  'Admin\Money\MoneyController@erhuoMoney');
-                $router->get('admin/otherBuy',  'Admin\Money\MoneyController@otherBuy');
-                //审核 资金
-                $router->post('admin/checkerhuo',  'Admin\Money\MoneyController@checkerhuo'); 
-                $router->post('admin/checkother',  'Admin\Money\MoneyController@checkother');  
-                //资金流动
-                $router->get('admin/otherGo',  'Admin\Money\MoneyController@otherGo');  
-       
-                
+            //二货资金管理路由
+            $router->get('admin/erhuoMoney',  'Admin\Money\MoneyController@erhuoMoney');
+            $router->get('admin/otherBuy',  'Admin\Money\MoneyController@otherBuy');
+            //审核 资金
+            $router->post('admin/checkerhuo',  'Admin\Money\MoneyController@checkerhuo'); 
+            $router->post('admin/checkother',  'Admin\Money\MoneyController@checkother');  
+            //资金流动
+            $router->get('admin/otherGo',  'Admin\Money\MoneyController@otherGo');  
+        
         });
 
         /**
