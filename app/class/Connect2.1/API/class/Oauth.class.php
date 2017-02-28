@@ -28,6 +28,7 @@ class Oauth{
     }
 
     public function qq_login(){
+
         $appid = $this->recorder->readInc("appid");
         $callback = $this->recorder->readInc("callback");
         $scope = $this->recorder->readInc("scope");
@@ -47,6 +48,7 @@ class Oauth{
 
         $login_url =  $this->urlUtils->combineURL(self::GET_AUTH_CODE_URL, $keysArr);
 
+        // header("Location: http://bbs. lampbrother.net"); 
         header("Location:$login_url");
     }
 
