@@ -10,24 +10,24 @@
 |
 */
 
-
-
-
 //中间件
 Route::group(['middleware' => ['web']], function ()
- {
+{
 
+<<<<<<< HEAD
 	    Route::get('/', function ()
 	    {  
 	    	return redirect("frontend/index");
 	    });
+=======
+    Route::get('/', function ()
+     {
+        return view('welcome');
+    });
+>>>>>>> 2017.02.28.weblog
 	
-
-		//navacate项目  在路由分割里
-		// Route::get('admin/Hlogin', 'Admin\HloginController@login');  
-	    
-	    //mysqlcurl项目 在路由分割里
 });
+<<<<<<< HEAD
 	
 
 		//ceishi 题  模拟app 端7天免登陆问题
@@ -35,3 +35,6 @@ Route::group(['middleware' => ['web']], function ()
 		// Route::get('admin/jianlogin', 'Admin\LoginController@jianlogin');       
 
 
+=======
+	  
+>>>>>>> 2017.02.28.weblog

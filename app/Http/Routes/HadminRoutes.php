@@ -88,6 +88,9 @@ class HadminRoutes
             //删除
             $router->get('blogrollDelete', 'BlogrollController@delete');  
 
+            //网站日志文件
+            $router->get('WebLog', 'WebLogController@index');  
+
         }); 
 
 
