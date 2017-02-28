@@ -11,12 +11,7 @@
 */
 
 //中间件
-Route::group(['middleware' => ['web']], function ()
-{
-
-
-    Route::get('/', function ()
-    {  
-    	return redirect("frontend/index");
-    });
-
+Route::get('/', function ()
+{  
+    return redirect("frontend/index");
+});
