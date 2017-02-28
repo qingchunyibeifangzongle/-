@@ -14,14 +14,15 @@ class HadminRoutes
     public function map(Registrar $router)
     {  
        
-        $router->get('admin/login',  'Admin\LoginController@login');     
         //开放路由
         $router->group(['middleware' => 'web'], function ($router)
-        {
+        {  
+        
             //后台路由/*********************************************/
-            $router->get('admin/index',  'Admin\AdminController@index');  
-            $router->any('admin/indexV1','Admin\AdminController@indexV1');       
+            $router->get('admin/login',  'Admin\LoginController@login');
+            $router->post('admin/postLogin',  'Admin\LoginController@postLogin');      
         });
+
         
         //资金管理路由
         $router->group(['middleware' => 'web'], function ($router)
@@ -86,7 +87,6 @@ class HadminRoutes
 
         $router->group(['middleware' => ['web']], function ($router) {
         // $router->group(['middleware' => ['web','admin.login']], function ($router) {
-
 
             $router->get('admin/index',  'Admin\AdminController@index');
 
