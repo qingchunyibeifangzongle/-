@@ -12,8 +12,9 @@ use Illuminate\Http\Request;
 class HadminRoutes
 {
     public function map(Registrar $router)
-    {
-            
+    {  
+       
+        $router->get('admin/login',  'Admin\LoginController@login');     
         //开放路由
         $router->group(['middleware' => 'web'], function ($router)
         {
@@ -87,6 +88,7 @@ class HadminRoutes
 
 
             $router->get('admin/index',  'Admin\AdminController@index');
+
             $router->get('admin/indexV1',  'Admin\AdminController@indexV1');
             //用户路由
             $router->get('admin/userSelect',  'Admin\UserController@userSelect');

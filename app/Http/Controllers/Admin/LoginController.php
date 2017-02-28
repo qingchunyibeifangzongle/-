@@ -16,7 +16,7 @@ class LoginController extends Controller
 	 * 登录首页
 	 */
 	public function login()
-	{
+	{  
 		return view("admin.login");
 	}
 
