@@ -65,10 +65,9 @@
 
 			if(file_exists($file)){
 				unlink($file);
-				echo 0;
-			}else{
-				echo 1;
 			}
+			
+			echo 1;
 		}
 
 	}
