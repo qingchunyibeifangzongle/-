@@ -38,6 +38,7 @@ $(function(){
 
 	// 当有文件添加进来的时候
 	uploader.on( 'fileQueued', function( file ) {
+		$(".thumbnail").remove();
 	    var $li = $(
 	            '<div id="' + file.id + '" class="file-item thumbnail">' +
 	                '<img>' +
@@ -91,7 +92,6 @@ $(function(){
 	        // 通过return false来告诉组件，此文件上传有错。  
 	        return false;  
 	    }  else {
-	    	$('#filePicker').hide();
 	    	$("#log").show();
 	    	$("input[name='log']").val(data.file);
 	    }
@@ -125,6 +125,7 @@ $(function(){
 	 */
 	$("#deletelog").click(function(){
 		var imgpath = $("input[name='log']").val();
+		$(".thumbnail").remove();
 		// 删除后台log 图片
 		$.ajax({
 		   type: "get",
@@ -133,7 +134,6 @@ $(function(){
 		   success: function(msg){
 		   		if(msg==1){
 		   			$('#filePicker').show();
-		   			$("#log").hide();
 		   			$("input[name='log']").val('');
 		   		}
 		   }
@@ -211,6 +211,7 @@ $(function(){
 	       $(form).ajaxSubmit({
 	       		// 成功
 	            success:function( msg ){
+	               location.reload(); 
 	               alert("修改成功");
 	            },
 	        }); 

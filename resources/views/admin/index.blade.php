@@ -128,7 +128,7 @@
                         </ul>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a class="J_menuItem" href="{{URL('admin/navShow')}}">添加导航</a>
+                                <a class="J_menuItem" href="{{URL('admin/navShow')}}">查看导航</a>
                             </li>
                         </ul>
                     </li>

@@ -17,28 +17,11 @@
 <body class="gray-bg">
     <div class="wrapper wrapper-content animated fadeInRight">
        
-        <div class="row">
-            <div class="col-sm-6">
+        <div class="row" >
+            <div class="col-sm-6" style="width:100%;">
                 <div class="ibox float-e-margins">
-                    <div class="ibox-title">
-                        <h5>添加导航</h5>
-                        <div class="ibox-tools">
-                            <a class="collapse-link">
-                                <i class="fa fa-chevron-up"></i>
-                            </a>
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="form_basic.html#">
-                                <i class="fa fa-wrench"></i>
-                            </a>
-                            <ul class="dropdown-menu dropdown-user">
-                                <li><a href="form_basic.html#">选项1</a>
-                                </li>
-                                <li><a href="form_basic.html#">选项2</a>
-                                </li>
-                            </ul>
-                            <a class="close-link">
-                                <i class="fa fa-times"></i>
-                            </a>
-                        </div>
+                    <div class="ibox-title" >
+                        <h5>导航添加</h5>
                     </div>
                     <div class="ibox-content">
                         <form class="form-horizontal m-t" action="../admin/navAdd" id="commentForm" method="POST">
