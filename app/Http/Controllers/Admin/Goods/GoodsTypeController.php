@@ -102,7 +102,7 @@ class GoodsTypeController extends Controller
             $typeId = $request->input('type_id');
             $typeList = $this->model->getUpList($typeId);
             $typeTree = $this->model->getTypeTree();
-            return view('admin.goods.goodsTypeUp',['typeList' => $typeList , 'typeTree' => $typeTree,'type_id' => $typeId]);
+            return view('admin.goodsType.goodsTypeUp',['typeList' => $typeList , 'typeTree' => $typeTree,'type_id' => $typeId]);
         }else{
             return redirect('admin/goodsType');
         }
