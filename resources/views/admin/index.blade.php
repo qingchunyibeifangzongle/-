@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -48,8 +47,7 @@
                         <div class="logo-element">校园二货后台管理系统
                         </div>
                     </li>
-                <!-- 商品管理 -->
-                    <li class="line dk"></li>        
+                    <li class="line dk"></li>
                     <li class="hidden-folded padder m-t m-b-sm text-muted text-xs">
                         <span class="ng-scope"><h3><strong>商品管理</strong></h3></span>
                     </li>
@@ -70,7 +68,7 @@
                                 <a class="J_menuItem" href="{{URL('admin/goodsType')}}">商品分类展示</a>
                             </li>
                             <li>
-                                <a class="J_menuItem" href="{{URL('admin/goodsAdd')}}">商品分类添加</a>
+                                <a class="J_menuItem" href="{{URL('admin/goodsTypeAddList')}}">商品分类添加</a>
                             </li>
                         </ul>
                     </li>

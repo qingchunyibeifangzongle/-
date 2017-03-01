@@ -6,11 +6,12 @@
     <div class="ibox-content">
         <form class="form-horizontal" method="post" action="{{URL('admin/goodsTypeAdd')}}">
             {{csrf_field()}}
+
             <div class="form-group">
                 <label class="col-sm-3 control-label">商品分类名称：</label>
 
                 <div class="col-md-3">
-                    <input type="text" name="type_name" placeholder="商品分类名称" class="form-control">
+                    <input type="text" name="type_name" placeholder="商品分类名称" class="form-control type_name">
                 </div>
             </div>
 
@@ -51,14 +52,14 @@
             <div class="form-group">
                 <label class="col-sm-3 control-label">商品分类描述：</label>
                 <div class="col-sm-3">
-                    <textarea id="comment" name="type_intro" placeholder="描述：20字以内" class="form-control"></textarea>
+                    <textarea id="comment" name="type_intro" placeholder="描述：20字以内" class="form-control" rows="2" cols="10"></textarea>
                 </div>
             </div>
 
             <div class="form-group">
                 <div class="col-sm-offset-3 col-sm-8">
                     <input type="hidden" name="path" id="path"/>
-                    <input class="btn btn-sm btn-info" type="submit" value="添加">
+                    <input class="btn btn-sm btn-info" type="submit" value="保存">
                 </div>
             </div>
         </form>
@@ -75,16 +76,20 @@
             //$(":input[name='parent_id']").val(path);
             $("#path").val(path);
         })
-//        $('.btn').click(function(){
-//            var path = $('select').find(':selected').attr('path');
-//            var type_name = $(":input[name='type_name']").val();
-//            var type_sort = $(":input[name='type_sort']").val();
-//            var is_show = $(":input[name='is_show']:checked").val();
-//            var type_intro = $(":input[name='type_intro']").val();
-//            var p_id = $(":input[name='p_id']").val();
-//            alert(path);
-//            $.post('goodsTypeAdd', {path:path,type_name:type_name,type_sort:type_sort,is_show:is_show,type_intro:type_intro,p_id:p_id},function(msg){
-//            },'json');
-//        })
+
+        $('.btn').click(function(){
+            var type_name = $(":input[name='type_name']").val();
+            if(type_name.length < 3 || type_name.length >= 15){
+                $('.type_name').after("<font color='red'>商品名称3-15位</font>");
+                return false;
+            }
+
+            var type_sort = $(":input[name='type_sort']").val();
+            var is_show = $(":input[name='is_show']:checked").val();
+            var type_intro = $(":input[name='type_intro']").val();
+            var p_id = $(":input[name='p_id']").val();
+            $.post('goodsTypeAdd',function(msg){
+            },'json');
+        })
     });
 </script>
