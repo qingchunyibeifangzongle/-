@@ -46,24 +46,7 @@
             }
         }//添加友情链接结束
 
-        /**
-         *-----------------------------------------------
-         * 展示友情链接
-         *-----------------------------------------------
-         * @param
-         * @return
-         */
-        /*public function show()
-        {   
-            $obj = new Blogroll;
-            $data = $obj -> orderBy('sort','desc') -> get();
-            $data = $data -> toArray();
-
-
-            return view('admin.webconfig.blogrollshow',compact("data"));
-        }*/
-
-
+ 
         /**
          *-----------------------------------------------
          *  展示新闻
@@ -84,19 +67,9 @@
             //获取当前页数据
             $page = !empty($request->input("page")) ? $request->input("page") : 1 ;
 
-            //获取查询的条件
-            $name = $request->input("name");
-            
-            if(!empty($request->input("name")))
-            {
-               $where["name"] = $request->input("name"); 
-            }else
-            {
-                $where["name"] = "";
-            }
 
             //查询表中所有的新闻
-            $count = Blogroll::where("name","like","%".$where["name"]."%")->count();  //获取数据总条数
+            $count = Blogroll::count();  //获取数据总条数
 
             //配置数据分页信息
             $config["count"]     = $count ;           //总共有多少条数据
@@ -110,8 +83,7 @@
             //计算偏移量
             $offest = ($page-1) * $this->page_size; 
             //拼接查询条件
-            $data = Blogroll::where("name","like","%".$where["name"]."%")
-                        ->skip($offest)
+            $data = Blogroll::skip($offest)
                         ->take($this->page_size)
                         ->get();
                         
