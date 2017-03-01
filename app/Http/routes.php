@@ -10,26 +10,8 @@
 |
 */
 
-
-
-
 //中间件
-Route::group(['middleware' => ['web']], function ()
- {
-
-	    Route::get('/', function ()
-	     {
-	        return view('welcome');
-	    });
-	
-
-		//navacate项目  在路由分割里
-		// Route::get('admin/Hlogin', 'Admin\HloginController@login');  
-	    
-	    //mysqlcurl项目 在路由分割里
+Route::get('/', function ()
+{  
+    return redirect("frontend/index");
 });
-	
-
-		//ceishi 题  模拟app 端7天免登陆问题
-		// Route::get('admin/login', 'Admin\LoginController@login');              
-		// Route::get('admin/jianlogin', 'Admin\LoginController@jianlogin');       

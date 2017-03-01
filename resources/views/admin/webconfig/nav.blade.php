@@ -50,8 +50,8 @@
                                 <tr>
                                     <th>排序</th>
                                     <th>导航名称</th>
-                                   <!--  <th>链接地址</th>
-                                   <th>排序</th> -->
+                                    <th>链接地址</th>
+                                   <th>排序</th>
                                     <th>操作</th>
                                 </tr>
                             </thead>
@@ -83,7 +83,7 @@
                                         <span style="display:none; ">
                                              <input type="text" name='sort' navname="sort" class="confirmsave">
                                         </span>
-                                   </td> -->
+                                   </td>
                                    <td class="center">
                                        <a href="javascript:void(0)" class="delete">删除</a>
                                    </td>  

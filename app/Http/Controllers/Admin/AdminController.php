@@ -15,7 +15,16 @@ class AdminController extends Controller
         //admim 首页
         public function index(Request $request)
         {
-               return view('admin.index');
+
+            $login_time = $request->session()->get('login_time');
+            $nowtime = time();
+            $timediff = $nowtime-$login_time;
+            //计算小时数
+            $remain = $timediff%86400;
+            //计算分钟数
+            $remain = $remain%3600;
+            $mins = intval($remain/60);
+            return view('admin.index',['mins'=>$mins]);
         }
         public function indexV1()
         {
@@ -23,7 +32,7 @@ class AdminController extends Controller
         } 
 
 
-        //退出   
+        //退出
         public function Out(Request $request)
         {
                 $request->session()->forget('admin_user');

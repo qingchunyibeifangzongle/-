@@ -3,6 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="format-detection" content="telephone=no">
+    <meta name="_token" content="{{ csrf_token() }}"/>
 <title>[校园] 二货网</title>
 <link href="favicon.ico?v=4.6.0" type="image/x-icon" rel="shortcut icon">
 <link href="Content/css.css" rel="stylesheet" type="text/css" />
@@ -65,15 +66,15 @@ body, #header { padding-right: 0; }
     <div class="login-board">
       <h3>欢迎来校园二货网</h3>
             <span id="span" align='center' color='red'></span>
-            <form id="ajax_login_form" method="POST" action="?url=login/logindo">
+            <form id="" method="POST" action="">
                 <div class="login-info">
                 <div class="input-outer"> <span class="ui-user"></span>
-                        <input type="text" name="login_email" class="text" id='login_email' onfocus=" if(this.value=='输入邮箱、手机或用户名') this.value=''" onblur="if(this.value=='') this.value='输入邮箱、手机或用户名'" value="输入邮箱、手机或用户名"/>
+                        <input type="text" name="login_email" class="text" id='login_email'  value="" placeholder="请输入邮箱"/>
                 </div>
                 <div class="input-outer">
                          <span class="ui-loginPwd"></span>
                         <label class="l-login login_password" style="color:#888;">输入密码</label>
-                        <input type="password" name="login_password" class="text" id='login_password'  style=" position:absolute; z-index:100;" onfocus="$('.login_password').hide()" onblur="if(this.value=='') $('.login_password').show()" value=""/>
+                        <input type="password" name="login_password" class="text" id='login_password'  style=" position:absolute; z-index:100;"  value=""/>
                 </div>
                         <div class="mb20"><a class="act-but submit" id='submit' >登录</a>
                 </div>
@@ -87,34 +88,96 @@ body, #header { padding-right: 0; }
                     <a href="http://101.201.66.123/ThinkSNS/index.php?app=public&mod=Passport&act=findPassword" class="login-fgetpwd">忘记密码？
                     </a>
                 </div>
-                <div class="third-party"><dl><dd><a href="http://demo.thinksns.com/ts4/index.php?app=public&amp;mod=Widget&amp;act=displayAddons&amp;type=sina&amp;addon=Login&amp;hook=login_sync_other" class="ico-sina"></a></dd><dd><a href="http://demo.thinksns.com/ts4/index.php?app=public&amp;mod=Widget&amp;act=displayAddons&amp;type=qzone&amp;addon=Login&amp;hook=login_sync_other" class="ico-qzone"></a></dd><dd><a href="http://demo.thinksns.com/ts4/index.php?app=public&amp;mod=Widget&amp;act=displayAddons&amp;type=weixin&amp;addon=Login&amp;hook=login_sync_other" class="ico-weixin_"></a></dd></dl></div>
+
+               
+
+                <div class="third-party">
+                  <dl>
+                      <dd>
+                        <a href="http://demo.thinksns.com/ts4/index.php?app=public&amp;mod=Widget&amp;act=displayAddons&amp;type=sina&amp;addon=Login&amp;hook=login_sync_other" class="ico-sina"></a>
+                      </dd>
+                     
+                      <dd>
+                        <a href="qq" class="ico-qzone"></a>
+                      </dd>
+                     <dd>
+                    <span class="ico-weixin_"></span>
+                  </dd>
+                </dl>
+
+<!-- <img src='picture/weixin.png' alt="" /> -->
+    <script src="js/jquery.min.js?v=2.1.4"></script>
+    <script src="js/bootstrap.min.js?v=3.3.6"></script>
+    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="js/plugins/layer/layer.min.js"></script>
+                <script>
+                    $(document).on('click', '.ico-weixin_',function()
+                    {
+                        var data = "<img src='picture/weixin.png'  />"
+                       
+                        layer.alert(data+'亲,请扫码关注校园二货网;',
+                         {
+                           skin: 'layui-layer-molv', //样式类名
+                           closeBtn: 0,
+                           anim: 100 ,
+                           width:300,
+                         })
+                                     
+                    })
+                </script>
+              </div>
+
                 <div class="hasno-account">
                 <p>还没有帐号？</p>
                 <div class="other-but">
                 <a  onclick="javascript:window.open('?url=login/register/uid/','_self')" class="white-but fl"><i class="arow-left"></i>去注册</a> 
-                <a href="?url=snsindex/indexshowsee/uid/ " class="white-but fr">先看看<i class="arow-right"></i></a> </div>
-            
+                <a href="?url=snsindex/indexshowsee/uid/ " class="white-but fr">先看看<i class="arow-right"></i></a> 
+               </div>
             </form>
     </div>
+    <div id="js_login_input" class="error-box" >
+          <p id="message"></p>
+   </div>
   </div>
+
 </div>
+
 <script src="Scripts/online_check.js"></script>
 <script src="Scripts/login.js" type="text/javascript"></script>
+
 <script type="text/javascript">
 $(document).on('click','#submit',function()
 {
-        var login_email    = $('#login_email').val();
+        var login_email = $('#login_email').val();
+        if (login_email=="") {
+          $("#message").html("<font color='red'>请输入邮箱</color>");
+          return false;
+        };
         var login_password = $('#login_password').val();
-      
+        if (login_password=="") {
+          $("#message").html("<font color='red'>请输入密码</color>");
+          return false;
+        };
         $.ajax({
+           dataType: "json",
            type: "POST",
-           url: "?url=login/login",
-           data: {"login_email":login_email,"login_password":login_password},
+           url: "loginDo",
+           data: {
+               "login_email":login_email,
+               "login_password":login_password,
+               "_token":"{{csrf_token()}}"
+                 },
+
            success: function(msg)
            {
-                if (msg ==0) {$('#span').html(''); window.location.href="?url=snsindex/indexshow"}
-                else{$('#span').html('<font color="red" style="margin:60px; ">账号和用户不匹配</font>')};
-           }
+              if(msg['code']==0) {
+                $("#message").html("<font color='red'>"+msg['msg']+"</color>");
+              }else if(msg['code']==1){
+                $("#message").html("<font color='green'>"+msg['msg']+"</color>");
+                window.location="index"
+              }
+            }
         });
 
 })
@@ -129,7 +192,8 @@ $(function(){
     });
 
     //背景图制作
-    var bg = "Images/login_bj.jpg";
+    var bg = "Images/login.jpg";
+     // var bg = "Images/login.png";
     $('body').css('background','url('+bg+')');
     $('body').css('background-repeat','no-repeat');
     $('body').css('background-position','center');

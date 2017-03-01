@@ -4,9 +4,11 @@
 	use App\Http\Requests;                                    // 引用请求插件类
 	use App\Http\Controllers\Controller;                      // 引用控制器类
     use App\Model\Admin\WebConfig\Nav;
+    use DB;
 
 	class WebNavController extends Controller
 	{
+
 
 		/**
 		 *-----------------------------------------------
@@ -52,12 +54,11 @@
 		public function show()
 		{  
 
-			//查询所有导航信息
 			$obj = new Nav;
 			$data = $obj -> orderBy('sort','desc') -> get();
 			$data = $data -> toArray();
-
 			return view("admin.webconfig.nav",compact("data"));
+
 		}
 
 		/**
