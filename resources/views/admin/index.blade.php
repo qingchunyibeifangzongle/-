@@ -240,6 +240,12 @@
                         </a>
                     </li>
                     <li>
+                        <a class="J_menuItem" href="{{URL('admin/getReion')}}">
+                            <i class="fa fa-home"></i>
+                            <span class="nav-label">获取地区信息</span>
+                        </a>
+                    </li>
+                    <li>
                         <a href="#">
                             <i class="fa fa fa-bar-chart-o"></i>
                             <span class="nav-label">统计图表</span>

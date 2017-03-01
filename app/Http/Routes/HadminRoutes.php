@@ -130,6 +130,21 @@ class HadminRoutes
 
         });
 
+        /**
+         *-----------------------------------------------
+         * 公共获取地区信息
+         *-----------------------------------------------
+         * @param
+         * @return
+         */
+        $router->group(['middleware' => 'web','namespace' => 'Pub','prefix' => 'admin'], function ($router)
+        {   
+
+            $router->get('getReion',  'GetRegionController@index');  
+
+        }); 
+        
+
     }// map 方法结束
 
 }//类结束符
