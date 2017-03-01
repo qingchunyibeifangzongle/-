@@ -14,7 +14,7 @@ $(function(){
 	$('.confirmsave').bind("blur", function(){
 	// $('.confirmsave').blur(function(){
 		var _this = $(this);
-		_this.off("blur"); 
+		// _this.off("blur"); 
 		var id = $(this).parents('tr').attr("id");
 		var name = $(this).attr('navname');
 		var value = $(this).val();
@@ -100,4 +100,6 @@ $(function(){
 		   }
 		});
 	})
+
+
 })

@@ -5,9 +5,12 @@
     use App\Http\Controllers\Controller;                      // 引用控制器类
     use DB;   
     use App\Model\Admin\WebConfig\Blogroll;
+    use App\Libs\Page;
 
      class BlogrollController extends Controller
      {
+        public $page_size = 2;  //每页显示多少
+        public $num       = 2;  //默认当前页前后显示多少个数字页
 
         /**
          *-----------------------------------------------
@@ -50,14 +53,78 @@
          * @param
          * @return
          */
-        public function show()
+        /*public function show()
         {   
             $obj = new Blogroll;
             $data = $obj -> orderBy('sort','desc') -> get();
             $data = $data -> toArray();
 
+
             return view('admin.webconfig.blogrollshow',compact("data"));
-        }
+        }*/
+
+
+        /**
+         *-----------------------------------------------
+         *  展示新闻
+         *-----------------------------------------------
+         * @param
+         * @return
+         */
+        public function Show(Request $request)
+        {   
+            //获取每页显示的条数
+            $page_size = $request->input("page_size");
+
+            if(!empty($page_size))
+            {
+                $this->page_size=$request->input("page_size");
+            } 
+
+            //获取当前页数据
+            $page = !empty($request->input("page")) ? $request->input("page") : 1 ;
+
+            //获取查询的条件
+            $name = $request->input("name");
+            
+            if(!empty($request->input("name")))
+            {
+               $where["name"] = $request->input("name"); 
+            }else
+            {
+                $where["name"] = "";
+            }
+
+            //查询表中所有的新闻
+            $count = Blogroll::where("name","like","%".$where["name"]."%")->count();  //获取数据总条数
+
+            //配置数据分页信息
+            $config["count"]     = $count ;           //总共有多少条数据
+            $config["page_size"] = $this->page_size;  //每页显示多少条
+            $config["now_page"]  = $page; //当前页
+            $config["num"]       = 1;     //数字也显示
+            $config["url"]       = "../admin/blogrollShow?";   //跳转链接地址
+            $page = new Page($config);
+            $page = $page ->create_page();
+
+            //计算偏移量
+            $offest = ($page-1) * $this->page_size; 
+            //拼接查询条件
+            $data = Blogroll::where("name","like","%".$where["name"]."%")
+                        ->skip($offest)
+                        ->take($this->page_size)
+                        ->get();
+                        
+            if($request->ajax())
+            {   
+                $arr["data"] = $data; 
+                $arr["page"] = $page; 
+                echo json_encode($arr);
+            }else
+            { 
+                return view('admin.webconfig.blogrollshow',compact("page","data"));
+            } 
+        }//展示新闻列表结束
 
         /**
          *-----------------------------------------------
