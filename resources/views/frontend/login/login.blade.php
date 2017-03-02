@@ -3,25 +3,25 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="format-detection" content="telephone=no">
-    <meta name="_token" content="{{ csrf_token() }}"/>
+<meta name="_token" content="{{ csrf_token() }}"/>
 <title>[校园] 二货网</title>
 <link href="favicon.ico?v=4.6.0" type="image/x-icon" rel="shortcut icon">
 <link href="Content/css.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" href="Content/uploadify.css" type="text/css">
-<link href="Content/login.css" rel="stylesheet" type="text/css"/><script>
-
+<link href="Content/login.css" rel="stylesheet" type="text/css"/>
+<script>
 /**
  * 全局变量
  */
-var SITE_URL  = 'http://101.201.66.123/ThinkSNS';
-var UPLOAD_URL= 'http://101.201.66.123/ThinkSNS/data/upload';
-var THEME_URL = 'http://101.201.66.123/ThinkSNS/resources/theme/stv1/_static';
+var SITE_URL  = '';
+var UPLOAD_URL= '/data/upload';
+var THEME_URL = '/resources/theme/stv1/_static';
 var APPNAME   = 'public';
 var MID		  = '0';
 var UID		  = '0';
 var initNums  =  '140';
 var SYS_VERSION = '4.6.0';
-var UMEDITOR_HOME_URL = 'http://101.201.66.123/ThinkSNS/resources/theme/stv1/_static/js/um/';
+var UMEDITOR_HOME_URL = '/resources/theme/stv1/_static/js/um/';
 var _CP       = 'TS4_';
 // Js语言变量
 var LANG = new Array();
@@ -85,7 +85,7 @@ body, #header { padding-right: 0; }
                         <input type="hidden" name="login_remember" value="0" id="check-box" class="checkbox"/>
                         <!-- JS选择记住密码时要JS将login_remember值变为1 -->
                     </span>记住用户名</a> 
-                    <a href="http://101.201.66.123/ThinkSNS/index.php?app=public&mod=Passport&act=findPassword" class="login-fgetpwd">忘记密码？
+                    <a href="/index.php?app=public&mod=Passport&act=findPassword" class="login-fgetpwd">忘记密码？
                     </a>
                 </div>
 
