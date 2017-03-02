@@ -24,15 +24,23 @@
         public function index(Request $request)
         {    
              $id = $request->input("id"); 
+             if( !is_numeric( $id )){
+                $msg["status"] =0 ;
+                $msg["msg"] ="请正确输入合法数字" ;
+                return json_encode($msg); //返回信息
+             }
+
              if(empty($id)){
                 $msg["status"] =0 ;
                 $msg["msg"] ="请求参数不能为空" ;
-             }else{
-                 $data = $this->getdate($id);
-                 $data = json_encode($data);
-                 $msg["status"] =1 ;
-                 $msg["msg"] = $data;;
+                return json_encode($msg); //返回信息
              }
+
+             $data = $this->getdate($id);
+             $data = json_encode($data);
+             $msg["status"] =1 ;
+             $msg["msg"] = $data;
+
              return json_encode($msg); //返回信息
         }
 
@@ -51,7 +59,9 @@
                 $data = $this -> get($file);
             }else{
                 //将子数据写入文件
+                
                 $data = $this->getOne($pid);
+
                 $this->write($file,$data);
             }
 
@@ -133,7 +143,7 @@
                 return ; 
             }
 
-            set_time_limit(100); //设置脚本执行时间
+            set_time_limit(300); //设置脚本执行时间
             file_put_contents($file, "<?php".PHP_EOL."return [ ".PHP_EOL);
 
             foreach ($data as $key => $value) {
