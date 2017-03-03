@@ -27,23 +27,34 @@ class Controller extends BaseController
      */
     public function __destruct()
     {      
-         $data = DB::getQueryLog();
-         if(empty($data)){
-            return ;
-         }
-         $sql = $data[0]['query'];
-         $params =  $data[0]['bindings'];
+        $this->getLog();
+    }
 
-         $sql = str_replace("?", "'%s'", $sql);
-         array_unshift($params, $sql);
+    /**
+     *-----------------------------------------------
+     * 获取用户操作信息并且添加
+     *-----------------------------------------------
+     * @param
+     * @return
+     */
+    public function getLog()
+    {
+        $data = DB::getQueryLog();
+        if(empty($data)){
+           return ;
+        }
+        $sql = $data[0]['query'];
+        $params =  $data[0]['bindings'];
 
-         $sql = call_user_func_array('sprintf', $params);  //获取当前的sql 语句
-         $log['sql'] = $sql ;
-         $log['time'] = time() ;
-         $log['uid'] = 1 ;
-         $log['ip'] = $_SERVER['REMOTE_ADDR'];
+        $sql = str_replace("?", "'%s'", $sql);
+        array_unshift($params, $sql);
 
-         DB::table('log')->insert($log);
+        $sql = call_user_func_array('sprintf', $params);  //获取当前的sql 语句
+        $log['sql'] = $sql ;
+        $log['time'] = time() ;
+        $log['uid'] = 1 ;
+        $log['ip'] = $_SERVER['REMOTE_ADDR'];
 
+        DB::table('log')->insert($log);
     }
 }

@@ -43,7 +43,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="ibox-content">
+                    <div class="ibox-content" style="width:800px;">
                         <form method="post" class="form-horizontal" id="webconfig" action="../admin/webAdd" >
                             <!-- 隐藏token 文件 -->
                             <input type="hidden" name="_token" value="<?php echo csrf_token(); ?>">
@@ -61,28 +61,26 @@
                             <div class="form-group">
                                 <label class="col-sm-2 control-label">网站log</label>
                                 <div class="col-sm-10">
-                                <?php if(!isset($config['log'])){  ?> 
-                                   <div id="filePicker" stype="" >选择图片</div>
-                                   <div style="display:none" id="log">
-                                       <input type="text" class="form-control" name="log"> 
-                                       <span class="help-block m-b-none">
-                                        <a href="javascript:void(0)" id="deletelog">重新上传</a>
-                                       </span> 
-                                       <div id="thelist" style="width:100px;" class="uploader-list"></div>  
-                                   </div>
-                                <?php }else { ?>
-                                    <div id="filePicker"  style="display:none"  >选择图片</div>
+                                
+                                    <div id="filePicker"   >
+                                        <?php if(!isset($config['log'])){ ?>
+                                                上传图片
+                                        <?php }else{  ?>
+                                        <a href="javascript:void(0)" id="deletelog">修改图片</a>
+                                        <?php }?>
+                                    </div>
                                     <div style="" id="log">
                                         <input type="text" class="form-control" name="log" value="<?php echo $config['log']; ?>"> 
                                         <span class="help-block m-b-none">
-                                         <a href="javascript:void(0)" id="deletelog">重新上传</a>
+
                                         </span> 
-                                        <div id="thelist" style="width:100px;" class="uploader-list">
-                                            <img style="width:100px;" src="<?php echo URL::asset("admin/bannerimg"); ?>/<?php echo $config['log']; ?>" alt="图片找不到">
+                                        <div id="thelist" style="width:100px;height: 100px;;" class="uploader-list">
+                                            <div id="WU_FILE_0" class="file-item thumbnail">
+                                             <img style="display: block;height: auto;max-width: 100%;" src="<?php echo URL::asset("admin/bannerimg"); ?>/<?php echo $config['log']; ?>" alt="" id="img" />
+                                            </div>
                                         </div>  
                                     </div>
-                                <?php } ?>
-                                </div>
+                             </div>
                             </div>
                             <div class="hr-line-dashed"></div>
                             <div class="form-group">

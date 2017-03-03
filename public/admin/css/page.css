@@ -1,0 +1,15 @@
+.page{
+      background-color: #ffffff;
+      border: 1px solid #dddddd;
+      color: inherit;
+      line-height: 1.42857;
+      margin-left: -1px;
+      padding: 4px 10px;
+      position: relative;
+      text-decoration: none;
+}
+
+.current{
+  
+  color: red;
+}
