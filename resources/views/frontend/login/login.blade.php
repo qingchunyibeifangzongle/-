@@ -131,8 +131,8 @@ body, #header { padding-right: 0; }
                 <div class="hasno-account">
                 <p>还没有帐号？</p>
                 <div class="other-but">
-                <a  onclick="javascript:window.open('?url=login/register/uid/','_self')" class="white-but fl"><i class="arow-left"></i>去注册</a> 
-                <a href="?url=snsindex/indexshowsee/uid/ " class="white-but fr">先看看<i class="arow-right"></i></a> 
+                <a  onclick="javascript:window.open('regist')" class="white-but fl"><i class="arow-left"></i>去注册</a> 
+                <a href="index " class="white-but fr">先看看<i class="arow-right"></i></a> 
                </div>
             </form>
     </div>
@@ -140,7 +140,6 @@ body, #header { padding-right: 0; }
           <p id="message"></p>
    </div>
   </div>
-
 </div>
 
 <script src="Scripts/online_check.js"></script>

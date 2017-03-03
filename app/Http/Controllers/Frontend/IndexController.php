@@ -31,6 +31,7 @@ class IndexController extends Controller
 			 $user = $oauth->get_user_info();
 			 $qq = new Login();
 	         $user['code'] = $qq->qqLogin($openid);
+	         $user['openid']=$openid;
 	         //把用户信息存session里
 	         session(['qq'=>$user]);
 	         return redirect("frontend/binding");
@@ -48,7 +49,7 @@ class IndexController extends Controller
 			$user = session("qq"); 
         	if ($user['code']==1) {
         		//跳绑定账号页面
-        		return view('frontend.login.qqregister');
+        		return view('frontend.login.qqregister',['user'=>$user]);
         	}else{
         		//跳主页面
         		return redirect("frontend/index");
