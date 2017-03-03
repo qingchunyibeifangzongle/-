@@ -79,8 +79,8 @@
 
         $('.btn').click(function(){
             var type_name = $(":input[name='type_name']").val();
-            if(type_name.length < 3 || type_name.length >= 15){
-                $('.type_name').after("<font color='red'>商品名称3-15位</font>");
+            if(type_name.length < 1 || type_name.length >= 15){
+                $('.type_name').after("<font color='red'>商品名称1-15位</font>");
                 return false;
             }
 
