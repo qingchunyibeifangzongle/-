@@ -1,0 +1,225 @@
+﻿@charset 'utf-8';
+.mask {
+    display: block;
+    opacity: .5;
+    filter: alpha(opacity=50);
+    background: #000;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.virtual-img {
+    position:relative;
+    padding:45px 25px 0 25px;
+    box-sizing: border-box;
+    font-family: 'microsoft yahei';
+    position:fixed;
+    top:20%;
+    left:50%;
+    margin-left: -300px;
+    width:600px;
+    height:440px;
+    *width:550px;
+    *height:395px;
+    background:#fff;
+    z-index:100;
+    text-align: center;
+}
+.virtual-img h3 {
+    margin-bottom: 15px;
+    font-size:18px;
+    color:#666;
+    text-align:center;
+}
+.virtual-img ul {
+    padding-bottom:12px;
+    overflow:hidden;
+}
+.virtual-img ul li {
+    float:left;
+    width:80px;
+    margin:0 14px;
+    margin-top:25px;
+}
+.virtual-img ul li>a {
+    position:relative;
+}
+.virtual-img ul a>img {
+    width:100%;
+}
+.virtual-img li i {
+    display:none;
+    position:absolute;
+    right:-5px;
+    bottom:-5px;
+}
+.virtual-img .click-btn {
+    display:block;
+    margin:0 auto;
+    margin-top: 40px;
+    width:125px;
+    height:40px;
+    font-size:14px;
+    line-height: 40px;
+    color:#fff;
+    background:#fe8100;
+    text-align: center;
+    text-decoration: none;
+}
+.uploadClose {
+    position:absolute;
+    right:17px;
+    top:17px;
+    display:block;
+    width:12px;
+    height:12px;
+    background:url(../Images/close.png) no-repeat;
+    cursor:pointer;
+}
+.select-way {
+    font-family:'microsoft yahei';
+    position:fixed;
+    top:20%;
+    left:50%;
+    box-sizing: border-box;
+    padding:45px 20px 0 20px;
+    margin-left: -300px;
+    width:600px;
+    height:350px;
+    *width:560px;
+    *height:305px;
+    background:#fff;
+    z-index:100;
+    overflow:hidden;
+}
+.select-way.height0 {
+    height:0;
+    padding:0;
+}
+.select-way h3 {
+    color:#666;
+    font-size:18px;
+    text-align: center;
+    margin-bottom: 35px;
+}
+.select-way>div {
+    float:left;
+    width:130px;
+    margin:0 70px;
+    text-align: center;
+}
+.upload-virtual img {
+    margin:0 auto;
+    width:120px;
+    height:120px;
+}
+.select-way .click-btn {
+    display:block;
+    margin-top: 20px;
+    width:125px;
+    height:40px;
+    line-height: 40px;
+    text-align: center;
+    text-decoration: none;
+    color:#fe8100;
+    font-size:14px;
+    background:#fff;
+    border:1px solid #fe8100;
+    box-sizing: border-box;
+}
+.select-way .click-btn.unable {
+    border:1px solid #c8c8c8;
+    color:#c8c8c8;
+}
+/*.select-way .click-btn:hover {
+    background:#fe8100;
+    color:#fff;
+}*/
+.img-wrapper {
+    width:120px!important;
+    height:120px!important;
+    border:none!important;
+}
+.img-wrapper img{
+    position:relative;
+    width:120px;
+    height:120px;
+    border-radius:60px;
+}
+.select-way dl.clearfix dd:first-child {
+    position:absolute;
+    width:120px;
+    height:120px;
+    z-index:99;
+}
+.select-way dl.clearfix dd:last-child {
+    position:relative;
+    top:-3px;
+}
+.select-way .ui-uploader-close {
+    z-index:999;
+}
+.select-way .first-div {
+    position:relative;
+}
+.select-way .first-div:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 25px;
+    right: -75px;
+    width: 1px;
+    height: 80px;
+    background: #ebebeb;
+}
+.select-way .ui-uploader-iframe-container>div {
+    opacity:0;
+    filter: alpha(opacity=0);
+}
+.select-way .ui-uploader-iframe-container>div object {
+    opacity:0;
+    filter: alpha(opacity=0);
+}
+.upload-virtual {
+    cursor:pointer;
+}
+.select-way .ui-uploader-error {
+    position:relative;
+    z-index:99;
+}
+.select-way .ui-uploader-error a{
+    line-height: 230px !important;
+}
+.first-div .click-btn {
+    margin-top:15px;
+}
+.first-div .ui-uploader-bar {
+    top:90px;
+}
+.box-auto {
+    top:-3px;
+    width:auto !important;
+    height:auto !important;
+    background-position: 40px 16.5px !important;
+    background-size: 53% !important;
+    background-size: contain\9;
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://sta.ganjistatic1.com/src/tool/uploader2/css/loading.gif',  sizingMethod='scale')\9;
+}
+.box-auto .ui-uploader-progress {
+    position:relative;
+    left:12px;
+    line-height:94px !important;
+    font-size:15px !important;
+}
+.noclick {
+    position: absolute;
+    height: 186px;
+    width: 126px;
+    top: 0;
+}
+body .lpn_panel_default.lpn_tmp_canvas{
+    display: none;
+}

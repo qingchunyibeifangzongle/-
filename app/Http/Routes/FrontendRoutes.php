@@ -36,6 +36,7 @@ class FrontendRoutes
             //绑定网站账号页面
     		$router->get('frontend/binding', 	'Frontend\IndexController@binding');
 
+
     		//绑定网站账号
     		$router->post('frontend/qqAdd', 	'Frontend\Login\LoginController@qqAdd');
 
@@ -44,6 +45,18 @@ class FrontendRoutes
         
     		//绑定已有账号
     		$router->post('frontend/bindAccount', 'Frontend\Login\LoginController@bindAccount');
+    		//招聘
+    		$router->get('frontend/work', 	'Frontend\Work\WorkController@work');
+    		$router->get('frontend/information', 	'Frontend\Work\WorkController@information');
+    		$router->post('frontend/postInformation', 'Frontend\Work\WorkController@postInformation');
+    		//报名
+    		$router->get('frontend/sign/{job_id}', 'Frontend\Work\WorkController@sign');
+    		$router->post('frontend/postSign', 'Frontend\Work\WorkController@postSign');
+    		$router->get('frontend/guanli', 'Frontend\Work\WorkController@guanli');
+    		$router->get('frontend/delGuanli', 'Frontend\Work\WorkController@delGuanli');
+    		//回复
+    		$router->get('frontend/selectInformation', 'Frontend\Work\WorkController@selectInformation');
+
         });
     }
 }
