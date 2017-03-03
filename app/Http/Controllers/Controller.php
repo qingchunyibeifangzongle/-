@@ -7,9 +7,11 @@ use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Auth\Access\AuthorizesResources;
 use App\Model\Admin\WebConfig\Region;
+use App\Model\Admin\WebConfig\Nav;
 
 class Controller extends BaseController
 {
+
     public function __construct()
     {
         DB::enableQueryLog();
@@ -74,10 +76,9 @@ class Controller extends BaseController
         //获取当前城市的名称
         $city = $ipInfo['address_detail']['city'];
         //查询当前城市的地址id
-        var_dump( Region::get());die;
+
         $city = Region::where('region_name', $city)->first();
-        // $city = $city ->toArray();
-        var_dump($city);die;
+        $city = $city ->toArray();
 
         //查询导航栏信息
         $nav = Nav::get();
