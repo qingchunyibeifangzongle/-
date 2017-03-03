@@ -9,7 +9,7 @@
 <script type="text/javascript" src="js/index.366d681c7662a316cf81_3.js"></script>
 <body>
 
-@include('frontend.comman.head')  
+@include('frontend.common.head')
     <!-- 头部  e -->
 
 <!-- 首页内容区  s -->
@@ -1988,7 +1988,7 @@
 </div>
 <!-- 首页内容区  e -->
 
-@include('frontend.comman.footer') 
+@include('frontend.common.footer')
 
 <!--在线客服-->
 </body>

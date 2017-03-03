@@ -57,4 +57,10 @@ class GoodsType extends Model
         return $sql;
     }
 
+    public function addType($data = array())
+    {
+        $sql = DB::table($this->table)->insert($data);
+        return $sql;
+    }
+
 }
