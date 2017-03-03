@@ -70,7 +70,8 @@
 				$redis->connect('127.0.0.1', 6379);
 				$redis -> set("user","zhangsan");
 				echo $redis->get("user");*/
-				return $this->top().view('frontend.index');
+				return $this->top();
+				// return $this->top().view('frontend.index');
 
 			}//首页结束
 
