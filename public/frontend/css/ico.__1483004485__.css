@@ -1,0 +1,97 @@
+@charset "utf-8";
+.db-icon,
+.cg-icon,
+.db-min-ico,
+.cg-min-ico,
+.word-jing-ico,
+.word-re-ico,
+.word-jiang-ico,
+.word-ji-ico {
+    background: url("../../../../image/jianzhi/web/c/jz_db_ico1.png?v=161229") no-repeat;
+}
+
+.db-icon,
+.cg-icon,
+.db-min-ico,
+.cg-min-ico,
+.word-jing-ico,
+.word-re-ico,
+.word-jiang-ico,
+.word-ji-ico {
+    display: inline-block;
+    width: 30px;
+    height: 16px;
+    font-size: 0;
+    line-height: 0;
+    vertical-align: middle;
+    overflow: hidden;
+}
+
+.db-icon,
+.cg-icon {
+    width: 90px;
+    height: 24px;
+    background-position: 0 -26px;
+}
+
+.cg-icon {
+    background-position: 0 -90px;
+}
+
+.db-min-ico,
+.cg-min-ico {
+    width: 64px;
+    background-position: -128px -32px;
+}
+
+.cg-min-ico {
+    background-position: -100px -90px;
+}
+
+.word-jing-ico {
+    background-position: 0 0;
+}
+
+.word-re-ico {
+    background-position: -32px 0;
+}
+
+.word-jiang-ico {
+    background-position: -64px 0;
+}
+
+.word-ji-ico {
+    background-position: -128px 0;
+}
+
+.word-ti-ico {
+    display: none;
+}
+
+.word-ico1,
+.word-ico2,
+.word-ico3,
+.word-ico4 {
+    display: inline-block;
+    height: 16px;
+    background-color: #a9c365;
+    color: #fff;
+    font-size: 12px;
+    line-height: 16px;
+    vertical-align: middle;
+    padding-left: 2px;
+    padding-right: 2px;
+    overflow: hidden;
+}
+
+.word-ico2 {
+    background-color: #88b9b9;
+}
+
+.word-ico3 {
+    background-color: #de958f;
+}
+
+.word-ico4 {
+    background-color: #99b3dd;
+}

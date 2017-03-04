@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests;                                    // 引用请求插件类
 use App\Http\Controllers\Controller;                      // 引用控制器类
 use Illuminate\Support\Facades\DB;                       // 引用DB类;  可以进行查询
-use App\Http\Models\Login;
+use App\Http\Models\Login;								//引入MODEL
 
 
 class LoginController extends Controller
@@ -34,11 +34,11 @@ class LoginController extends Controller
 		public function loginDO(Request $request)
 		{
 			//接受用户名密码信息
-			$all=$request->all();
+			$all = $request->all();
 			//实例化登录M层
-			$login=new Login();
+			$login = new Login();
 			//登录验证
-			$user=$login->login($all);
+			$user = $login->login($all);
 			//返回前台json数据
 			return json_encode($user);
 		}
@@ -61,20 +61,6 @@ class LoginController extends Controller
         	$oauth->qq_login();
 		}
 
-		/**
-        *前台QQ绑定注册
-        *
-        * @author  ZHANGTAO
-        * @param 
-        * @return 
-        */ 
-		public function qqRegist()
-		{  
-			
-
-			 return view('frontend.login.qqregister');   
-		}
-
 
 		/**
         *前台注册
@@ -88,6 +74,60 @@ class LoginController extends Controller
 			
 
 			 return view('frontend.login.register');   
+		}
+
+		/**
+        *QQ绑定+注册账号
+        *
+        * @author  ZHANGTAO
+        * @param 
+        * @return 
+        */ 
+		public function qqAdd(Request $request)
+		{  
+			$all = $request->all();
+			$all['all']['password'] = md5($all['all']['password']);
+			$add = new Login();
+			$user = $add->qqAdd($all['all']);
+			return $user;
+			
+			
+
+
+			   
+		}
+
+		/**
+        *验证邮箱是否唯一
+        *
+        * @author  ZHANGTAO
+        * @param 
+        * @return 
+        */ 
+		public function onlyEmail(Request $request)
+		{  
+			$email = $request->input("email");	
+			$email = new Login();
+			$user_email = $email->onlyEmail($email);	
+			return $user_email;
+		}
+
+		/**
+        *绑定已有账号
+        *
+        * @author  ZHANGTAO
+        * @param 
+        * @return 
+        */ 
+		public function bindAccount(Request $request)
+		{  
+			$email = $request->input("email");	
+			$password = $request->input("password");
+			$openid = $request->input("qq");
+			$login = new Login();	
+			$binding = $login->bindAccount($email,$password,$openid);	
+			return $binding;
+			
 		}
 
 

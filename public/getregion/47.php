@@ -1,0 +1,20 @@
+<?php
+return [ 
+'586' => '{"region_id":587,"parent_id":47,"region_name":"\u65b0\u534e\u533a","region_type":3}',
+'587' => '{"region_id":588,"parent_id":47,"region_name":"\u8fd0\u6cb3\u533a","region_type":3}',
+'588' => '{"region_id":589,"parent_id":47,"region_name":"\u6ca7\u53bf","region_type":3}',
+'589' => '{"region_id":590,"parent_id":47,"region_name":"\u9752\u53bf","region_type":3}',
+'590' => '{"region_id":591,"parent_id":47,"region_name":"\u4e1c\u5149\u53bf","region_type":3}',
+'591' => '{"region_id":592,"parent_id":47,"region_name":"\u6d77\u5174\u53bf","region_type":3}',
+'592' => '{"region_id":593,"parent_id":47,"region_name":"\u76d0\u5c71\u53bf","region_type":3}',
+'593' => '{"region_id":594,"parent_id":47,"region_name":"\u8083\u5b81\u53bf","region_type":3}',
+'594' => '{"region_id":595,"parent_id":47,"region_name":"\u5357\u76ae\u53bf","region_type":3}',
+'595' => '{"region_id":596,"parent_id":47,"region_name":"\u5434\u6865\u53bf","region_type":3}',
+'596' => '{"region_id":597,"parent_id":47,"region_name":"\u732e\u53bf","region_type":3}',
+'597' => '{"region_id":598,"parent_id":47,"region_name":"\u5b5f\u6751\u56de\u65cf\u81ea\u6cbb\u53bf","region_type":3}',
+'598' => '{"region_id":599,"parent_id":47,"region_name":"\u6cca\u5934\u5e02","region_type":3}',
+'599' => '{"region_id":600,"parent_id":47,"region_name":"\u4efb\u4e18\u5e02","region_type":3}',
+'600' => '{"region_id":601,"parent_id":47,"region_name":"\u9ec4\u9a85\u5e02","region_type":3}',
+'601' => '{"region_id":602,"parent_id":47,"region_name":"\u6cb3\u95f4\u5e02","region_type":3}',
+'602' => '{"region_id":603,"parent_id":47,"region_name":"\u5176\u5b83\u533a","region_type":3}',
+] ; 

@@ -1,16 +1,5 @@
-<!doctype html>
-<html>
-<head _tracker='{"pagetype":"index"}'>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="renderer" content="webkit">
-<title>【校园】二货网</title>
-</head><!-- 加载js/css-->
-<script type="text/javascript" src="js/base.aafb2bc1791840d2768b_2.js"></script>
-<script type="text/javascript" src="js/index.366d681c7662a316cf81_3.js"></script>
-<body>
-
-@include('frontend.comman.head')  
-    <!-- 头部  e -->
+@include('frontend.common.head')
+ <!-- 头部  e -->
 
 <!-- 首页内容区  s -->
 <div class="index-area">
@@ -1988,7 +1977,7 @@
 </div>
 <!-- 首页内容区  e -->
 
-@include('frontend.comman.footer') 
+@include('frontend.common.footer')
 
 <!--在线客服-->
 </body>
