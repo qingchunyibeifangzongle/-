@@ -58,6 +58,7 @@ class GoodsTypeController extends Controller
             }else{
                 $data['path'] = $data['path'].'-'.$data['p_id'];
             }
+
             $res = $this->model->addType($data);
             if($res){
                 echo 1;

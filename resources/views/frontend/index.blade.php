@@ -1,5 +1,5 @@
-
-    <!-- 头部  e -->
+@include('frontend.common.head')
+ <!-- 头部  e -->
 
 <!-- 首页内容区  s -->
 <div class="index-area">
@@ -1977,7 +1977,7 @@
 </div>
 <!-- 首页内容区  e -->
 
-@include('frontend.comman.footer') 
+@include('frontend.common.footer')
 
 <!--在线客服-->
 </body>
