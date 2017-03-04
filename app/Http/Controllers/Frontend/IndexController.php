@@ -82,6 +82,7 @@
 		public function index(Request $request)
 		{    
 
+			// return view('frontend.index');
 			return $this->top().view('frontend.index');
 
 		}//首页结束

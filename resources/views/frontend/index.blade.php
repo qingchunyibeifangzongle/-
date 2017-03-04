@@ -1,4 +1,4 @@
-@include('frontend.common.head')
+
  <!-- 头部  e -->
 
 <!-- 首页内容区  s -->
