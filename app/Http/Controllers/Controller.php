@@ -84,7 +84,7 @@ class Controller extends BaseController
         $nav = Nav::get();
         $nav = $nav->toArray();
 
-        return view("frontend.comman.head",compact("nav","city"));
+        return view("frontend.common.head",compact("nav","city"));
     }
 
     /**
