@@ -14,11 +14,11 @@
         <div class="hd-top clearfix">
             <img src="images/logo.jpg" class='logo' alt="校园直卖网">
                 <div class="c2city">
-                    <a href="javascript:;" class="choose-city" >  
+                    <a href="javascript:;" class="choose-city" >
                         <span><?php echo $city["region_name"]; ?>
                             <i>&nbsp;</i>
-                        </span>  
-                     </a> 
+                        </span>
+                     </a>
                     <i class="maskline"></i>
                     <!-- 加载所有学校信息 -->
                     <div class="city-box" id="city-box" >
@@ -36,7 +36,7 @@
                     </div>
                 <!-- 加载所有学校信息结束 -->
                 </div>
-            
+
             <div class="uc">
                 <a class="" href="login">
                     登录|注册
@@ -100,7 +100,7 @@
                         <?php echo $value['name']; ?>
                     </a>
                 <?php endforeach ?>
-                <!-- 循环导航结束 --> 
+                <!-- 循环导航结束 -->
             </div>
         </div>
     </div>

@@ -83,8 +83,9 @@ class Controller extends BaseController
         //查询导航栏信息
         $nav = Nav::get();
         $nav = $nav->toArray();
-
-        return view("frontend.comman.head",compact("nav","city"));
+//var_dump($city);die;
+//        return view("frontend.common.head",compact("nav","city"));
+        return view("frontend.common.head",['nav'=>$nav ,'city'=>$city]);
     }
 
     /**

@@ -37,7 +37,6 @@
              }
 
              $data = $this->getdate($id);
-             $data = json_encode($data);
              $msg["status"] =1 ;
              $msg["msg"] = $data;
 

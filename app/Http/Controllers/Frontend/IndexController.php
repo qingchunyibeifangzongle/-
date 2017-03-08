@@ -1,11 +1,9 @@
 <?php
 	namespace App\Http\Controllers\Frontend;                  //使用命名空间申明是本类
+	use App\Model\Frontend\Index\Index;
 	use Illuminate\Http\Request;
 	use App\Http\Requests;                                    // 引用请求插件类
 	use App\Http\Controllers\Controller;                      // 引用控制器类
-	use DB;                                                   // 引用DB类;  可以进行查询
-	use App\Http\Models\Login;  
-	use App\Model\Admin\WebConfig\Nav; 
 
 	class IndexController extends Controller
 	{
@@ -80,9 +78,17 @@
 		 */
 
 		public function index(Request $request)
-		{    
+		{
+			$model = new Index();
+			$goodsList = $model->getGoodsList();
+//			var_dump($goodsList);die;
+			foreach($goodsList as $k => $v){
+				$goodsList[$k]['goods_img'] =explode(',',$v['goods_img']);
+			}
 
-			return $this->top().view('frontend.index');
+//			        $sql['goods_img'] = substr($sql['goods_img'],0,strpos($sql['goods_img'],','));
+//			var_dump($goodsList);die;
+			return $this->top().view('frontend.index',['goodsList' => $goodsList]);
 
 		}//首页结束
 
