@@ -748,7 +748,8 @@
                     title="北京出售"                    >我要sale物</a>
                 <a class="fl " baidu_alog="pc_index_top_tab&click&pc_index_top_tab_intro_c"
                    href="/bj/intro/"  data-gzlog="tracking_type=click&eventid=0010000000000010" title="校园服务保障">服务保障</a>
-
+                <a class="fl " href="{{URL('frontend/buyother')}}"  title="校园任务">发布任务</a>
+                <a class="fl " href="{{URL('frontend/buy')}}"  title="校园任务">我要接任务</a>
                 <a class="fl " href="/ask/"  title="校园问答系统">问答</a>
             </div>
         </div>

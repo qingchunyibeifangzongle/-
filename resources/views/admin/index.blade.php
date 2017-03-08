@@ -14,7 +14,6 @@
     <meta http-equiv="refresh" content="0;ie.html" />
     <![endif]-->
     
-    <link rel="shortcut icon" href="favicon.ico"> <link href="css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
     <link href="css/font-awesome.min.css?v=4.4.0" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/style.css?v=4.1.0" rel="stylesheet">
@@ -237,7 +236,7 @@
                         <span class="ng-scope"><h3><strong>日志管理</strong></h3></span>
                     </li>
                     <li>
-                        <a class="J_menuItem" href="indexV1">
+                        <a class="J_menuItem" href="{{URL('admin/WebLog')}}">
                             <i class="fa fa-home"></i>
                             <span class="nav-label">查看日志文件</span>
                         </a>
