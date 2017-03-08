@@ -18,8 +18,9 @@ class WorkController extends Controller
      */
     public function work(Request $request)
     {
+        $nav = DB::table('nav')->get();
         $arr = Work::work();
-        return view("frontend.work.work",['arr'=>$arr]);
+        return view("frontend.work.work",['arr'=>$arr,'nav'=>$nav]);
     }
 
     /**
@@ -27,7 +28,9 @@ class WorkController extends Controller
      */
     public function information()
     {
-        return view("frontend.work.information");
+        $nav = DB::table('nav')->get();
+        $school = DB::table('school')->get();
+        return view("frontend.work.information",['nav'=>$nav,'school'=>$school]);
     }
     /**
      * 发布招聘
@@ -37,18 +40,23 @@ class WorkController extends Controller
         $arr = $request->all();
         $arr['user_id'] = $request->session()->get("user_id");
         $res = Work::postInformation($arr);
-        print_r($res);
+        if($res){
+            echo "<script>alert('发布成功');location.href='work'</script>";
+        }else{
+            echo "<script>alert('发布失败');location.href='information'</script>";
+        }
     }
 
     /**
      * 报名
      */
     public function sign($job_id ,Request $request)
-    {
+    {   
+        $nav = DB::table('nav')->get();
         $user_id = $request->session()->get("user_id");
         $res = Work::selectSign($user_id,$job_id);
         if($res == 1){
-            return view("frontend.work.sign",['job_id'=>$job_id]);
+            return view("frontend.work.sign",['job_id'=>$job_id,'nav'=>$nav]);
         }else{
             return view("frontend.work.500",['error'=>'已报名，禁止重复','url'=>"../work",'color'=>'red']);
         }
@@ -76,9 +84,10 @@ class WorkController extends Controller
      */
     public function guanli(Request $request)
     {
+        $nav = DB::table('nav')->get();
         $user_id = $request->session()->get("user_id");
         $res = Work::guanli($user_id);
-        return view("frontend.work.guanli",['res'=>$res]);
+        return view("frontend.work.guanli",['res'=>$res,'nav'=>$nav]);
     }
 
     /**
@@ -99,8 +108,9 @@ class WorkController extends Controller
      */
     public function selectInformation(Request $request)
     {
+        $nav = DB::table('nav')->get();
         $user_id = $request->session()->get('user_id');
         $arr = Work::selectInformation($user_id);
-        return view('frontend.work.selectInformation',['arr'=>$arr]);     
+        return view('frontend.work.selectInformation',['arr'=>$arr,'nav'=>$nav]);     
     }
 }

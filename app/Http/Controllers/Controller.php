@@ -11,7 +11,6 @@ use App\Model\Admin\WebConfig\Nav;
 
 class Controller extends BaseController
 {
-
     public function __construct()
     {
         DB::enableQueryLog();
