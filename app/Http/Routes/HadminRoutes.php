@@ -17,12 +17,7 @@ class HadminRoutes
         //开放路由
         $router->group(['middleware' => 'web'], function ($router)
         {  
-        
-            //后台路由/*********************************************/
-
-            $router->get('admin/login',  'Admin\LoginController@login');
-            $router->post('admin/postLogin',  'Admin\LoginController@postLogin');      
-
+            //后台路由/*********************************************/   
              $router->get('admin/login',  'Admin\LoginController@login');
              $router->post('admin/postLogin',  'Admin\LoginController@postLogin');      
 
@@ -129,6 +124,7 @@ class HadminRoutes
 
 
         });
+        
 
         /**
          *-----------------------------------------------

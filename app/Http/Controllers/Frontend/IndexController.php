@@ -33,15 +33,15 @@
 				 return redirect("frontend/binding");
 			}
 
-		  /**
-			*-----------------------------------------------
-			*判断跳转页面，绑定账号
-			*-----------------------------------------------
-			* @param
-			* @return
-			*/
-			public function binding()
-			{
+	  /**
+		*-----------------------------------------------
+		*判断跳转页面，绑定账号
+		*-----------------------------------------------
+		* @param
+		* @return
+		*/
+		public function binding()
+		{
 			$user = session("qq"); 
 				if ($user['code']==1) {
 					//跳绑定账号页面
@@ -78,14 +78,22 @@
 		 */
 
 		public function index(Request $request)
-		{
+		{  
 			$model = new Index();
 			$goodsList = $model->getGoodsList();
 
 			foreach($goodsList as $k => $v){
 				$goodsList[$k]['goods_img'] =explode(',',$v['goods_img']);
 			}
-
+			/*$user = session("qq"); 
+        	if ($user['code']==1) {
+        		//跳绑定账号页面
+        		return view('frontend.login.qqregister');
+        	}else{
+        		//跳主页面
+        		return redirect("frontend/index");
+                
+        	}*/
 			return $this->top().view('frontend.index',['goodsList' => $goodsList]);
 
 		}//首页结束

@@ -20,6 +20,8 @@ class FrontendRoutes
          	
             //前台登录
             $router->get('frontend/login',  'Frontend\Login\LoginController@index');  
+            //前台qq绑定
+            $router->get('frontend/qqregist', 'Frontend\Login\LoginController@qqRegist');
 
             //前台注册
             $router->get('frontend/regist', 'Frontend\Login\LoginController@regist');						 
@@ -32,8 +34,11 @@ class FrontendRoutes
 		    
             //前台登录
 		    $router->post('frontend/loginDo', 	'Frontend\Login\LoginController@loginDo');
-    		
+
             //绑定网站账号页面
+
+            //绑定网站账号
+
     		$router->get('frontend/binding', 	'Frontend\IndexController@binding');
 
 
@@ -57,6 +62,14 @@ class FrontendRoutes
     		//回复
     		$router->get('frontend/selectInformation', 'Frontend\Work\WorkController@selectInformation');
 
+        });
+        //代步路由
+        $router->group(['middleware' => 'web'], function ($router)
+        {
+            //二货资金管理路由
+            $router->get('frontend/buyother',  'Admin\Money\BuyotherController@buyother');
+            $router->post('frontend/dai',  'Admin\Money\BuyotherController@dai');
+            $router->get('frontend/buy',  'Admin\Money\BuyotherController@buy');
         });
     }
 }

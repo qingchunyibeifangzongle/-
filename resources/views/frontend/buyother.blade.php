@@ -1,121 +1,20 @@
-<!DOCTYPE html>
-<html><head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta name="format-detection" content="telephone=no">
-<<<<<<< HEAD
-<title> [校园] 二货网 </title>
-<meta content="" name="keywords">
-<meta property="qc:admins" content="345471037076401633636375">
-<<<<<<< HEAD
-<meta name="csrf-token" content="{{ csrf_token() }}">
-<link href="http://demo.thinksns.com/ts4/favicon.ico?v=" type="image/x-icon" rel="shortcut icon">
-=======
-<link href="/favicon.ico?v=" type="image/x-icon" rel="shortcut icon">
->>>>>>> faacdb0d18e536d3e0a8805b1b257d6538610035
-=======
-<title> - </title>
-<meta content="" name="keywords">
-<meta property="qc:admins" content="345471037076401633636375">
-<link href="http://demo.thinksns.com/ts4/favicon.ico?v=" type="image/x-icon" rel="shortcut icon">
->>>>>>> moneydaibu
-<link href="qqregister/css.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="qqregister/uploadify.css" type="text/css">
-
-<script>
-/**
- * 全局变量
- */
-<<<<<<< HEAD
-var SITE_URL  = '';
-var UPLOAD_URL= '/data/upload';
-var THEME_URL = '/resources/theme/stv1/_static';
-var APPNAME   = 'public';
-var MID       = '';
-var UID       = '';
-var initNums  =  '';
-var SYS_VERSION = '';
-var UMEDITOR_HOME_URL = '/resources/theme/stv1/_static/js/um/';
-=======
-var SITE_URL  = 'http://demo.thinksns.com/ts4';
-var UPLOAD_URL= 'http://demo.thinksns.com/ts4/data/upload';
-var THEME_URL = 'http://demo.thinksns.com/ts4/resources/theme/stv1/_static';
-var APPNAME   = 'public';
-var MID     = '';
-var UID     = '';
-var initNums  =  '';
-var SYS_VERSION = '';
-var UMEDITOR_HOME_URL = 'http://demo.thinksns.com/ts4/resources/theme/stv1/_static/js/um/';
->>>>>>> moneydaibu
-var _CP       = 'TS4_';
-// Js语言变量
-var LANG = new Array();
-</script>
-<script src="qqregister/public_zh-cn.js"></script>
-<script src="qqregister/jquery_004.js"></script>
-<script src="qqregister/jquery.js"></script>
-<script src="qqregister/common.js"></script>
-<script src="qqregister/core.js"></script>
-<script src="qqregister/module_003.js"></script>
-<script src="qqregister/module_002.js"></script>
-<script src="qqregister/jwidget_1.js"></script>
-<script src="qqregister/jquery_003.js"></script>
-<script src="qqregister/jquery_002.js"></script>
-<script src="qqregister/ui_002.js"></script>
-<script src="qqregister/ui.js"></script>
-<script src="qqregister/core_002.js"></script>
-<script src="qqregister/core_003.js"></script>
-<script src="qqregister/core_002.js"></script>
-<<<<<<< HEAD
-<script src="qqregister/binding.js"></script>
-=======
->>>>>>> moneydaibu
-
-<style type="text/css">
-body, #header { padding-right: 0; }
-</style>
-</head>
-<body>
-<script>
-    core.plugFunc('message', function(){
-        core.message.init();
-        
-    });
-</script>
-<<<<<<< HEAD
-
-<!--手机APP下载-->
-<div id="app_download">
-  <a class="app_download" href="/index.php?app=weiba&amp;mod=Index&amp;act=postDetail&amp;post_id=2699"></a>
-</div>
-<div id="body_page" name="body_page">
-<div id="body-bg">
-<div id="header" name="header">
-  <!-- 未登录时 -->
-  <div class="header-wrap" style="background:green">
-      <div class="head-bd" > 
-        <!-- logo -->
-        <div class="logo" style="background:"><h2><a href="" style="font-size:26px;color:white"><b>校园</b>       &nbsp;<span style="font-size:18px;">二货</span></a></h2></div>
-        <!-- logo -->
-        <div class="nav">
-          <ul>
-                      </ul>
-        </div>
-      </div>
-=======
+<!doctype html>
+<html>
+<head _tracker='{"pagetype":"index"}'>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="renderer" content="webkit">
+<title>【校园】二货网</title>
+<link rel="stylesheet" href="{{ URL::asset('frontend/daigo/init.css')}}">
+    <!-- <link rel="stylesheet" href="{{ URL::asset('frontend/daigo/main.css')}}"> -->
+    <link rel="stylesheet" href="{{ URL::asset('frontend/daigo/release.css')}}">
+    
+    <script src="{{ URL::asset('frontend/daigo/hm.js')}}"></script>
+</head><!-- 加载js/css-->
 <script type="text/javascript" src="js/base.aafb2bc1791840d2768b_2.js"></script>
 <script type="text/javascript" src="js/index.366d681c7662a316cf81_3.js"></script>
-<!--手机APP下载-->
-<div id="app_download">
-  <a class="app_download" href="http://demo.thinksns.com/ts4/index.php?app=weiba&amp;mod=Index&amp;act=postDetail&amp;post_id=2699"></a>
-</div>
-<div id="body_page" name="body_page">
-<div id="body-bg">
-<div id="header" name="header" style='height:50px;'>
-  <!-- 未登录时 -->
+<body>
 
-      <div class="head-bd"> 
-        <!-- logo -->
-       <div class="header">
+    <div class="header">
         <div class="hd-top clearfix">
             <img src="images/logo.jpg" class='logo' alt="校园直卖网">
                 <div class="c2city">
@@ -816,15 +715,15 @@ body, #header { padding-right: 0; }
             <!--头部搜索框 -->
             <div class="search-box">
                 <div class="suggestion_widget" data-default-count="0" style='width:330px;'>
-                    <input type="text" class="search-input js_search_input_index" style='float:left;' style='float:left; width:250px; height:30px; border:1px solid #22ac38;' placeholder="搜索您想要的商品"  data-role="keywordInput" name="keyword"  >
+                    <input type="text" class="search-input js_search_input_index" style='float:left;' style='float:left; width:250px; height:30px; border:1px solid #22ac38;' placeholder="搜索您想要的车"  data-role="keywordInput" name="keyword"  >
                     <button class="search-btn" data-gzlog="tracking_type=click&eventid=0020070000000022" baidu_alog='pc_index_search&click&pc_index_search_rementuijian_c' style=' float:right;'>搜索</button>
                     <input type="hidden" value="bj" name="hiddenCity">
                 </div>
             </div>
         </div>
 
-        <!--menu s-->
-            <div class="nav">
+        <!-- menu s-->
+                        <div class="nav">
             <div class="w">
 
                 <a class="fr app-web" baidu_alog="pc_index_top_tab&click&pc_index_top_tab_appdownload_c"
@@ -854,409 +753,386 @@ body, #header { padding-right: 0; }
                     title="北京出售"                    >我要sale物</a>
                 <a class="fl " baidu_alog="pc_index_top_tab&click&pc_index_top_tab_intro_c"
                    href="/bj/intro/"  data-gzlog="tracking_type=click&eventid=0010000000000010" title="校园服务保障">服务保障</a>
-
+                <a class="fl " href="/frontend/daibu"  title="校园任务">发布任务</a>
                 <a class="fl " href="/ask/"  title="校园问答系统">问答</a>
             </div>
         </div>
-
->>>>>>> moneydaibu
-    </div>  <!-- 登录后 -->
-  </div>
-
-<!-- 首页顶部广告图位置 -->
-<!--二级导航-->
-<<<<<<< HEAD
-<div class="navigation-down">
-  </div>
-  
-=======
-
-
->>>>>>> moneydaibu
-<link type="text/css" rel="stylesheet" href="qqregister/login.css">
-  <div id="page-wrap">
-    <div class="reg-wrap">      
-      <!--设置账号-->
-      <div class="reg-main">
-        <div>
-        <div class="article">
-          <div class="mb30">
-            <dl class="account-links clearfix">
-<<<<<<< HEAD
-              <dt class="face_img left"><img src="<?php echo $user['figureurl_qq_2']?>" height="50" width="50"></dt>
-              <dd class="left"><h4>欢迎你，<span style="color:#0096e6"><?php echo $user['nickname']?></span>，您的QQ互联帐号授权成功！</h4><p style="color:#666">接下来完成简单的设置，即可用QQ互联帐号直接登录。</p></dd>
-=======
-              <dt class="face_img left"><img src="qqregister/100.png" width="50" height="50"></dt>
-              <dd class="left"><h4>欢迎你，<span style="color:#0096e6">孤狼</span>，您的QQ互联帐号授权成功！</h4><p style="color:#666">接下来完成简单的设置，即可用QQ互联帐号直接登录。</p></dd>
->>>>>>> moneydaibu
-            </dl>
-          </div>
-          <div class="tab-menu line-b-animate clearfix" style=" margin-bottom:30px;">
-            <ul>
-              <li class="current"><span><a href="#" uri="tab-pannel-1">新帐号</a></span></li>
-<<<<<<< HEAD
-<<<<<<< HEAD
-              <li class=""><span><a href="#" uri="tab-pannel-2">绑定已有帐号</a></span></li>            </ul>
-          <div style="width: 42px; left: 0px; overflow: hidden;" class="line-b"></div></div>
-       
-          <div style="display: block;" id="tab-pannel-1">
-          
-           
-=======
-              <li><span><a href="#" uri="tab-pannel-2">绑定已有帐号</a></span></li>            </ul>
-          <div class="line-b" style="width: 42px; left: 0px; overflow: hidden;"></div></div>
-        <div style="display:none;">
-          <form method="POST" action="/index.php?app=public&amp;mod=Register&amp;act=doOtherStep1" name="ajax_direct_bind_form" id="ajax_direct_bind_form">
-=======
-              <li><span><a href="#" uri="tab-pannel-2">绑定已有帐号</a></span></li>            </ul>
-          <div class="line-b" style="width: 42px; left: 0px; overflow: hidden;"></div></div>
-        <div style="display:none;">
-          <form method="POST" action="http://demo.thinksns.com/ts4/index.php?app=public&amp;mod=Register&amp;act=doOtherStep1" name="ajax_direct_bind_form" id="ajax_direct_bind_form">
->>>>>>> moneydaibu
-            <input name="other_type" value="qzone" type="hidden">
-            <input name="oauth_token" value="88F532685D3AF90A90F6401EEEE386D3" type="hidden">
-            <input name="oauth_token_secret" value="C090E9C8C86CCFCBDDBE380856BE6DFF" type="hidden">
-            <input name="other_uid" value="C090E9C8C86CCFCBDDBE380856BE6DFF" type="hidden">
-            <input name="other_face" value="http://qzapp.qlogo.cn/qzapp/101320592/C090E9C8C86CCFCBDDBE380856BE6DFF/100" type="hidden">
-            <input name="other_signature" value="" type="hidden">
-            <input name="uname" value="孤狼" type="hidden">
-            <input name="avatar" value="1" type="hidden">
-            <input name="direct" value="1" type="hidden">
-            <input class="btn-register" value="直接进入" type="submit">
-          </form>
-        </div>
-          <div id="tab-pannel-1">
-<<<<<<< HEAD
-            <form model-node="normal_form" method="POST" action="/index.php?app=public&amp;mod=Register&amp;act=doOtherStep1" name="ajax_register_form" id="ajax_register_form">
-=======
-            <form model-node="normal_form" method="POST" action="http://demo.thinksns.com/ts4/index.php?app=public&amp;mod=Register&amp;act=doOtherStep1" name="ajax_register_form" id="ajax_register_form">
->>>>>>> moneydaibu
-            <input name="other_type" value="qzone" type="hidden">
-            <input name="oauth_token" value="88F532685D3AF90A90F6401EEEE386D3" type="hidden">
-            <input name="oauth_token_secret" value="C090E9C8C86CCFCBDDBE380856BE6DFF" type="hidden">
-            <input name="other_uid" value="C090E9C8C86CCFCBDDBE380856BE6DFF" type="hidden">
-            <input name="other_face" value="http://qzapp.qlogo.cn/qzapp/101320592/C090E9C8C86CCFCBDDBE380856BE6DFF/100" type="hidden">
-            <input name="other_signature" value="" type="hidden">
-<<<<<<< HEAD
->>>>>>> faacdb0d18e536d3e0a8805b1b257d6538610035
-=======
->>>>>>> moneydaibu
-            <dl class="item">
-              <dd class="clearfix">
-                <div class="form-tt"><i class="text-required pr5">*</i>昵称：</div>
-                <div class="form-row">
-                  <div style="overflow:hidden;*zoom:1">
-<<<<<<< HEAD
-<<<<<<< HEAD
-                    <input class="s-txt" event-node="uname" id="username" name="uname" autocomplete="off" value="<?php echo $user['nickname']?>" type="text" status="1">
-                    <span id="s_name"></span>
-=======
-                    <input event-node="uname" name="uname" checkurl="/index.php?app=public&amp;mod=Register&amp;act=isUnameAvailable" autocomplete="off" value="孤狼" class="s-txt" type="text">
->>>>>>> faacdb0d18e536d3e0a8805b1b257d6538610035
-                  </div>
-
-                </div>
-                <input type="hidden" id="openid"value="<?php echo $user['openid']?>">
-              </dd>
-
-              <dd class="clearfix">
-                <div class="form-tt"><i class="text-required pr5">*</i>邮箱：</div>
-                <div class="form-row" style="z-index:99">
-<<<<<<< HEAD
-                  <input class="s-txt" event-node="email" event-args="" name="email"  autocomplete="off" type="text" id="email">
-                  <span id="s_email"></span>
-=======
-                  <input event-node="email" event-args="" name="email" checkurl="/index.php?app=public&amp;mod=Register&amp;act=isEmailAvailable" autocomplete="off" class="s-txt" type="text">
->>>>>>> faacdb0d18e536d3e0a8805b1b257d6538610035
-=======
-                    <input event-node="uname" name="uname" checkurl="http://demo.thinksns.com/ts4/index.php?app=public&amp;mod=Register&amp;act=isUnameAvailable" autocomplete="off" value="孤狼" class="s-txt" type="text">
-                  </div>
-                </div>
-              </dd>
-              <dd class="clearfix">
-                <div class="form-tt"><i class="text-required pr5">*</i>邮箱：</div>
-                <div class="form-row" style="z-index:99">
-                  <input event-node="email" event-args="" name="email" checkurl="http://demo.thinksns.com/ts4/index.php?app=public&amp;mod=Register&amp;act=isEmailAvailable" autocomplete="off" class="s-txt" type="text">
->>>>>>> moneydaibu
-                </div>
-              </dd>
-              <dd class="clearfix">
-                <div class="form-tt"><i class="text-required pr5">*</i>密码：</div>
-                <div class="form-row">
-<<<<<<< HEAD
-                    <input class="s-txt" event-node="password" name="password" value="" type="password">
-                    <span id="s_password"></span>
-                    <div classname="psw-state-empty" model-node="password_weight" class="psw-state-empty">
-=======
-                    <input event-node="password" name="password" value="" class="s-txt" type="password">
-                    <div model-node="password_weight" class="psw-state-empty" classname="psw-state-empty">
->>>>>>> moneydaibu
-                        <div class="progress progress-green-transition"><div class="bar"></div></div>
-                        <div class="txt"><span>弱</span><span>中</span><span>强</span></div>
-                    </div>
-                </div>
-              </dd>
-              <dd class="clearfix">
-                <div class="form-tt"><i class="text-required pr5">*</i>确认密码：</div>
-                <div class="form-row">
-<<<<<<< HEAD
-                  <input class="s-txt" event-node="repassword" name="repassword" type="password">
-                  <span id="s_repassword"></span>
-=======
-                  <input event-node="repassword" name="repassword" class="s-txt" type="password">
->>>>>>> moneydaibu
-                </div>
-              </dd>
-              <dd class="clearfix">
-                <div class="form-tt"><i class="text-required pr5">*</i>性别：</div>
-                <div class="form-row">
-<<<<<<< HEAD
-                  <label style="line-height:36px;">
-                  <input name="sex" class="s-radio" value="1" checked event-node="radio" event-args="error=请选择性别" type="radio">男</label>　
-                  <label><input event-node="radio" name="sex" value="0" class="s-radio" type="radio">女</label>
-                </div>
-              </dd>
+        <!-- menu e-->
+    </div>
+    <!-- 头部  e -->
              
-              <dd class="mt15">
-                <div class="form-row actionBtn">
-                  <input class="btn-register left" value="完善资料" type="button" id="perfect" >  
-                                  </div>
-              </dd>
-            </dl>
-         <script>
-         
-         </script>
-        </div>
-<<<<<<< HEAD
-        <div id="tab-pannel-2" style="display: none;">
-          <form method="POST" action="" id="ajax_other_bind_form" onsubmit="return ajax_bind_submit(this);">
-            
-=======
-        <div id="tab-pannel-2" style="display:none;">
-          <form method="POST" action="/index.php?app=public&amp;mod=Register&amp;act=doBindStep1" name="ajax_other_bind_form" id="ajax_other_bind_form" onsubmit="return ajax_bind_submit(this);">
-=======
-                  <label style="line-height:36px;"><input name="sex" class="s-radio" value="1" checked="checked" event-node="radio" event-args="error=请选择性别" type="radio">男</label>　
-                  <label><input event-node="radio" name="sex" value="2" class="s-radio" type="radio">女</label>
-               
-                    <dd class="mt15">
-                <div class="form-row actionBtn">
-                  <input class="btn-register left" value="完善资料" type="submit">  
+<!-- 首页内容区  s -->
+<div class="index-area">
+     <!-- 发布商品js -->
+           <script src="{{ URL::asset('frontend/daigo/jquery-1.js') }}"></script>
+            <script src="{{ URL::asset('frontend/daigo/plupload.js')}}"></script>
+            <script src="{{ URL::asset('frontend/daigo/zh_CN.js')}}"></script>
+            <script src="{{ URL::asset('frontend/daigo/qiniu.js')}}"></script>
+            <!-- <script src="{{ URL::asset('frontend/daigo/common.js')}}"></script> -->
+             <script src="{{ URL::asset('frontend/daigo/add.js')}}"></script>
+    <script src="{{ URL::asset('frontend/daigo/release.js')}}"></script>
+     <!-- 发布商品js结束 -->
+     <form action="{{url('frontend/dai')}}" method="post">
+     <div class="form-wr">
+            <div class="form-must-wr">
+                <div class="form-item l goods-title">
+                    <div class="form-key"><span>任务 名称</span></div>
+                    <div class="form-value">
+                        <div class="form-input-wr">
+                            <input id="title" name="title" placeholder="最多25个字" type="text">
+                        </div>
                     </div>
-                 </dd>
                 </div>
-              </dd>
-     
-           
+                <div class="form-item xl goods-desc">
+                    <div class="form-key"><span>商品详情</span></div>
+                    <div class="form-value">
+                        <div class="form-input-wr">
+                            <textarea name="details" id="details" placeholder="建议填写物品的详细情况,以及件数,商店名称"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-item l goods-title">
+                    <div class="form-key"><span>交易地点</span></div>
+                    <div class="form-value">
+                        <div class="form-input-wr">
+                            <input id="address" name="address" placeholder="宿舍、教学楼、食堂等" value="" type="text">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-item m goods-price">
+                    <div class="form-key"><span>商品价格</span></div>
+                    <div class="form-value">
+                        <div class="form-input-wr">
+                            <input class="price" id="price" name="price" type="text" placeholder="商品总价格" >
+                        </div>
+                        <div class="form-input-wr">
+                            <input class="price" id="daigo" name="daigo_price" type="text" placeholder="这里是跑路费" >
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-select">
+                </div>
+                <div class="form-item m">
+                <br/>
+                    <div class="form-key"><span>手机号</span></div>
+                    <div class="form-value">
+                        <div class="form-input-wr">
+                            <input id="phonee" name="phone" value="" type="text">
+                            <input type="hidden" name="_token" value = "{{ csrf_token() }}"/>
+                            <input type="hidden" name="school_id" value = "1"/>
+                        </div>
+                    </div>
+                    <button type="button" class="form-submit">马上发布</button>
+                    <div class="form-item m goods-price">
+                    <div class="form-key"></div>
+                    <div class="form-value">
+                       <div><input type="submit" value="马上发布"/></div>
+                    </div>
+                </div>
+                    
+                </div>
+            </div>
+            </form>
+        </div>
+   
 
-         <dd class="clearfix">
-<input event-node="input_area" id="current" name="city_ids" value="" type="hidden"><span class="ico-ok" style="display: none;"></span><div class="box-ver" style="display: none;"><span><b class="ico-error"></b></span></div>
-<input id="current_name" name="city_names" value="" type="hidden">
+    <!--首页帖子列表 s-->
 
-               </div>
-                </div>
-              </dd>
-              <dd class="clearfix" style="display:none">
-                <div class="form-tt"><i class="text-required pr5">*</i>使用头像：</div>
-                <div class="form-row">
-                  <img src="qqregister/100.png" width="50" height="50">
-                  <br>
-                  <label><input name="avatar" value="1" checked="checked" class="s-radio" type="radio">是</label>
-                  <label><input name="avatar" value="0" class="s-radio" type="radio">否</label>
-                </div>
-              </dd>
-              <dd class="mt15">
-               <!--  <div class="form-row actionBtn">
-                  <input class="btn-register left" value="完善资料" type="submit">  
-                    </div> -->
-              </dd>
-            </dl>
-          </form>
-        </div>
-        <div id="tab-pannel-2" style="display:none;">
-          <form method="POST" action="http://demo.thinksns.com/ts4/index.php?app=public&amp;mod=Register&amp;act=doBindStep1" name="ajax_other_bind_form" id="ajax_other_bind_form" onsubmit="return ajax_bind_submit(this);">
->>>>>>> moneydaibu
-            <input name="other_type" value="qzone" type="hidden">
-            <input name="oauth_token" value="88F532685D3AF90A90F6401EEEE386D3" type="hidden">
-            <input name="oauth_token_secret" value="C090E9C8C86CCFCBDDBE380856BE6DFF" type="hidden">
-            <input name="other_uid" value="C090E9C8C86CCFCBDDBE380856BE6DFF" type="hidden">
-            <input name="other_face" value="http://qzapp.qlogo.cn/qzapp/101320592/C090E9C8C86CCFCBDDBE380856BE6DFF/100" type="hidden">
-            <input name="other_signature" value="" type="hidden">
-<<<<<<< HEAD
->>>>>>> faacdb0d18e536d3e0a8805b1b257d6538610035
-=======
->>>>>>> moneydaibu
-            <dl class="item">
-              <dd class="clearfix">
-                <div class="form-tt"><i class="text-required pr5">*</i>邮箱：</div>
-                <div class="form-row" style="z-index:99">
-<<<<<<< HEAD
-                  <input class="s-txt" event-node="input_text" id="have_email" name="email" type="text">
-                  <span id="s_have_email"></span>
-=======
-                  <input event-node="input_text" name="email" class="s-txt"  type="text">
->>>>>>> moneydaibu
-                </div>
-              </dd>
-              <dd class="clearfix">
-                <div class="form-tt"><i class="text-required pr5">*</i>密码：</div>
-                <div class="form-row">
-<<<<<<< HEAD
-                  <input class="s-txt" event-node="input_text" id="have_password" name="password" value="" type="password">
-=======
-                  <input event-node="input_text" name="password" value="" class="s-txt" type="password">
->>>>>>> moneydaibu
-                </div>
-              </dd>
-              <dd class="mt15">
-                <div class="form-row actionBtn">
-<<<<<<< HEAD
-                  <input class="btn-register" value="绑定" type="submit" id="binding">
-=======
-                  <input class="btn-register" value="绑定" type="submit">
->>>>>>> moneydaibu
-                </div>
-              </dd>
-            </dl>
-          </form>
-        </div>
-        </div>
-              </div>
-    </div>
-  </div>
-  <script type="text/javascript">
-<<<<<<< HEAD
-    //绑定
-    $("#binding").click(function(){
-      var email=$("#have_email").val();
-      var password=$("#have_password").val();
-      var openid=$("#openid").val();
-      $.ajax({
-           type: "POST",
-           url: "bindAccount",
-           data: {email:email,password:password,qq:openid},
-           success: function(msg){
-             if (msg==1) {
-              $("#s_have_email").html("<font color='red'>该邮箱不存在</font>")
-             }else if(msg==2){
-               $("#s_have_email").html("<font color='red'>该邮箱已绑定QQ</font>")
-             }else if(msg==0){
-               $("#s_have_email").html("<font color='green'>绑定成功</font>")
-               window.location="index";
-             }else if(msg==10){
-               $("#s_have_email").html("<font color='red'>密码不正确</font>")
-             }
-           }
-        });
-    })
-=======
->>>>>>> moneydaibu
-    $(function() {
-        $(".tab-menu ul > li > span > a").click(function(e) {
-            $(this).parent().parent().parent().children('li').removeClass('current');
-            $(this).parent().parent().addClass('current');
-            if ($(this).attr('uri') == 'tab-pannel-1'){
-              $('#tab-pannel-1').show();
-              $('#tab-pannel-2').hide();
-            }else{
-              $('#tab-pannel-2').show();
-              $('#tab-pannel-1').hide();
-            }
-        });
-    });
-    function ajax_bind_submit(obj){
-      var email = obj.email.value;
-      var password = obj.password.value;
-      var remember = 0;
-      if ( !email ){
-        ui.error('用户邮箱不能为空！');return false;
-      }
-      // 添加邮箱正则验证
-      var myreg = /^([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+@([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+\.[a-zA-Z]{2,3}$/;
-      if (!myreg.test(email)) {
-        ui.error('请输入正确的邮箱地址！');
-        return false;
-      }
-      if ( !password ){
-        ui.error('密码不能为空！');return false;
-      }
-      var options = {
-        dataType: "json",
-          success: function(txt) {
-            if(1 == txt.status) {
-              ui.success(txt.info);
-              if(txt.data['jumpUrl']){
-                setTimeout(function() {
-                  location.href = txt.data['jumpUrl'];
-                }, 500);
-              }
-            } else {
-              ui.error(txt.info);
-            }
-          }
-      };
-      $(obj).ajaxSubmit(options);
-      return false;
-    }
-  </script>
-<script src="qqregister/module.js"></script>
-<div class="footer-wrap">
-  <div class="footer">
-    <div class="login-footer">
-      <div class="attend-official clearfix">
-        <dl>
-          <dt>
-            <div class="mb15">关注我们</div>
-            <a href="http://weibo.com/thinksns" target="_blank" rel="nofollow me"><i class="ico-weibo"></i>加关注</a>
-            <!--<a><i class="ico-weixin"></i>加关注</a>-->
-          </dt>
-<<<<<<< HEAD
-          <dd><img src="qqregister/55a3969ca374a.png"></dd>
-        </dl>
-      </div>
-            <div class="copy-right">
-      <p>ThinkSNS是智士软件旗下开源社交软件系统，适合企业及二次开发者基于系统进行快速二次开发，高效低成本实现各软件系统建设，商
-业使用请授权，公益及个人可申请免费网页端源码使用，须保留ThinkSNS标示，遵循开源授权协议，侵权必究。商业授权，网站／APP定制开发服务可致
-电官方商务部：18108035545。</p>
-      <p class="f8">Powered by <a href="http://www.thinksns.com/">ThinkSNS</a>&nbsp;©2017 ZhishiSoft All Rights Reserved. </p>
-=======
-          <dd><img src="picture/weixin.png"></dd>
-        </dl>
-      </div>
-            <div class="copy-right">
-      <p>校园二货网是腾龙软件旗下开源社交软件系统，适合企业及二次开发者基于系统进行快速二次开发，高效低成本实现各软件
-      </p>
-      <p class="f8">Powered by <a href="http://www.thinksns.com/">校园二货网</a>&nbsp;©2017 ZhishiSoft All Rights Reserved. </p>
->>>>>>> moneydaibu
-      </div>
-    </div>
-  </div>
-  <!--footer end--> 
-  
+
+    <!--底部推广 s-->
+    <div class="w gz-zq">
+    <div class="zq-crm clearfix">
+      
+</div>    <!--底部推广 e -->
+
 </div>
-<!--page end--> 
- 
-<!-- 统计代码-->
-<div id="site_analytics_code" style="display:none;">  </div>
-<script>
-  //底部置底
-  var head_height = $("#body-bg").css("padding-top");
-  var footer_height = $(".footer-wrap").height();
-  var footer_margin_top = $(".footer-wrap").css("margin-top");
-  var content_height = $("#page-wrap").height();
+<!-- 首页内容区  e -->
 
-  var window_height = $(window).height();
-  var min_height = Number(window_height)-parseInt(head_height)-Number(footer_height)-parseInt(footer_margin_top)-1;
-  if(content_height < min_height){
-    if($("#main-wrap").length > 0){
-      $("#main-wrap").css("min-height",min_height);
-    }else{
-      $("#page-wrap").css("min-height",min_height);
-    }
-  }
-</script>
+<!-- 底部  s -->
+<div class="footer">
+    <!--加载footer 信息部分 -->
+   <div class="company-info clearfix">
+    <img src="images/logo.jpg" width='150' hight='160' alt="校园直卖网" style=' float:left;'>
+    <div class="phone-email" >
+        <p>
+            咨询电话：<i>400-023-1529</i> <br>
+            <span>（周一至周日 8:00-21:00）</span>
+        </p>
+        <p>售后服务专线：400-066-8780  </p>
+    </div>
+    <img src="picture/weixin.png" alt="" class="gz-ewm">
+    <p class="ewm-tit">关注微信</p>
+    <img src="picture/weixin.png" alt="" class="gz-ewm">
+    <p class="ewm-tit">下载APP</p>
+    <div class="basic-info">
+        <div class="info-link">
+            <a rel="nofollow" href="/bj/aboutus/" target="_blank">关于校园</a>
+            <a rel="nofollow" href="/bj/join/" target="_blank">加入我们</a>
+            <a rel="nofollow" href="/bj/contact" target="_blank">联系我们</a>
+            <a rel="nofollow" href="/bj/intro/" target="_blank">服务保障</a>
+        </div>
+        <p class="arc-info">Copyright 2017 www.guazi.com All Rights Reserved</p>
+        <p class="arc-info">京ICP备15053955号  ICP证151071号 </p>
+        <div style="width:300px;margin:0 auto; padding:20px 0;">
+            <a rel="nofollow" target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802020161" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="picture/ghs_3.png" style="float:left;"/><p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">京公网安备 11010802020161号</p></a>
+        </div>
+    </div>
+</div>
+    <!--seo 链接 -->
+    
+    <div class="friendly-link">
+        <p class="link-tit">热门品牌：</p>
+        <span class="open-box"></span>
+        <span class="close-box" data-role="is_show_box"></span>
+                                    <a href="/bj/dazhong/" target="_blank">北京二手大众</a>
+                            <a href="/bj/hyundai/" target="_blank">北京二手现代</a>
+                            <a href="/bj/bmw/" target="_blank">北京二手宝马</a>
+                            <a href="/bj/audi/" target="_blank">北京二手奥迪</a>
+                            <a href="/bj/benz/" target="_blank">北京二手奔驰</a>
+                            <a href="/bj/buick/" target="_blank">北京二手别克</a>
+                            <a href="/bj/ford/" target="_blank">北京二手福特</a>
+                            <a href="/bj/toyota/" target="_blank">北京二手丰田</a>
+                            <a href="/bj/richan/" target="_blank">北京二手日产</a>
+                            <a href="/bj/honda/" target="_blank">北京二手本田</a>
+                            <a href="/bj/chevrolet/" target="_blank">北京二手雪佛兰</a>
+                            <a href="/bj/mazda/" target="_blank">北京二手马自达</a>
+                            <a href="/bj/kia/" target="_blank">北京二手起亚</a>
+                            <a href="/bj/biaozhi/" target="_blank">北京二手标致</a>
+                            <a href="/bj/changan/" target="_blank">北京二手长安</a>
+                            <a href="/bj/citroen/" target="_blank">北京二手雪铁龙</a>
+                            <a href="/bj/landrover/" target="_blank">北京二手路虎</a>
+                            <a href="/bj/byd/" target="_blank">北京二手比亚迪</a>
+                            <a href="/bj/porsche/" target="_blank">北京二手保时捷</a>
+                            <a href="/bj/hafu/" target="_blank">北京二手哈弗</a>
+                            <a href="/bj/chery/" target="_blank">北京二手奇瑞</a>
+                            <a href="/bj/skoda/" target="_blank">北京二手斯柯达</a>
+                            <a href="/bj/mini/" target="_blank">北京二手MINI</a>
+                            <a href="/bj/suzuki/" target="_blank">北京二手铃木</a>
+                            <a href="/bj/shenbao/" target="_blank">北京二手北汽绅宝</a>
+                            <a href="/bj/jeep/" target="_blank">北京二手Jeep</a>
+                            <a href="/bj/jianghuai/" target="_blank">北京二手江淮</a>
+                            <a href="/bj/volvo/" target="_blank">北京二手沃尔沃</a>
+                            <a href="/bj/huachen/" target="_blank">北京二手金杯</a>
+                            <a href="/bj/mitsubishi/" target="_blank">北京二手三菱</a>
+                            <a href="/bj/jiebao/" target="_blank">北京二手捷豹</a>
+                            <a href="/bj/zhongtai/" target="_blank">北京二手众泰</a>
+                            <a href="/bj/dongnan/" target="_blank">北京二手东南</a>
+                            <a href="/bj/changcheng/" target="_blank">北京二手长城</a>
+                            <a href="/bj/jili/" target="_blank">北京二手吉利</a>
+                        </div>
+    <div class="friendly-link">
+        <p class="link-tit">热门车系：</p>
+        <span class="open-box"></span>
+        <span class="close-box" data-role="is_show_box"></span>
+                                    <a href="/bj/maiteng/" target="_blank">北京二手大众迈腾</a>
+                            <a href="/bj/suteng/" target="_blank">北京二手大众速腾</a>
+                            <a href="/bj/passat/" target="_blank">北京二手大众帕萨特</a>
+                            <a href="/bj/baolai/" target="_blank">北京二手大众宝来</a>
+                            <a href="/bj/langyi/" target="_blank">北京二手大众朗逸</a>
+                            <a href="/bj/golf/" target="_blank">北京二手大众高尔夫</a>
+                            <a href="/bj/tuguan/" target="_blank">北京二手大众途观</a>
+                            <a href="/bj/dazhong-polo/" target="_blank">北京二手大众大众PO...</a>
+                            <a href="/bj/bmw-5/" target="_blank">北京二手宝马宝马5系</a>
+                            <a href="/bj/bmw-3/" target="_blank">北京二手宝马宝马3系</a>
+                            <a href="/bj/fute-fukesi/" target="_blank">北京二手福特福克斯</a>
+                            <a href="/bj/mondeo/" target="_blank">北京二手福特蒙迪欧</a>
+                            <a href="/bj/audi-a6l/" target="_blank">北京二手奥迪奥迪A6...</a>
+                            <a href="/bj/audi-q5-jinkou/" target="_blank">北京二手奥迪奥迪Q5</a>
+                            <a href="/bj/audi-a8l/" target="_blank">北京二手奥迪奥迪A8...</a>
+                            <a href="/bj/audi-a4l/" target="_blank">北京二手奥迪奥迪A4...</a>
+                            <a href="/bj/mazida6/" target="_blank">北京二手马自达马自达...</a>
+                            <a href="/bj/xiandai-ix35/" target="_blank">北京二手现代现代ix...</a>
+                            <a href="/bj/yilante-yuedong/" target="_blank">北京二手现代悦动</a>
+                            <a href="/bj/sunata/" target="_blank">北京二手现代索纳塔</a>
+                            <a href="/bj/shengdajinkou/" target="_blank">北京二手现代全新胜达</a>
+                            <a href="/bj/chevrolet-keluzi/" target="_blank">北京二手雪佛兰科鲁兹</a>
+                            <a href="/bj/benz-c/" target="_blank">北京二手奔驰奔驰C级</a>
+                            <a href="/bj/benz-e/" target="_blank">北京二手奔驰奔驰E级</a>
+                            <a href="/bj/buick-junwei/" target="_blank">北京二手别克君威</a>
+                            <a href="/bj/buick-gl8/" target="_blank">北京二手别克别克GL...</a>
+                            <a href="/bj/buick-junyue/" target="_blank">北京二手别克君越</a>
+                            <a href="/bj/i-yage/" target="_blank">北京二手本田雅阁</a>
+                            <a href="/bj/mini-mini/" target="_blank">北京二手MINIMI...</a>
+                            <a href="/bj/h6/" target="_blank">北京二手哈弗哈弗H6</a>
+                            <a href="/bj/tianlai/" target="_blank">北京二手日产天籁</a>
+                            <a href="/bj/qida/" target="_blank">北京二手日产骐达</a>
+                            <a href="/bj/kaimeirui/" target="_blank">北京二手丰田凯美瑞</a>
+                            <a href="/bj/hanlanda/" target="_blank">北京二手丰田汉兰达</a>
+                            <a href="/bj/c5-jinkou/" target="_blank">北京二手雪铁龙雪铁龙...</a>
+                        </div>
+        <div class="friendly-link">
+        <p class="link-tit">友情链接：</p>
+        <span class="open-box"></span>
+        <span class="close-box" data-role="is_show_box"></span>
+                                    <a href="http://www.chinawutong.com/baike/">物流百科</a>
+                            <a href="http://bj.ganji.com/ershouche/">赶集</a>
+                            <a href="http://www.che127.com/beijing/">北京</a>
+                            <a href="http://beijing.tianqi.com/15/">北京天气预报15天</a>
+                            <a href="http://www.jiajuol.com/beijing/">北京装修网</a>
+                            <a href="http://beijing.ganchang.cn/">北京个人</a>
+                            <a href="http://www.icauto.com.cn/weizhang/">违章查询</a>
+                            <a href="http://bj.58che.com/">北京车市</a>
+                            <a href="http://beijing.baixing.com/cheliang/">北京</a>
+                            <a href="http://beijing.huangye88.com/">北京信息港</a>
+                            <a href="http://www.xbaixing.com/bj/">北京百姓网</a>
+                            <a href="http://www.chexun.com/">车讯网</a>
+                            <a href="http://www.862sc.com/">伯乐网</a>
+                            <a href="http://bj.16888.com/">北京校园网</a>
+                            <a href="http://www.atzuche.net/">北京租车公司</a>
+                            <a href="http://www.12365auto.com/">车质网</a>
+                            <a href="http://bj.58.com/ershouche/">北京</a>
+                            <a href="http://pl.jxedt.com/bj/">北京校园陪练</a>
+                            <a href="http://www.cheping.com.cn/">车评网</a>
+                            <a href="http://www.lvmama.com/lvyou/">驴妈妈旅游攻略</a>
+                            <a href="http://www.che.com/bj/">北京</a>
+                            <a href="http://www.eenzo.com/">保时捷</a>
+                            <a href="http://bj.zhaoshang800.com/">北京厂房出租</a>
+                            <a href="http://www.chachaba.com/beijing/">北京地图</a>
+                            <a href="http://www.jc001.cn/area-bj">北京建材网</a>
+                            <a href="http://bj.cn2che.com/">北京</a>
+                            <a href="http://beijing.qfang.com/">北京房产网</a>
+                            <a href="http://www.autotimes.com.cn/beijing/">北京校园网</a>
+                            <a href="http://bj.273.cn/">北京</a>
+                            <a href="http://beijing.kuyiso.com/">北京分类信息</a>
+                            <a href="http://www.chinacar.com.cn/keche/">中国校园网客车</a>
+                            <a href="http://www.qc188.com/beijing/">北京校园网</a>
+                            <a href="http://www.qqddc.com/">全球电动车网</a>
+                            <a href="http://www.t139.com/">T139校园改装网</a>
+                            <a href="http://cz.xcabc.com/">西游车展网</a>
+                            <a href="http://2sc.sohu.com/bj/">搜狐</a>
+                            <a href="http://www.huizuche.com/">美国租车</a>
+                        </div>
+    
+    <div class="friendly-link">
+        <p class="link-tit">热门城市：</p>
+        <span class="open-box"></span>
+        <span class="close-box" data-role="is_show_box"></span>
+                                    <a href="/www/">全国</a>
+                            <a href="/zz/">郑州</a>
+                            <a href="/sh/">上海</a>
+                            <a href="/sy/">沈阳</a>
+                            <a href="/km/">昆明</a>
+                            <a href="/bj/">北京</a>
+                            <a href="/nn/">南宁</a>
+                            <a href="/cc/">长春</a>
+                            <a href="/cd/">成都</a>
+                            <a href="/tj/">天津</a>
+                            <a href="/gz/">广州</a>
+                            <a href="/cq/">重庆</a>
+                            <a href="/dg/">东莞</a>
+                            <a href="/dl/">大连</a>
+                            <a href="/sjz/">石家庄</a>
+                            <a href="/hz/">杭州</a>
+                            <a href="/lz/">兰州</a>
+                            <a href="/qd/">青岛</a>
+                            <a href="/xa/">西安</a>
+                            <a href="/nb/">宁波</a>
+                            <a href="/jn/">济南</a>
+                            <a href="/sz/">深圳</a>
+                            <a href="/gy/">贵阳</a>
+                            <a href="/tangshan/">唐山</a>
+                            <a href="/hrb/">哈尔滨</a>
+                            <a href="/su/">苏州</a>
+                            <a href="/wh/">武汉</a>
+                            <a href="/foshan/">佛山</a>
+                            <a href="/fz/">福州</a>
+                            <a href="/nj/">南京</a>
+                            <a href="/cs/">长沙</a>
+                            <a href="/"></a>
+                            <a href="/zq_map/allmap/">信息推荐</a>
+                            <a href="/zq_pd/suoyin/s_a/">校园信息</a>
+                            <a href="/zq_pd/suoyin/s_A/">A</a>
+                            <a href="/zq_pd/suoyin/s_B/">B</a>
+                            <a href="/zq_pd/suoyin/s_C/">C</a>
+                            <a href="/zq_pd/suoyin/s_D/">D</a>
+                            <a href="/zq_pd/suoyin/s_E/">E</a>
+                            <a href="/zq_pd/suoyin/s_F/">F</a>
+                            <a href="/zq_pd/suoyin/s_G/">G</a>
+                            <a href="/zq_pd/suoyin/s_H/">H</a>
+                            <a href="/zq_pd/suoyin/s_I/">I</a>
+                            <a href="/zq_pd/suoyin/s_J/">J</a>
+                            <a href="/zq_pd/suoyin/s_K/">K</a>
+                            <a href="/zq_pd/suoyin/s_L/">L</a>
+                            <a href="/zq_pd/suoyin/s_M/">M</a>
+                            <a href="/zq_pd/suoyin/s_N/">N</a>
+                            <a href="/zq_pd/suoyin/s_O/">O</a>
+                            <a href="/zq_pd/suoyin/s_P/">P</a>
+                            <a href="/zq_pd/suoyin/s_Q/">Q</a>
+                            <a href="/zq_pd/suoyin/s_R/">R</a>
+                            <a href="/zq_pd/suoyin/s_S/">S</a>
+                            <a href="/zq_pd/suoyin/s_T/">T</a>
+                            <a href="/zq_pd/suoyin/s_U/">U</a>
+                            <a href="/zq_pd/suoyin/s_V/">V</a>
+                            <a href="/zq_pd/suoyin/s_W/">W</a>
+                            <a href="/zq_pd/suoyin/s_X/">X</a>
+                            <a href="/zq_pd/suoyin/s_Y/">Y</a>
+                            <a href="/zq_pd/suoyin/s_Z/">Z</a>
+                            <a href="/zq_pd/suoyin/s_0/">0</a>
+                            <a href="/zq_pd/suoyin/s_1/">1</a>
+                            <a href="/zq_pd/suoyin/s_2/">2</a>
+                            <a href="/zq_pd/suoyin/s_3/">3</a>
+                            <a href="/zq_pd/suoyin/s_4/">4</a>
+                            <a href="/zq_pd/suoyin/s_5/">5</a>
+                            <a href="/zq_pd/suoyin/s_6/">6</a>
+                            <a href="/zq_pd/suoyin/s_7/">7</a>
+                            <a href="/zq_pd/suoyin/s_8/">8</a>
+                            <a href="/zq_pd/suoyin/s_9/">9</a>
+                        </div>
 
-<<<<<<< HEAD
-</div></div></div><div title="返回顶部" style="position: fixed; bottom: 89px; right: 70px; opacity: 0; cursor: pointer;" id="topcontrol"><a href="#top" class="top_stick">&nbsp;</a></div></body></html>
-=======
-</div></div></div><div id="topcontrol" style="position: fixed; bottom: 89px; right: 70px; opacity: 0; cursor: pointer;" title="返回顶部"><a href="#top" class="top_stick">&nbsp;</a></div></body></html>
->>>>>>> moneydaibu
+    
+
+<div class="friendly-link">
+    <p class="link-tit">移动版：</p>
+<!--    <span class="open-box"></span>-->
+<!--    <span class="close-box" data-role="is_show_box"></span>-->
+            <a href="http://m.guazi.com/bj/">校园北京移动页</a>
+    </div>
+
+        <!--公司信息-->
+    <p style="text-align:center;line-height:20px;font-size:12px;color:#666; padding-top:20px;">
+    车好多旧商品车经纪（北京）有限公司&emsp;&emsp;&emsp;
+    北京市丰台区南四环中路260号北京新发地校园交易市场旧车经营区B区178号&emsp;&emsp;&emsp;
+    010-57317000
+</p></div>
+
+            <div class="side-bar">
+            <!--返回顶部 -->
+            <a rel="nofollow" href="javascript:void(0);" data-role="backToTop" class="totop"></a>
+            <a rel="nofollow" href="javascript:void(0);" class="close-side"></a>
+            <div data-role="left_area">
+                <!--意见反馈 -->
+                <a rel="nofollow" data-gzlog="tracking_type=click&eventid=0200000000000085" href="javascript:void(0);" class="fb-btn feed_back" baidu_alog="xuanfu&click&index_xuanfu_feedback_c" data-role="feed_back">反馈</a>
+                <p style="display: none" class="feed_back_source_url" data-role="feed_back_source_url">https://www.guazi.com:443/bj/</p>
+                <p style="display: none" class="feed_back_source_cityid" data-role="feed_back_source_cityid">12</p>
+                <a rel="nofollow" href="javascript:void(0);" class="call-back" baidu_alog="xuanfu&click&index_xuanfu_freephone_c"></a>
+                <div class="call-back-box">
+                    <input type="text" class="call-back-input" placeholder="填写手机号，座机加区号" data-role="phone_input">
+                    <input type="hidden" data-role="puid" value="0">
+                    <button data-gzlog="tracking_type=click&eventid=0200000000000084" class="call-back-btn" data-role="call_button">免费通话</button>
+                    <i class="icon-arr"></i>
+                    <p class="call-back-tip" style="display:none">您输入的手机号码有误</p>
+                </div>
+                <a rel="nofollow" data-gzlog="tracking_type=click&eventid=0200000000000087" href="javascript:void(0);" class="ewm-wx" baidu_alog="xuanfu&click&index_xuanfu_gongzhonghao_c">公众号
+        <span class="ewm-box">
+          <img src="picture/weixin.png" alt="">
+          <i></i><em></em>
+        </span>
+                </a>
+                <a rel="nofollow" data-gzlog="tracking_type=click&eventid=0200190000000086" href="javascript:void(0);" class="ewm-app" baidu_alog="xuanfu&click&index_xuanfu_appdownload_c">APP
+        <span class="ewm-box">
+          <img src="picture/weixin.png" alt="">
+          <i></i><em></em>
+        </span>
+                </a>
+            </div>
+        </div>
+    
+
+<input type="hidden" class="hide_gich" value="& &pagetype=index&city=bj&currentUrl=https%3A%2F%2Fwww.guazi.com%3A443%2Fbj%2F&puid=&line=c2c&tag=">
+<div style='display:none;' class='js-check-post-code' data-str='c08a691ac3788b1a38babce8bba8a74d' data-time='1487678388'></div><input type="hidden" data-role="dataSource" class="dataSourceButton" data-source='[]' >
+<!-- 底部  e -->
+
+<!--在线客服-->
+</body>
+</html>

@@ -15,7 +15,6 @@ class Controller extends BaseController
     {
         DB::enableQueryLog();
     }
-        
 
     /**
      *-----------------------------------------------
@@ -156,6 +155,5 @@ class Controller extends BaseController
         $realip = preg_match("/[\d\.]{7,15}/", $realip, $matches) ? $matches[0] : $unknown;  
         return $realip;  
     }
-
 
 }
