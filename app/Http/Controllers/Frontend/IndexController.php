@@ -85,16 +85,16 @@
 			foreach($goodsList as $k => $v){
 				$goodsList[$k]['goods_img'] =explode(',',$v['goods_img']);
 			}
-			/*$user = session("qq"); 
+
+			$user = session("qq"); 
         	if ($user['code']==1) {
         		//跳绑定账号页面
         		return view('frontend.login.qqregister');
         	}else{
         		//跳主页面
-        		return redirect("frontend/index");
+				return $this->top().view('frontend.index',['goodsList' => $goodsList]);
                 
-        	}*/
-			return $this->top().view('frontend.index',['goodsList' => $goodsList]);
+        	}
 
 		}//首页结束
 

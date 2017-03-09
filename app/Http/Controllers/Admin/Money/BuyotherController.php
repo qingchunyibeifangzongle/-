@@ -13,8 +13,7 @@ class BuyotherController extends Controller
         //发布任务
         public function buyother(Request $request)
         {
-            //echo 2313232; die;
-            return view('frontend.buyother');
+            return $this->top().view('frontend.buyother');
         }
         //发布任务
         public function buy(Request $request)
@@ -28,7 +27,7 @@ class BuyotherController extends Controller
                 $data[$k]['end'] = date('Y-m-d H:i:s', $data[$k]['end']);
 
             }
-            return view('frontend.buy',['data'=>$data]);
+            return $this->top().view('frontend.buy',['data'=>$data]);
         }
         //处理任务
         public function dai(Request $request)

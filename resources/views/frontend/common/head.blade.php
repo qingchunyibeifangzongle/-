@@ -9,6 +9,11 @@
 <script type="text/javascript" src="js/base.aafb2bc1791840d2768b_2.js"></script>
 <script type="text/javascript" src="js/index.366d681c7662a316cf81_3.js"></script>
 <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<link rel="stylesheet" href="{{ URL::asset('frontend/daigo/init.css')}}">
+<link rel="stylesheet" href="{{ URL::asset('frontend/daigo/release.css')}}">
+<script src="{{ URL::asset('frontend/daigo/hm.js')}}"></script>
+<script type="text/javascript" src="js/base.aafb2bc1791840d2768b_2.js"></script>
+<script type="text/javascript" src="js/index.366d681c7662a316cf81_3.js"></script>
 <body>
 
     <div class="header">
