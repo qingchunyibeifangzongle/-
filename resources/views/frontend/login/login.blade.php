@@ -73,8 +73,7 @@ body, #header { padding-right: 0; }
                 </div>
                 <div class="input-outer">
                          <span class="ui-loginPwd"></span>
-                        <label class="l-login login_password" style="color:#888;">输入密码</label>
-                        <input type="password" name="login_password" class="text" id='login_password'  style=" position:absolute; z-index:100;"  value=""/>
+                        <input type="password" name="login_password" class="text" id='login_password'  placeholder="请输入密码" style=" position:absolute; z-index:100;"  value=""/>
                 </div>
                         <div class="mb20"><a class="act-but submit" id='submit' >登录</a>
                 </div>
