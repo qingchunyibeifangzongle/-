@@ -1,9 +1,4 @@
-@include('frontend.common.head')
- <!-- 头部  e -->
-
-<!-- 首页内容区  s -->
 <div class="index-area">
-
     <!--banner显示 s-->
     <div class="sel-op clearfix">
     <div class="sel-area fl">
@@ -1891,63 +1886,7 @@
                             </a>
                         </li>
                                     
-<!--                --><!--                    --><!--                        --><!--                        --><!--                            <li baidu_alog='banner&&click&&index_yunying_bottom_banner_--><!--'>-->
-<!--                                <a rel="nofollow" data-gzlog="tracking_type=click&eventid=0150160000000042&url=Hyundai" href="--><!--" target="_blank">-->
-<!--                                    <img src="--><!--" alt="Hyundai">-->
-<!--                                </a>-->
-<!--                            </li>-->
-<!--                        --><!--                    --><!--                --><!--                    <li baidu_alog='banner&&click&&index_yunying_bottom_banner_1'>-->
-<!--                        <a rel="nofollow" data-gzlog="tracking_type=click&eventid=0150160000000042&url=Hyundai" href="--><!--" target="_blank">-->
-<!--                            <img src="--><!--" alt="Hyundai">-->
-<!--                        </a>-->
-<!--                    </li>-->
-<!--                    <li baidu_alog='banner&&click&&index_yunying_bottom_banner_2'>-->
-<!--                        <a rel="nofollow" data-gzlog="tracking_type=click&eventid=0150160000000042&url=Hyundai" href="--><!--" target="_blank">-->
-<!--                            <img src="--><!--" alt="Hyundai">-->
-<!--                        </a>-->
-<!--                    </li>-->
-<!--                -->
-<!--                --><!--                    <li baidu_alog='banner&&click&&index_yunying_bottom_banner_6'>-->
-<!--                        <a rel="nofollow" data-gzlog="tracking_type=click&eventid=0150160000000042&url=lowpowered" href="/zq_lowpowered/?domain=--><!--" target="_blank">-->
-<!--                            <img src="--><!--" alt="loan">-->
-<!--                        </a>-->
-<!--                    </li>-->
-<!--                --><!---->
-<!--                <li baidu_alog='banner&&click&&index_yunying_bottom_banner_5'>-->
-<!--                    <a rel="nofollow" data-gzlog="tracking_type=click&eventid=0150160000000042&url=loan" href="/zq_loan/?domain=--><!--" target="_blank">-->
-<!--                        <img src="--><!--" alt="loan">-->
-<!--                    </a>-->
-<!--                </li>-->
-<!---->
-<!--                <li baidu_alog='banner&&click&&index_yunying_bottom_banner_2'>-->
-<!--                    <a rel="nofollow" data-gzlog="tracking_type=click&eventid=0150160000000042&url=audi"  href="/zq_audi/?domain=--><!--" target="_blank">-->
-<!--                        <img src="--><!--" alt="audi">-->
-<!--                    </a>-->
-<!--                </li>-->
-<!---->
-<!--                --><!--                    <li baidu_alog='banner&&click&&index_yunying_bottom_banner_3'>-->
-<!--                        <a rel="nofollow" data-gzlog="tracking_type=click&eventid=0150160000000042&url=Jeep"  href="/zq_Jeep/?domain=--><!--" target="_blank">-->
-<!--                            <img src="--><!--" alt="Jeep">-->
-<!--                        </a>-->
-<!--                    </li>-->
-<!--                --><!---->
-<!--                --><!--                    <li baidu_alog='pc_index_buttom_banner&click&index_yunying_bottom_Racing_banner_c'>-->
-<!--                        <a rel="nofollow" data-gzlog="tracking_type=click&eventid=0150160000000042&url=Racing"  href="/zq_Racing/?domain=--><!--" target="_blank">-->
-<!--                            <img src="--><!--" alt="Racing">-->
-<!--                        </a>-->
-<!--                    </li>-->
-<!--                --><!--                -->
-<!--                <li baidu_alog='pc_index_buttom_banner&click&index_yunying_bottom_tianlai'>-->
-<!--                    <a rel="nofollow" data-gzlog="tracking_type=click&eventid=0150160000000042&url=tianlai"  href="/zq_tianlai/?domain=--><!--" target="_blank">-->
-<!--                        <img src="--><!--" alt="tianlai">-->
-<!--                    </a>-->
-<!--                </li>-->
-<!--                --><!--                    <li baidu_alog='pc_index_buttom_banner&click&index_yunying_bottom_offroad_banner_c'>-->
-<!--                        <a rel="nofollow" data-gzlog="tracking_type=click&eventid=0150160000000042&url=offroad" href="/zq_offroad/?domain=--><!--" target="_blank">-->
-<!--                            <img src="--><!--" alt="offroad">-->
-<!--                        </a>-->
-<!--                    </li>-->
-<!--                -->            </ul>
+<    </ul>
             <a href="javascript:void(0);" class="slider-prev" data-role="prev_btn" baidu_alog='slider&&click&&index_yunying_bottom_banner_lsilder'>&lt;</a>
             <a href="javascript:void(0);" class="slider-next" data-role="next_btn" baidu_alog='slider&&click&&index_yunying_bottom_banner_rsilder'>&gt;</a>
         </div>
@@ -1975,10 +1914,8 @@
 </div>    <!--底部推广 e -->
 
 </div>
-<!-- 首页内容区  e -->
 
 @include('frontend.common.footer')
 
-<!--在线客服-->
 </body>
 </html>

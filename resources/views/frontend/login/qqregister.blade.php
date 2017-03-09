@@ -5,12 +5,10 @@
 <title> [校园] 二货网 </title>
 <meta content="" name="keywords">
 <meta property="qc:admins" content="345471037076401633636375">
-<<<<<<< HEAD
+
 <meta name="csrf-token" content="{{ csrf_token() }}">
 <link href="http://demo.thinksns.com/ts4/favicon.ico?v=" type="image/x-icon" rel="shortcut icon">
-=======
 <link href="/favicon.ico?v=" type="image/x-icon" rel="shortcut icon">
->>>>>>> faacdb0d18e536d3e0a8805b1b257d6538610035
 <link href="qqregister/css.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="qqregister/uploadify.css" type="text/css">
 
@@ -102,14 +100,12 @@ body, #header { padding-right: 0; }
           <div class="tab-menu line-b-animate clearfix" style=" margin-bottom:30px;">
             <ul>
               <li class="current"><span><a href="#" uri="tab-pannel-1">新帐号</a></span></li>
-<<<<<<< HEAD
               <li class=""><span><a href="#" uri="tab-pannel-2">绑定已有帐号</a></span></li>            </ul>
           <div style="width: 42px; left: 0px; overflow: hidden;" class="line-b"></div></div>
        
           <div style="display: block;" id="tab-pannel-1">
           
            
-=======
               <li><span><a href="#" uri="tab-pannel-2">绑定已有帐号</a></span></li>            </ul>
           <div class="line-b" style="width: 42px; left: 0px; overflow: hidden;"></div></div>
         <div style="display:none;">
@@ -134,18 +130,14 @@ body, #header { padding-right: 0; }
             <input name="other_uid" value="C090E9C8C86CCFCBDDBE380856BE6DFF" type="hidden">
             <input name="other_face" value="http://qzapp.qlogo.cn/qzapp/101320592/C090E9C8C86CCFCBDDBE380856BE6DFF/100" type="hidden">
             <input name="other_signature" value="" type="hidden">
->>>>>>> faacdb0d18e536d3e0a8805b1b257d6538610035
             <dl class="item">
               <dd class="clearfix">
                 <div class="form-tt"><i class="text-required pr5">*</i>昵称：</div>
                 <div class="form-row">
                   <div style="overflow:hidden;*zoom:1">
-<<<<<<< HEAD
                     <input class="s-txt" event-node="uname" id="username" name="uname" autocomplete="off" value="<?php echo $user['nickname']?>" type="text" status="1">
                     <span id="s_name"></span>
-=======
                     <input event-node="uname" name="uname" checkurl="/index.php?app=public&amp;mod=Register&amp;act=isUnameAvailable" autocomplete="off" value="孤狼" class="s-txt" type="text">
->>>>>>> faacdb0d18e536d3e0a8805b1b257d6538610035
                   </div>
 
                 </div>
@@ -155,12 +147,9 @@ body, #header { padding-right: 0; }
               <dd class="clearfix">
                 <div class="form-tt"><i class="text-required pr5">*</i>邮箱：</div>
                 <div class="form-row" style="z-index:99">
-<<<<<<< HEAD
                   <input class="s-txt" event-node="email" event-args="" name="email"  autocomplete="off" type="text" id="email">
                   <span id="s_email"></span>
-=======
                   <input event-node="email" event-args="" name="email" checkurl="/index.php?app=public&amp;mod=Register&amp;act=isEmailAvailable" autocomplete="off" class="s-txt" type="text">
->>>>>>> faacdb0d18e536d3e0a8805b1b257d6538610035
                 </div>
               </dd>
               <dd class="clearfix">
@@ -200,11 +189,9 @@ body, #header { padding-right: 0; }
          
          </script>
         </div>
-<<<<<<< HEAD
         <div id="tab-pannel-2" style="display: none;">
           <form method="POST" action="" id="ajax_other_bind_form" onsubmit="return ajax_bind_submit(this);">
             
-=======
         <div id="tab-pannel-2" style="display:none;">
           <form method="POST" action="/index.php?app=public&amp;mod=Register&amp;act=doBindStep1" name="ajax_other_bind_form" id="ajax_other_bind_form" onsubmit="return ajax_bind_submit(this);">
             <input name="other_type" value="qzone" type="hidden">
@@ -213,7 +200,6 @@ body, #header { padding-right: 0; }
             <input name="other_uid" value="C090E9C8C86CCFCBDDBE380856BE6DFF" type="hidden">
             <input name="other_face" value="http://qzapp.qlogo.cn/qzapp/101320592/C090E9C8C86CCFCBDDBE380856BE6DFF/100" type="hidden">
             <input name="other_signature" value="" type="hidden">
->>>>>>> faacdb0d18e536d3e0a8805b1b257d6538610035
             <dl class="item">
               <dd class="clearfix">
                 <div class="form-tt"><i class="text-required pr5">*</i>邮箱：</div>
