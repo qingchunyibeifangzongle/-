@@ -15,7 +15,7 @@ class BuyotherController extends Controller
         {
             return $this->top().view('frontend.buyother');
         }
-        //发布任务
+        //接收任务
         public function buy(Request $request)
         {
             $model = new \App\Model\Replace(); //实例化model
@@ -41,7 +41,7 @@ class BuyotherController extends Controller
             //var_dump($data['end']); die;
             $model = new \App\Model\Replace(); //实例化model
             $res = $model->insert($data);
-            var_dump($res); die;
+            return Redirect::to('buyother/buy');
         }
 
 
