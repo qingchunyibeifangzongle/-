@@ -1,11 +1,9 @@
 <?php
 	namespace App\Http\Controllers\Frontend;                  //使用命名空间申明是本类
+	use App\Model\Frontend\Index\Index;
 	use Illuminate\Http\Request;
 	use App\Http\Requests;                                    // 引用请求插件类
 	use App\Http\Controllers\Controller;                      // 引用控制器类
-	use DB;                                                   // 引用DB类;  可以进行查询
-	use App\Http\Models\Login;  
-	use App\Model\Admin\WebConfig\Nav; 
 
 	class IndexController extends Controller
 	{
@@ -35,15 +33,15 @@
 				 return redirect("frontend/binding");
 			}
 
-		  /**
-			*-----------------------------------------------
-			*判断跳转页面，绑定账号
-			*-----------------------------------------------
-			* @param
-			* @return
-			*/
-			public function binding()
-			{
+	  /**
+		*-----------------------------------------------
+		*判断跳转页面，绑定账号
+		*-----------------------------------------------
+		* @param
+		* @return
+		*/
+		public function binding()
+		{
 			$user = session("qq"); 
 				if ($user['code']==1) {
 					//跳绑定账号页面
@@ -80,9 +78,23 @@
 		 */
 
 		public function index(Request $request)
-		{    
+		{  
+			$model = new Index();
+			$goodsList = $model->getGoodsList();
 
-			return $this->top().view('frontend.index');
+			foreach($goodsList as $k => $v){
+				$goodsList[$k]['goods_img'] =explode(',',$v['goods_img']);
+			}
+
+			$user = session("qq"); 
+        	if ($user['code']==1) {
+        		//跳绑定账号页面
+        		return view('frontend.login.qqregister');
+        	}else{
+        		//跳主页面
+				return $this->top().view('frontend.index',['goodsList' => $goodsList]);
+                
+        	}
 
 		}//首页结束
 

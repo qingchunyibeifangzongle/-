@@ -6,6 +6,7 @@
  *
  * AMD API 内部的简单不完全实现，请忽略。只有当WebUploader被合并成一个文件的时候才会引入。
  */
+
 (function( root, factory ) {
     var modules = {},
 
@@ -6808,7 +6809,7 @@
                         xhr.send( binary );
                     }
                 } else {
-                    xhr.send( formData );
+                    //xhr.send( formData );
                 }
             },
     

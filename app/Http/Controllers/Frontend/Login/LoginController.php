@@ -64,6 +64,8 @@ class LoginController extends Controller
 
 		/**
         *前台注册
+		/**
+        *前台QQ绑定注册
         *
         * @author  ZHANGTAO
         * @param 
@@ -90,11 +92,6 @@ class LoginController extends Controller
 			$add = new Login();
 			$user = $add->qqAdd($all['all']);
 			return $user;
-			
-			
-
-
-			   
 		}
 
 		/**
@@ -127,7 +124,9 @@ class LoginController extends Controller
 			$login = new Login();	
 			$binding = $login->bindAccount($email,$password,$openid);	
 			return $binding;
-			
+		public function regist()
+		{  
+			return view('frontend.login.register');   
 		}
 
 

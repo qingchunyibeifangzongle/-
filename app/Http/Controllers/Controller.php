@@ -11,12 +11,10 @@ use App\Model\Admin\WebConfig\Nav;
 
 class Controller extends BaseController
 {
-
     public function __construct()
     {
         DB::enableQueryLog();
     }
-        
 
     /**
      *-----------------------------------------------
@@ -84,7 +82,7 @@ class Controller extends BaseController
         $nav = Nav::get();
         $nav = $nav->toArray();
 
-        return view("frontend.comman.head",compact("nav","city"));
+       return view("frontend.common.head",compact("nav","city"));
     }
 
     /**
@@ -157,6 +155,5 @@ class Controller extends BaseController
         $realip = preg_match("/[\d\.]{7,15}/", $realip, $matches) ? $matches[0] : $unknown;  
         return $realip;  
     }
-
 
 }

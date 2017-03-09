@@ -12,6 +12,8 @@ class Work extends Model
     {
         return DB::table('job')
                     ->leftJoin('user', 'user.user_id', '=', 'job.user_id')
+                    ->leftJoin('school', 'school.school_id', '=', 'job.school_id')
+                    ->orderBy("job_id","desc")
                     ->paginate(15);
     }
     /**
@@ -23,11 +25,16 @@ class Work extends Model
         if($n_file->isValid()){
             $entension = $n_file -> getClientOriginalExtension();
             $newName = rand(10000000,999999999).'.'.$entension;
-            $path = $n_file -> move('.\frontend\uploads',$newName);
-            $arr['job_img'] = $path;
+            $path = $n_file -> move('./frontend/uploads',$newName);
+            $path = str_replace('\\','/',$path);
+            $arr['job_img'] = './uploads/'.$newName;
+            //print_r($arr);die;
         }
         $arr['job_time'] = time();
-        print_r($arr);die;
+        $arr['user_id'] =1;
+        unset($arr['_token']);
+        unset($arr['myfile']);
+        return DB::table('job')->insert($arr);
     }
 
     /**

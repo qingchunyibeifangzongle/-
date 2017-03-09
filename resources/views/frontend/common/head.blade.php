@@ -5,20 +5,26 @@
 <meta name="renderer" content="webkit">
 <title>【校园】二货网</title>
 </head><!-- 加载js/css-->
+<script type="text/javascript" src="{{URL::asset('frontend/js/base.aafb2bc1791840d2768b_2.js')}}"></script><script type="text/javascript" src="{{URL::asset('frontend/js/detail.a8cc07cb1ba1b3bd63ab.js')}}"></script>
 <script type="text/javascript" src="js/base.aafb2bc1791840d2768b_2.js"></script>
 <script type="text/javascript" src="js/index.366d681c7662a316cf81_3.js"></script>
 <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<link rel="stylesheet" href="{{ URL::asset('frontend/daigo/init.css')}}">
+<link rel="stylesheet" href="{{ URL::asset('frontend/daigo/release.css')}}">
+<script src="{{ URL::asset('frontend/daigo/hm.js')}}"></script>
+<script type="text/javascript" src="js/base.aafb2bc1791840d2768b_2.js"></script>
+<script type="text/javascript" src="js/index.366d681c7662a316cf81_3.js"></script>
 <body>
 
     <div class="header">
         <div class="hd-top clearfix">
             <img src="images/logo.jpg" class='logo' alt="校园直卖网">
                 <div class="c2city">
-                    <a href="javascript:;" class="choose-city" >  
+                    <a href="javascript:;" class="choose-city" >
                         <span><?php echo $city["region_name"]; ?>
                             <i>&nbsp;</i>
-                        </span>  
-                     </a> 
+                        </span>
+                     </a>
                     <i class="maskline"></i>
                     <!-- 加载所有学校信息 -->
                     <div class="city-box" id="city-box" >
@@ -36,7 +42,7 @@
                     </div>
                 <!-- 加载所有学校信息结束 -->
                 </div>
-            
+
             <div class="uc">
                 <a class="" href="login">
                     登录|注册
@@ -96,11 +102,11 @@
                    href="/bj/"  data-gzlog="tracking_type=click&eventid=0010000000000007" title="校园">首页</a>
                 <!-- 循环导航开始 -->
                 <?php foreach ($nav as $key => $value): ?>
-                    <a class="fl "  href="<?php echo $value['url']; ?>"  title="北京个人"  >
+                    <a class="fl "  href="<?php echo URL::asset($value['url']); ?>"  title="北京个人"  >
                         <?php echo $value['name']; ?>
                     </a>
                 <?php endforeach ?>
-                <!-- 循环导航结束 --> 
+                <!-- 循环导航结束 -->
             </div>
         </div>
     </div>
