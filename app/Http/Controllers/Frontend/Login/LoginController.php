@@ -63,8 +63,6 @@ class LoginController extends Controller
 
 
 		/**
-        *前台注册
-		/**
         *前台QQ绑定注册
         *
         * @author  ZHANGTAO
@@ -73,9 +71,7 @@ class LoginController extends Controller
         */ 
 		public function regist()
 		{  
-			
-
-			 return view('frontend.login.register');   
+			return view('frontend.login.register');   
 		}
 
 		/**
@@ -124,11 +120,7 @@ class LoginController extends Controller
 			$login = new Login();	
 			$binding = $login->bindAccount($email,$password,$openid);	
 			return $binding;
-		public function regist()
-		{  
-			return view('frontend.login.register');   
-		}
-
+        }
 
 }
 ?>
