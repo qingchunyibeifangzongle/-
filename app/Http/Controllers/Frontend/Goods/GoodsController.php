@@ -110,6 +110,6 @@ class GoodsController extends Controller
         $model = new Goods();
         $goodsList = $model->getAllGoodsList($user_id,$goods_id);
         $goodsInfo = $model->getGoodsInfo();
-        return view('frontend.goods.details',['goodsList' => $goodsList,'goodsInfo' => $goodsInfo]);
+        return $this->top().view('frontend.goods.details',['goodsList' => $goodsList,'goodsInfo' => $goodsInfo]);
     }
 }
