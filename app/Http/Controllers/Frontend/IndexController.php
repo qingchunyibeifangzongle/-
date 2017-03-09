@@ -105,11 +105,6 @@
                 
         	}
 
-
-		
-
-			return $this->top().view('frontend.index');
-
 		}//首页结束
 
 	}//类结束

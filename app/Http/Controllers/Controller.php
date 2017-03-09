@@ -8,6 +8,7 @@ use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Auth\Access\AuthorizesResources;
 use App\Model\Admin\WebConfig\Region;
 use App\Model\Admin\WebConfig\Nav;
+use App\Model\Frontend\School\School;
 
 class Controller extends BaseController
 {
@@ -68,26 +69,39 @@ class Controller extends BaseController
      */
     public function top()
     {   
+        $city = $this->getCity();
+        //查询导航栏信息
+        $nav = Nav::get();
+        $nav = $nav->toArray();
+
+        //查询当前城市下有哪些学校
+        $obj = new School();
+        $school = $obj ->getSchool($city["region_id"]);
+        
+        return view("frontend.common.head",compact("nav","city","school"));
+    }
+
+    /**
+     *-----------------------------------------------
+     * 获取当前城市的信息
+     *-----------------------------------------------
+     * @param
+     * @return
+     */
+    public function getCity()
+    {
         //获取登录地址的详细信息
         $ipInfo = $this->getIpLookup();
         // var_dump($ipInfo);die;
         //获取当前城市的名称
         $city = $ipInfo['address_detail']['city'];
-        //查询当前城市的地址id
-
+        //查询当前城市的地址id 
         $city = Region::where('region_name', $city)->first();
         $city = $city ->toArray();
-        //查询导航栏信息
-        $nav = Nav::get();
-        $nav = $nav->toArray();
 
-
-       return view("frontend.common.head",compact("nav","city"));
-
-               // var_dump($city);die();
-        return view("frontend.common.head",compact("nav","city"));
-
+        return $city;
     }
+
 
     /**
      *-----------------------------------------------

@@ -42,4 +42,18 @@ class School extends Model
         return $sql;
     }
 
+
+    /**
+     *-----------------------------------------------
+     * 获取当前城市下的所有的学校名称
+     *-----------------------------------------------
+     * @param $cityId  当前城市的id
+     * @return$data 查询当前学校的所有的数据
+     */
+    public function  getSchool($cityId)
+    {
+        $data  = DB::table('school')->where('city',$cityId)->get();
+        return $data;
+    }
+
 }

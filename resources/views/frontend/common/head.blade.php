@@ -4,18 +4,18 @@
 <meta name="renderer" content="webkit">
 <title>【校园】二货网</title>
 </head>
+<link rel="stylesheet" href="{{ URL::asset('frontend/daigo/init.css')}}">
+<link rel="stylesheet" href="{{ URL::asset('frontend/daigo/release.css')}}">
 
 <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
 <!-- 加载js/css-->
 <script type="text/javascript" src="{{URL::asset('frontend/js/base.aafb2bc1791840d2768b_2.js')}}"></script>
 <script type="text/javascript" src="{{URL::asset('frontend/js/detail.a8cc07cb1ba1b3bd63ab.js')}}"></script>
-<script type="text/javascript" src="js/base.aafb2bc1791840d2768b_2.js"></script>
 <script type="text/javascript" src="js/index.366d681c7662a316cf81_3.js"></script>
-<link rel="stylesheet" href="{{ URL::asset('frontend/daigo/init.css')}}">
-<link rel="stylesheet" href="{{ URL::asset('frontend/daigo/release.css')}}">
 <script src="{{ URL::asset('frontend/daigo/hm.js')}}"></script>
 <script type="text/javascript" src="js/base.aafb2bc1791840d2768b_2.js"></script>
-<script type="text/javascript" src="js/index.366d681c7662a316cf81_3.js"></script>
+
+
 <body>
 
     <div class="header">
@@ -32,11 +32,11 @@
                     <div class="city-box" id="city-box" >
                         <div class="all-city">
                             <dl>
-                               <dt>A</dt>
+                               <!-- <dt>A</dt> -->
                                <dd>
-                                   <a data-gzlog="tracking_type=click&amp;eventid=0020060000000017&amp;select_city=anshan" baidu_alog="pc_index_city&amp;click&amp;pc_index_all_city_c" href="/anshan/" title="鞍山二手车">鞍山                                            </a>
-                                   <a data-gzlog="tracking_type=click&amp;eventid=0020060000000017&amp;select_city=anyang" baidu_alog="pc_index_city&amp;click&amp;pc_index_all_city_c" href="/anyang/" title="安阳二手车">安阳                                            </a>
-                                   <a data-gzlog="tracking_type=click&amp;eventid=0020060000000017&amp;select_city=anqing" baidu_alog="pc_index_city&amp;click&amp;pc_index_all_city_c" href="/anqing/" title="安庆二手车">安庆                                            </a>
+                               <?php foreach ($school as $key => $value): ?>
+                                   <a  href="<?php echo URL::asset('frontend/index')."?school_id=".$value['school_id']; ?>" title="点击查看当前学校下所有的商品"><?php echo $value['school_name']; ?> </a>
+                               <?php endforeach ?>
                                </dd>
                             </dl>
                         <p class="more-city">更多城市正在加紧筹备，敬请期待。</p>

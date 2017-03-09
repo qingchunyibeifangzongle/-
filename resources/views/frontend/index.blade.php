@@ -71,17 +71,17 @@
             <ul class="clearfix">
                                     <li>
                                                     <a data-gzlog="tracking_type=click&eventid=0140130000000029&url=jr" class="" baidu_alog='pc_index_topYunying&click&pc_index_topYunying_banenr_sub1_fenqi_c' href="https://jr.guazi.com/bj/">
-                                <img src="picture/62c09f0e69174554b69073529a2c7115_3.png@base@tag=imgscale&w=284&h=98&q=88" alt="校园分期">
+                                <img src="picture/c032a02080c56a972515543396d825fd_3.png" alt="校园分期">
                             </a>
                                             </li>
                                 <li>
                                             <a baidu_alog='pc_index_topYunying&click&pc_index_topYunying_banenr_sub2_c' data-gzlog="tracking_type=click&eventid=0140130000000029&url=t3" href="https://www.guazi.com/zq_article/t1/">
-                            <img src="picture/c032a02080c56a972515543396d825fd_3.png@base@tag=imgscale&w=284&h=98&q=88" alt="">
+                            <img src="picture/c032a02080c56a972515543396d825fd_3.png" alt="">
                         </a>
                                     </li>
                 <li>
                                             <a baidu_alog='pc_index_topYunying&click&pc_index_topYunying_banenr_sub3_c' data-gzlog="tracking_type=click&eventid=0140130000000029&url=t1" href="https://www.guazi.com/zq_article/t3/">
-                            <img src="picture/b393d738df428ef5d6f1827af039f101_3.png@base@tag=imgscale&w=284&h=98&q=88" alt="">
+                            <img src="picture/c032a02080c56a972515543396d825fd_3.png" alt="">
                         </a>
                                     </li>
             </ul>
@@ -108,10 +108,10 @@
         <a rel="nofollow" baidu_alog="index_tabselect&click&pc_index_tabSelect_right_morecar_c" class="all-car" href="/bj/buy/" gjalog="100000000051000100000010">查看全部&gt;&gt;</a>
           <span class="ti-left">
             <span>热门商品</span>
-                                              <a baidu_alog="pc_index_tabSelect_detailCar&mouseenter&pc_index_tabSelect_detailCar_new_sale_h "
-                     href="javascript:void(0)" data-role="tabSelect" gjalog="100000000967000100000010" eventid="0080140000000032" >最新上架</a>
-                                              <a baidu_alog="pc_index_tabSelect_detailCar&mouseenter&pc_index_tabSelect_detailCar_jishou_h"
-                     href="javascript:void(0)" data-role="tabSelect" gjalog="100000000968000100000010" eventid="0080150000000156" >降价急售</a>
+                          <a baidu_alog="pc_index_tabSelect_detailCar&mouseenter&pc_index_tabSelect_detailCar_new_sale_h "
+ href="javascript:void(0)" data-role="tabSelect" gjalog="100000000967000100000010" eventid="0080140000000032" >最新上架</a>
+                          <a baidu_alog="pc_index_tabSelect_detailCar&mouseenter&pc_index_tabSelect_detailCar_jishou_h"
+ href="javascript:void(0)" data-role="tabSelect" gjalog="100000000968000100000010" eventid="0080150000000156" >降价急售</a>
 
                         </span>
     </div>
@@ -146,34 +146,34 @@
         </div>
     </div>
 
-            <div class="list" style="
+<!--             <div class="list" style="
     display:none;        ">
         <ul class="list-bigimg clearfix">
-            <li clue_id="8592121">
-                <div class="list-infoBox">
-                    <a data-gzlog="tracking_type=click&eventid=0080320000000036&carid=8592121@0" baidu_alog='pc_index_tabSelect_detailCar&click&pc_index_tabSelect_zhunxin_post_c' title="北汽绅宝绅宝D50 2016款 1.5L 手动精英版" target="_blank" class="imgtype" href="/bj/dc85ce40a52b6553x.htm" >
-                        <img width="290" height="194" src="picture/84959ce92ddccf2feeaea87e40367fbb_3.jpg@base@tag=imgscale&w=290&h=192&c=1&m=2&q=88" alt="北汽绅宝绅宝D50 2016款 1.5L 手动精英版">
-                    </a>
+<li clue_id="8592121">
+    <div class="list-infoBox">
+        <a data-gzlog="tracking_type=click&eventid=0080320000000036&carid=8592121@0" baidu_alog='pc_index_tabSelect_detailCar&click&pc_index_tabSelect_zhunxin_post_c' title="北汽绅宝绅宝D50 2016款 1.5L 手动精英版" target="_blank" class="imgtype" href="/bj/dc85ce40a52b6553x.htm" >
+            <img width="290" height="194" src="picture/84959ce92ddccf2feeaea87e40367fbb_3.jpg" alt="北汽绅宝绅宝D50 2016款 1.5L 手动精英版">
+        </a>
 
-                    <p class="infoBox">
-                        <a data-gzlog="tracking_type=click&eventid=0080320000000036&carid=8592121@0" data-gzlog="tracking_type=click&eventid=0080320000000036&carid=8592121@0" baidu_alog='pc_index_tabSelect_detailCar&click&pc_index_tabSelect_zhunxin_post_c' title="北汽绅宝绅宝D50 2016款 1.5L 手动精英版" href="/bj/dc85ce40a52b6553x.htm" target="_blank" class="info-title" >北汽绅宝绅宝D50 2016款 1.5L 手动精英版</a>
-                    </p>
-                    <p class="fc-gray"><span class="">2016年3月上牌</span><em class="shuxian">|</em>行驶2.9万公里</p>
+        <p class="infoBox">
+            <a data-gzlog="tracking_type=click&eventid=0080320000000036&carid=8592121@0" data-gzlog="tracking_type=click&eventid=0080320000000036&carid=8592121@0" baidu_alog='pc_index_tabSelect_detailCar&click&pc_index_tabSelect_zhunxin_post_c' title="北汽绅宝绅宝D50 2016款 1.5L 手动精英版" href="/bj/dc85ce40a52b6553x.htm" target="_blank" class="info-title" >北汽绅宝绅宝D50 2016款 1.5L 手动精英版</a>
+        </p>
+        <p class="fc-gray"><span class="">2016年3月上牌</span><em class="shuxian">|</em>行驶2.9万公里</p>
 
-                    <p class="priType-s">
-                        <em class="tag-green">准新车</em><span><i class="fc-org priType">6.00万</i></span><s>9.10万</s>
-                    </p>
-                </div>
-            </li>
+        <p class="priType-s">
+            <em class="tag-green">准新车</em><span><i class="fc-org priType">6.00万</i></span><s>9.10万</s>
+        </p>
+    </div>
+</li>
 
         </ul>
         <div class="all-car-link">
-            <a data-gzlog='tracking_type=click&eventid=0080320000000037'  baidu_alog='pc_index_tabSelect_detailCar&click&pc_index_tabSelect_zhunxin_more_c' href="/bj/buy/c4/">更多准新车</a>
+<a data-gzlog='tracking_type=click&eventid=0080320000000037'  baidu_alog='pc_index_tabSelect_detailCar&click&pc_index_tabSelect_zhunxin_more_c' href="/bj/buy/c4/">更多准新车</a>
         </div>
-    </div>
-
-    </div>
-</div>    <!--首页帖子列表 e -->
+    </div> -->
+<!-- 
+     </div>
+ </div>    --> <!--首页帖子列表 e -->
 
     <!--底部推广 s-->
     <div class="w gz-zq">
@@ -185,32 +185,32 @@
             <ul class="zhuantui-ul" data-role="slide_container" style="margin-left:0px;">
                                                             <li baidu_alog='banner&&click&&index_yunying_bottom_banner_1'>
                             <a rel="nofollow" data-gzlog="tracking_type=click&eventid=0150160000000042&url=Hyundai" href="https://www.guazi.com/zq_article/4316/" target="_blank">
-                                <img src="picture/d1334bdf40068cfcbb8f123f6c73ba00_3.png@base@tag=imgscale&w=436&h=202&q=88" alt="Hyundai">
+                                <img src="picture/c032a02080c56a972515543396d825fd_3.png" alt="Hyundai">
                             </a>
                         </li>
                                             <li baidu_alog='banner&&click&&index_yunying_bottom_banner_2'>
                             <a rel="nofollow" data-gzlog="tracking_type=click&eventid=0150160000000042&url=Hyundai" href="https://www.guazi.com/zq_article/4311/" target="_blank">
-                                <img src="picture/be3e71408f9598294c61317cf4397f8e_3.png@base@tag=imgscale&w=436&h=202&q=88" alt="Hyundai">
+                                <img src="picture/c032a02080c56a972515543396d825fd_3.png" alt="Hyundai">
                             </a>
                         </li>
                                             <li baidu_alog='banner&&click&&index_yunying_bottom_banner_3'>
                             <a rel="nofollow" data-gzlog="tracking_type=click&eventid=0150160000000042&url=Hyundai" href="https://www.guazi.com/zq_article/4309/" target="_blank">
-                                <img src="picture/914606094beee5dcd18bd3dcfd975f74_3.png@base@tag=imgscale&w=436&h=202&q=88" alt="Hyundai">
+                                <img src="picture/c032a02080c56a972515543396d825fd_3.png" alt="Hyundai">
                             </a>
                         </li>
                                             <li baidu_alog='banner&&click&&index_yunying_bottom_banner_4'>
                             <a rel="nofollow" data-gzlog="tracking_type=click&eventid=0150160000000042&url=Hyundai" href="https://www.guazi.com/zq_article/4306/" target="_blank">
-                                <img src="picture/8a71adad2c381ea96e8565f3cce262e3_3.png@base@tag=imgscale&w=436&h=202&q=88" alt="Hyundai">
+                                <img src="picture/c032a02080c56a972515543396d825fd_3.png" alt="Hyundai">
                             </a>
                         </li>
                                             <li baidu_alog='banner&&click&&index_yunying_bottom_banner_5'>
                             <a rel="nofollow" data-gzlog="tracking_type=click&eventid=0150160000000042&url=Hyundai" href="http://www.guazi.com/zq_article/t3/" target="_blank">
-                                <img src="picture/00821e9c710a8a333918c71209f40cee_3.png@base@tag=imgscale&w=436&h=202&q=88" alt="Hyundai">
+                                <img src="picture/c032a02080c56a972515543396d825fd_3.png" alt="Hyundai">
                             </a>
                         </li>
                                             <li baidu_alog='banner&&click&&index_yunying_bottom_banner_6'>
                             <a rel="nofollow" data-gzlog="tracking_type=click&eventid=0150160000000042&url=Hyundai" href="http://www.guazi.com/zq_article/t1/" target="_blank">
-                                <img src="picture/5d0b3429eeb3eabe57a6c76771258072_3.png@base@tag=imgscale&w=436&h=202&q=88" alt="Hyundai">
+                                <img src="picture/c032a02080c56a972515543396d825fd_3.png" alt="Hyundai">
                             </a>
                         </li>
                                     
@@ -247,3 +247,4 @@
 
 </body>
 </html>
+
