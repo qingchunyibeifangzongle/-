@@ -67,7 +67,17 @@ class IndexController extends Controller
 */    
          public function index(Request $request)
         {
-        	return view('frontend.index');
+        	$type = DB::table("type")->where("p_id","=",0)->get();
+        	foreach ($type as $key => $value) {
+        		$son = DB::table("type")
+        							->where("p_id","=",$value['type_id'])
+        							->get();
+        		if($son){
+        			$type[$key]['son']=$son;
+        		}
+        	}
+        	// var_dump($type);die;
+        	return view('frontend.index',['type'=>$type]);
         }
 }
 
