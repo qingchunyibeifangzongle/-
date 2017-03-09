@@ -1,11 +1,14 @@
-<!doctype html>
 <html>
 <head _tracker='{"pagetype":"index"}'>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="renderer" content="webkit">
 <title>【校园】二货网</title>
+
 </head><!-- 加载js/css-->
 <script type="text/javascript" src="{{URL::asset('frontend/js/base.aafb2bc1791840d2768b_2.js')}}"></script><script type="text/javascript" src="{{URL::asset('frontend/js/detail.a8cc07cb1ba1b3bd63ab.js')}}"></script>
+
+</head>
+
 <script type="text/javascript" src="js/base.aafb2bc1791840d2768b_2.js"></script>
 <script type="text/javascript" src="js/index.366d681c7662a316cf81_3.js"></script>
 <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
@@ -70,8 +73,11 @@
             <!--头部搜索框 -->
             <div class="search-box">
                 <div class="suggestion_widget" data-default-count="0" style='width:330px;'>
-                    <input type="text" class="search-input js_search_input_index" style='float:left;' style='float:left; width:250px; height:30px; border:1px solid #22ac38;' placeholder="搜索您想要的宝贝"  data-role="keywordInput" name="keyword"  >
-                    <button class="search-btn" data-gzlog="tracking_type=click&eventid=0020070000000022" baidu_alog='pc_index_search&click&pc_index_search_rementuijian_c' style=' float:right;'>搜索</button>
+                    <form action="searchshow" id="login_form">
+                            <input type="text" class="search-input js_search_input_index" style='float:left;' name="search" style='width:280px;height:30px; border:1px solid #22ac38;' placeholder="搜索您想要的宝贝"  data-role="keywordInput" name="keyword"  >
+                            <input type="hidden" name="_token" value="<?php echo csrf_token(); ?>">
+                   </form>
+                    <button class="search-btn search"  style=' float:left;' >搜索</button>
                     <input type="hidden" value="bj" name="hiddenCity">
                 </div>
             </div>
@@ -111,6 +117,7 @@
         </div>
     </div>
 
+  
     <script type="text/javascript">
         $(".choose-city").hover(function(){
             $(".city-box").show();
@@ -119,4 +126,26 @@
         $("#city-box").mouseleave(function(){
             $("#city-box").hide();
         });
-    </script>
+
+
+        $(document).on('keyup','.search-input',function(){
+            var searchWhere = $(this).val();
+            var chinese  = /^[\u4e00-\u9fa5]{1,20}|\w+/ ;
+            if (!chinese.test(searchWhere)){
+                login = 1;
+                alert('亲,请填写中文或字母数字下划线');return false;
+            }
+        })
+
+        $(document).on('click','.search',function(){
+            login = 0;
+            var searchWhere = $('.search-input').val();
+            $('.search-input').keyup();
+            if (login == 0) {
+                $('#login_form').submit();
+            }
+
+        })
+
+        
+    </script> 

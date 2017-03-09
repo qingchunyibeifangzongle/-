@@ -124,9 +124,6 @@ class LoginController extends Controller
 			$login = new Login();	
 			$binding = $login->bindAccount($email,$password,$openid);	
 			return $binding;
-		public function regist()
-		{  
-			return view('frontend.login.register');   
 		}
 
 

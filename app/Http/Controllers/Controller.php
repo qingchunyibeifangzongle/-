@@ -77,12 +77,16 @@ class Controller extends BaseController
 
         $city = Region::where('region_name', $city)->first();
         $city = $city ->toArray();
-
         //查询导航栏信息
         $nav = Nav::get();
         $nav = $nav->toArray();
 
+
        return view("frontend.common.head",compact("nav","city"));
+
+               // var_dump($city);die();
+        return view("frontend.common.head",compact("nav","city"));
+
     }
 
     /**
