@@ -113,9 +113,9 @@
     $(function(){
        $('.province').change(function(){
            var region_id = $('.province').val();
-           $.get('{{URL('frontend/linkage')}}',{region_id:region_id},function(msg){
+           $.get('{{URL('admin/getRegion')}}',{id:region_id},function(msg){
                $(".city").html("<option value=''>请选择</option>");
-               $.each(msg, function(i, item) {
+               $.each(msg.msg, function(i, item) {
                    $(".city").append("<option value='" + item.region_id + "'>" + item.region_name + "</option>");
                });
            },'json')
@@ -123,9 +123,9 @@
 
         $('.city').change(function(){
             var region_id = $('.city').val();
-            $.get('{{URL('frontend/linkage')}}',{region_id:region_id},function(msg){
+            $.get('{{URL('admin/getRegion')}}',{id:region_id},function(msg){
                 $(".area").html("<option value=''>请选择</option>");
-                $.each(msg, function(i, item) {
+                $.each(msg.msg, function(i, item) {
                     $(".area").append("<option value='" + item.region_id + "'>" + item.region_name + "</option>");
                 });
             },'json')
