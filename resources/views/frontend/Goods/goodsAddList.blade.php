@@ -298,8 +298,8 @@
                                 <div class="queueList" style="height: 200px; width: 800px;">
                                     <div class="box">
                                     <input type="file" style="margin-top: 20px;" class="myfile" name="goods_img[]">
-                                    <button class="but"  style="height: 30px; width: 100px; background-color: #00AA88" onClick="submitForm()"><font color="white"size="3px;">添加一行</font></button>
-                                    <button class="del" style="height: 30px; width: 100px; background-color: #00AA88" onClick="submitForm()"><font color="white"size="3px;">减少一行</font></button>
+                                    <button type="button" class="but"  style="height: 30px; width: 100px; background-color: #00AA88" ><font color="white"size="3px;">添加一行</font></button>
+                                    <button type="button" class="del" style="height: 30px; width: 100px; background-color: #00AA88" ><font color="white"size="3px;">减少一行</font></button>
                                     </div>
                                 </div>
                             </div>
@@ -312,6 +312,7 @@
 </div>
 <script>
     $(function(){
+        alert(123)
         $('.p_id').change(function(){
             var type_id = $(this).val();
             $.get('{{URL('frontend/getTypeInfo')}}',{type_id:type_id},function(msg){
@@ -326,8 +327,8 @@
 
         var str='';
         str="<div class='box'><input type='file' style='margin-top: 20px;' class='myfile' name='goods_img[]'> " +
-        "<button class='but' onClick='submitForm()'  style='height: 30px; width: 100px; background-color: #00AA88'><font color='white'size='3px;'>添加一行</font></button> " +
-        "<button class='del' onClick='submitForm()'  style='height: 30px; width: 100px; background-color: #00AA88'><font color='white'size='3px;'>减少一行</font></button></div> " ;
+        "<button type="button" class='but' style='height: 30px; width: 100px; background-color: #00AA88'><font color='white'size='3px;'>添加一行</font></button> " +
+        "<button type="button" class='del' style='height: 30px; width: 100px; background-color: #00AA88'><font color='white'size='3px;'>减少一行</font></button></div> " ;
 
         $(document).on('click','.but',function(){
             $(this).parent().after(str)
