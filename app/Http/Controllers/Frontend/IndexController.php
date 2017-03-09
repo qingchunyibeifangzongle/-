@@ -4,7 +4,7 @@
 	use Illuminate\Http\Request;
 	use App\Http\Requests;                                    // 引用请求插件类
 	use App\Http\Controllers\Controller;                      // 引用控制器类
-
+	use DB;
 	class IndexController extends Controller
 	{
 	
@@ -77,8 +77,17 @@
 		 * @return
 		 */
 
+
 		public function index(Request $request)
 		{  
+        	$type = DB::table("type")->where("p_id","=",0)->get();
+        	foreach ($type as $key => $value) {
+        	$son = DB::table("type")->where("p_id","=",$value['type_id'])->get();
+        		if($son){
+        			$type[$key]['son']=$son;
+        		}
+        	}
+			
 			$model = new Index();
 			$goodsList = $model->getGoodsList();
 
@@ -92,9 +101,14 @@
         		return view('frontend.login.qqregister');
         	}else{
         		//跳主页面
-				return $this->top().view('frontend.index',['goodsList' => $goodsList]);
+				return $this->top().view('frontend.index',['goodsList' => $goodsList,'type'=>$type]);
                 
         	}
+
+
+		
+
+			return $this->top().view('frontend.index');
 
 		}//首页结束
 

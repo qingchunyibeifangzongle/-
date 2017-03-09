@@ -120,7 +120,9 @@ class LoginController extends Controller
 			$login = new Login();	
 			$binding = $login->bindAccount($email,$password,$openid);	
 			return $binding;
+
         }
+
 
 }
 ?>
