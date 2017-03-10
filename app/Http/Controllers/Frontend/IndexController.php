@@ -76,8 +76,6 @@
 		 * @param
 		 * @return
 		 */
-
-
 		public function index(Request $request)
 		{  
         	$type = DB::table("type")->where("p_id","=",0)->get();
