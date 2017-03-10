@@ -125,7 +125,7 @@
             <li>
                 <div class="list-infoBox">
                     <a title="宝马Z4 2009款 sDrive23i领先型(进口)" target="_blank" class="imgtype" href='{{URL("frontend/goodsList/$v[user_id]/$v[goods_id]")}}' >
-                        <img width="290" height="194" src="{{URL::asset('admin/uploads')}}/{{$v['goods_img'][0]}}" alt="宝马Z4 2009款 sDrive23i领先型(进口)"></a>
+                        <img width="290" height="194" src="{{URL::asset('admin/uploads')}}/{{$v['goods_img']}}" alt="宝马Z4 2009款 sDrive23i领先型(进口)"></a>
                         <p class="infoBox">
                         <a  title="" href="{{URL("frontend/goodsList/$v[user_id]/$v[goods_id]")}}" target="_blank" class="info-title" >{{$v['goods_name']}}</a>
                     </p>

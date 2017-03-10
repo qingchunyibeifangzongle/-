@@ -13,21 +13,6 @@ class GoodsController extends Controller
     }
 
 
-//    /**
-//     *查询所有商品信息借口
-//     * @return mixed
-//     */
-//    public function getAllGoodsList(Request $request)
-//    {
-//        $name = $request->input('name');
-//        if($name == md5('zhangsan')){
-//            $goodsList = $this->model->getAllGoodsList();
-//            return   json_encode($goodsList);
-//        }else{
-//            return '错误';
-//        }
-//    }
-
     public function goodsAddList()
     {
         $parentType = $this->model->getParentType();

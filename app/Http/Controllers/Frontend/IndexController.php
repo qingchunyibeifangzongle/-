@@ -66,6 +66,26 @@
 		 */
 		public function index(Request $request)
 		{  
+			//获取分类列表
+			$type = $this->getType();
+
+		    //获取首页展示数据
+		    $goodsList = $this->getGoods($request);
+
+			return $this->top().view('frontend.index',['goodsList' => $goodsList,'type'=>$type]);
+		   
+		}//首页结束
+
+		/**
+		 *-----------------------------------------------
+		 * 获取当所有的分类
+		 *-----------------------------------------------
+		 * @param
+		 * @return
+		 */
+		public function getType()
+		{
+			//查询分类的子分类
         	$type = DB::table("type")->where("p_id","=",0)->get();
         	foreach ($type as $key => $value) {
         	$son = DB::table("type")->where("p_id","=",$value['type_id'])->get();
@@ -73,17 +93,31 @@
         			$type[$key]['son']=$son;
         		}
         	}
-			
+        	return $type;
+		}
+
+		/**
+		 *-----------------------------------------------
+		 * 获取首页商品
+		 *-----------------------------------------------
+		 * @param
+		 * @return
+		 */
+		public function getGoods(Request $request)
+		{
 			$model = new Index();
-			$goodsList = $model->getGoodsList();
+            $schoolId = $request->input('school_id');
+
+            $regionId = $this->getCity();
+			$goodsList = $model->getGoodsList($regionId['region_id'],$schoolId); //获取商品
 
 			foreach($goodsList as $k => $v){
-				$goodsList[$k]['goods_img'] =explode(',',$v['goods_img']);
+				$goodsList[$k]['goods_img'] =substr($v['goods_img'],0,strpos($v['goods_img'],','));
 			}
 
-        	return $this->top().view('frontend.index',['goodsList' => $goodsList,'type'=>$type]);
+			return $goodsList;
 
-		}//首页结束
+		}
 
 	}//类结束
 
