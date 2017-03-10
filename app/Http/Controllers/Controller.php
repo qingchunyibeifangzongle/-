@@ -80,12 +80,15 @@ class Controller extends BaseController
         //查询导航栏信息
         $nav = Nav::get();
         $nav = $nav->toArray();
+        //获取用户信息
+        if(session("user_id")){
+            $user_name=DB::table("user")
+                                ->where("user_id","=",session("user_id"))
+                                ->first();
+        }
+       return view("frontend.common.head",compact("nav","city","user_name"));
 
-
-       return view("frontend.common.head",compact("nav","city"));
-
-               // var_dump($city);die();
-        return view("frontend.common.head",compact("nav","city"));
+    
 
     }
 

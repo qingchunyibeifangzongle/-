@@ -193,7 +193,7 @@ body, #header { padding-right: 0; }
               <dd class="clearfix">
                 <div class="form-tt"><i class="text-required pr5">*</i>确认密码：</div>
                 <div class="form-row">
-                  <input event-node="repassword" name="repassword" class="s-txt" type="password">
+                  <input  name="repassword" class="s-txt" type="password">
                   <span id="s_repassword"></span>
                 </div>
               </dd>

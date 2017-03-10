@@ -63,8 +63,6 @@ class LoginController extends Controller
 
 
 		/**
-        *前台注册
-		/**
         *前台QQ绑定注册
         *
         * @author  ZHANGTAO
