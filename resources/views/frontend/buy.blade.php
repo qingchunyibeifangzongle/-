@@ -43,7 +43,7 @@
                         
                         <div class="list-infoBox">
                             <a data-gzlog="tracking_type=click&eventid=0080140000000032&carid=8620605@0" baidu_alog='pc_index_tabSelect_detailCar&click&pc_index_tabSelect_new_sale_post_c' title="宝马Z4 2009款 sDrive23i领先型(进口)" target="_blank" class="imgtype" href="/bj/5b93f33aa5f8a765x.htm" >
-                                <img width="290" height="194" src="picture/fcf3c175fc0e8a8098f7ca0593cc4355_2.jpg@base@tag=imgscale&w=290&h=192&c=1&m=2&q=88" alt="宝马Z4 2009款 sDrive23i领先型(进口)">
+                                <img width="290" height="194" src="picture/5565a0a1de7ce.png" alt="宝马Z4 2009款 sDrive23i领先型(进口)">
                                                                                                                                 </a>
                                                         <p class="infoBox">
                                 <a data-gzlog="tracking_type=click&eventid=0080140000000032&carid=8620605@0" data-gzlog="tracking_type=click&eventid=0080140000000032&carid=8620605@0" baidu_alog='pc_index_tabSelect_detailCar&click&pc_index_tabSelect_new_sale_post_c' title="宝马Z4 2009款 sDrive23i领先型(进口)" href="/bj/5b93f33aa5f8a765x.htm" target="_blank" class="info-title" ><?=$v['title']?></a>
