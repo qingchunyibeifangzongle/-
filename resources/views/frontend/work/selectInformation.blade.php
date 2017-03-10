@@ -22,15 +22,15 @@
                         </span>  
                      </a> 
                     <i class="maskline"></i>
-                    <!-- 加载所有学校信息 -->
+                   <!-- 加载所有学校信息 -->
                     <div class="city-box" id="city-box" >
                         <div class="all-city">
                             <dl>
-                               <dt>A</dt>
+                               <dt>学校名称</dt>
                                <dd>
-                                   <a data-gzlog="tracking_type=click&amp;eventid=0020060000000017&amp;select_city=anshan" baidu_alog="pc_index_city&amp;click&amp;pc_index_all_city_c" href="/anshan/" title="鞍山二手车">鞍山                                            </a>
-                                   <a data-gzlog="tracking_type=click&amp;eventid=0020060000000017&amp;select_city=anyang" baidu_alog="pc_index_city&amp;click&amp;pc_index_all_city_c" href="/anyang/" title="安阳二手车">安阳                                            </a>
-                                   <a data-gzlog="tracking_type=click&amp;eventid=0020060000000017&amp;select_city=anqing" baidu_alog="pc_index_city&amp;click&amp;pc_index_all_city_c" href="/anqing/" title="安庆二手车">安庆                                            </a>
+                               @foreach ($school as $key => $value)
+                                   <a href='{{URL("frontend/work")}}?school_id={{$value['school_id']}}' >{{$value['school_name']}}</a>
+                               @endforeach
                                </dd>
                             </dl>
                         <p class="more-city">更多城市正在加紧筹备，敬请期待。</p>
@@ -40,8 +40,14 @@
                 </div>
             
             <div class="uc">
-                <a class="" href="login">
-                    登录|注册
+                    <?php if(!isset($user_name)){?>
+                                       <a class="" href="login">
+                                       登录
+                                   <?php }else{ ?>
+                                       <a href="loginout" class="">
+                                       <?php echo $user_name['user_nickname']?>
+                                      退出</a>
+                                   <?php }?>
                     <div class="app-guide">
                         <div class="guide-ewm">
                             <img src="picture/weixin.png" alt="关注公共号">
@@ -97,11 +103,11 @@
                                 <a class="fl active" baidu_alog="pc_index_top_tab&click&pc_index_top_tab_index_c"
                    href="/bj/"  data-gzlog="tracking_type=click&eventid=0010000000000007" title="校园">首页</a>
                 <!-- 循环导航开始 -->
-                <?php foreach ($nav as $key => $value): ?>
-                    <a class="fl "  href="<?php echo $value['url']; ?>"  title="北京个人"  >
+                  @foreach ($nav as $key => $value)
+                    <a class="fl "  href='{{URL("$value[url]")}}' >
                         <?php echo $value['name']; ?>
                     </a>
-                <?php endforeach ?>
+                 @endforeach
                 <!-- 循环导航结束 --> 
             </div>
         </div>

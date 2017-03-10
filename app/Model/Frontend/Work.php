@@ -8,19 +8,31 @@ use App\Http\Requests\Request;
 
 class Work extends Model
 {
-    public static function work()
+    public static function work($school_id)
     {
-        return DB::table('job')
+        if(isset($school_id)){
+            return DB::table('job')
                     ->leftJoin('user', 'user.user_id', '=', 'job.user_id')
                     ->leftJoin('school', 'school.school_id', '=', 'job.school_id')
                     ->orderBy("job_id","desc")
-                    ->paginate(15);
+                    ->where('school.school_id',$school_id)
+                    ->paginate(5);
+        }else{
+            return DB::table('job')
+                    ->leftJoin('user', 'user.user_id', '=', 'job.user_id')
+                    ->leftJoin('school', 'school.school_id', '=', 'job.school_id')
+                    ->orderBy("job_id","desc")
+                    ->paginate(5);  
+        }
     }
     /**
      * @param $arr 发布招聘
      */
     public static function postInformation($arr)
     {
+        if($arr['user_id'] == ""){
+            return 1;
+        }
         $n_file = $arr['myfile'];
         if($n_file->isValid()){
             $entension = $n_file -> getClientOriginalExtension();
@@ -34,7 +46,12 @@ class Work extends Model
         $arr['user_id'] =1;
         unset($arr['_token']);
         unset($arr['myfile']);
-        return DB::table('job')->insert($arr);
+        $res = DB::table('job')->insert($arr);
+        if($res){
+            return 2;
+        }else{
+            return 3;
+        }
     }
 
     /**

@@ -20,7 +20,7 @@
             <img src="images/logo.jpg" class='logo' alt="校园直卖网"  style='width:256px;height:78px;'>
                 <div class="c2city">
                     <a href="javascript:;" class="choose-city" >  
-                        <span>学校
+                        <span>北京市
                             <i>&nbsp;</i>
                         </span>  
                      </a> 
@@ -29,11 +29,11 @@
                     <div class="city-box" id="city-box" >
                         <div class="all-city">
                             <dl>
-                               <dt>学校名称</dt>
+                               <dt>A</dt>
                                <dd>
-                               @foreach ($school as $key => $value)
-                                   <a href='{{URL("frontend/work")}}?school_id={{$value['school_id']}}' >{{$value['school_name']}}</a>
-                               @endforeach
+                                   <a data-gzlog="tracking_type=click&amp;eventid=0020060000000017&amp;select_city=anshan" baidu_alog="pc_index_city&amp;click&amp;pc_index_all_city_c" href="/anshan/" title="鞍山二手车">鞍山                                            </a>
+                                   <a data-gzlog="tracking_type=click&amp;eventid=0020060000000017&amp;select_city=anyang" baidu_alog="pc_index_city&amp;click&amp;pc_index_all_city_c" href="/anyang/" title="安阳二手车">安阳                                            </a>
+                                   <a data-gzlog="tracking_type=click&amp;eventid=0020060000000017&amp;select_city=anqing" baidu_alog="pc_index_city&amp;click&amp;pc_index_all_city_c" href="/anqing/" title="安庆二手车">安庆                                            </a>
                                </dd>
                             </dl>
                         <p class="more-city">更多城市正在加紧筹备，敬请期待。</p>
@@ -43,14 +43,8 @@
                 </div>
             
             <div class="uc">
-                    <?php if(!isset($user_name)){?>
-                                       <a class="" href="login">
-                                       登录
-                                   <?php }else{ ?>
-                                       <a href="loginout" class="">
-                                       <?php echo $user_name['user_nickname']?>
-                                      退出</a>
-                                   <?php }?>
+                <a class="" href="login">
+                    登录|注册
                     <div class="app-guide">
                         <div class="guide-ewm">
                             <img src="picture/weixin.png" alt="关注公共号">
@@ -96,11 +90,11 @@
                        href="https://jr.guazi.com/bj/"  data-gzlog="tracking_type=click&eventid=0010000000000011" title="分期付款">分期乐</a> -->
                                 <a class="fl" href="{{URL('frontend/index')}}" title="校园">首页</a>
                 <!-- 循环导航开始 -->
-                  @foreach ($nav as $key => $value)
-                    <a class="fl "  href='{{URL("$value[url]")}}' >
+                <?php foreach ($nav as $key => $value): ?>
+                    <a class="fl "  href="<?php echo $value['url']; ?>">
                         <?php echo $value['name']; ?>
                     </a>
-                 @endforeach
+                <?php endforeach ?>
                 <!-- 循环导航结束 --> 
             </div>
         </div>
@@ -116,53 +110,3 @@
         });
     </script>
   
-    <div class="filterBar w mt10" style="margin-top:70px;">
-        <div class="chkFilter"></div>
-        <div>
-            <a href="javascript:;"style="color:red;align-text:center" > <h2>建议同学们注意安全，学校以外的禁止工作</h2></a>
-        </div>
-    </div>
-    <div class="filterBar w mt10"  style="margin-top:20px;">
-        <div class="chkFilter"></div>
-        <div class="sortFilter">
-            <a href="{{URL('frontend/information')}}" class="cur"><h3>发布信息</h3></a>
-            <a href="{{URL('frontend/selectInformation')}}"><h3>查看回复</h3></a>
-            <a href="{{URL('frontend/guanli')}}"><h3>管理发布信息</h3></a>
-        </div>
-    </div>
-   
-        <div class="jzList-con w">
-            @foreach($arr as $v)
-            <div class="jzList-item clearfix">
-            <div class="jzList-pic"><img src="{{$v['job_img']}}">
-            </div>
-                <div class="jzList-txt">
-                    <div class="jzList-txt-t">
-                        <h3>
-                            <a target="_blank" href="#">
-                            {{$v['job_name']}}
-                            </a>
-                        </h3>
-                    </div>
-                    <ul class="jzList-field clearfix">
-                        <li><span>工作时间：</span> {{date("Y-m-d H:i:s"),strtotime($v['job_time'])}}</li>
-                        <li><span>工作地点：</span>{{$v['school_name']}}</li>
-                        <li><span>招聘人数：</span>{{$v['number']}}人</li>
-                    </ul>
-                </div>
-                <div class="jzList-btn">
-                        <a href='{{URL("frontend/sign/$v[job_id]")}}' class="apply_jz_class">报名参加</a>
-                </div>
-                <div class="jzList-salary">
-                    <span class="money"><em>{{$v['job_salary']}}</em>元/天</span>
-                    <span>{{$v['job_describe']}}</span>&nbsp;&nbsp;&nbsp;
-                     <span class="money">联系人:<em>{{$v['user_nickname']}}</em></span>
-
-                </div>
-            </div>
-        @endforeach
-    <div class="w">
-        <div class="pageBox" data-widget="app/ms_v2/common/list_page.js#pagination"><ul class="pageLink clearfix">{!! $arr->appends(['school_id'=>$school_id])->links() !!}</ul></div>    </div>
-        </div>
-</body>
-</html>
