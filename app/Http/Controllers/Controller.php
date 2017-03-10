@@ -77,8 +77,15 @@ class Controller extends BaseController
         //查询当前城市下有哪些学校
         $obj = new School();
         $school = $obj ->getSchool($city["region_id"]);
+
+        //获取用户信息
+        if(session("user_id")){
+            $user_name=DB::table("user")
+                                ->where("user_id","=",session("user_id"))
+                                ->first();
+        }
         
-        return view("frontend.common.head",compact("nav","city","school"));
+        return view("frontend.common.head",compact("nav","city","school",'user_name'));
     }
 
     /**

@@ -46,8 +46,17 @@
                 </div>
 
             <div class="uc">
-                <a class="" href="login">
-                    登录|注册
+                
+                <?php if(!isset($user_name)){?>
+                    <a class="" href="login">
+                    登录
+                <?php }else{ ?>
+                    <a href="loginout" class="">
+                    <?php echo $user_name['user_nickname']?>
+                   退出</a>
+                <?php }?>
+                    
+                    
                     <div class="app-guide">
                         <div class="guide-ewm">
                             <img src="picture/weixin.png" alt="关注公共号">

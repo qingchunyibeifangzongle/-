@@ -123,5 +123,19 @@ class LoginController extends Controller
         }
 
 
+        /**
+         *-----------------------------------------------
+         * 退出
+         *-----------------------------------------------
+         * @param
+         * @return
+         */
+        public function loginOut(Request $request)
+        {
+            $request->session()->flush();
+            return redirect("frontend/index");
+        }
+
+
 }
 ?>

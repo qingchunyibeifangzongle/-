@@ -20,6 +20,8 @@ class FrontendRoutes
          	
             //前台登录
             $router->get('frontend/login',  'Frontend\Login\LoginController@index');  
+            //退出
+            $router->get('frontend/loginout',  'Frontend\Login\LoginController@loginOut');  
             //前台qq绑定
             $router->get('frontend/qqregist', 'Frontend\Login\LoginController@qqRegist');
 
