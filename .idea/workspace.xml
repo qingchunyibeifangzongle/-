@@ -1,58 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d85b3d2d-a633-4f4e-9214-e26b96f97cca" name="默认的" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/frontend/uploads/104564819.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/frontend/uploads/140849914.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/frontend/uploads/147919616.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/frontend/uploads/196350097.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/frontend/uploads/295174865.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/frontend/uploads/298921203.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/frontend/uploads/310220642.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/frontend/uploads/381098937.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/frontend/uploads/395057067.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/frontend/uploads/396900024.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/frontend/uploads/399709777.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/frontend/uploads/435028076.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/frontend/uploads/438442077.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/frontend/uploads/445904541.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/frontend/uploads/523882751.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/frontend/uploads/569291992.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/frontend/uploads/579050598.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/frontend/uploads/616181640.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/frontend/uploads/621770935.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/frontend/uploads/634762268.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/frontend/uploads/643977050.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/frontend/uploads/668751220.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/frontend/uploads/681410217.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/frontend/uploads/708299255.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/frontend/uploads/721230163.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/frontend/uploads/747122192.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/frontend/uploads/790235290.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/frontend/uploads/810447387.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/frontend/uploads/838967895.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/frontend/uploads/861657409.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/frontend/uploads/911658935.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/frontend/uploads/914982299.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/frontend/uploads/980966186.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/frontend/uploads/986706542.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/uploads/242605285.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/uploads/611831054.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/uploads/635245666.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/uploads/816973266.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/uploads/848515014.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/school.iml" afterPath="$PROJECT_DIR$/.idea/school.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Frontend/Work/WorkController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Frontend/Work/WorkController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Model/Frontend/Work.php" afterPath="$PROJECT_DIR$/app/Model/Frontend/Work.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/frontend/js/base.aafb2bc1791840d2768b_2.js" afterPath="$PROJECT_DIR$/public/frontend/js/base.aafb2bc1791840d2768b_2.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/frontend/work/guanli.blade.php" afterPath="$PROJECT_DIR$/resources/views/frontend/work/guanli.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/frontend/work/information.blade.php" afterPath="$PROJECT_DIR$/resources/views/frontend/work/information.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/frontend/work/selectInformation.blade.php" afterPath="$PROJECT_DIR$/resources/views/frontend/work/selectInformation.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/frontend/work/sign.blade.php" afterPath="$PROJECT_DIR$/resources/views/frontend/work/sign.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/frontend/work/work.blade.php" afterPath="$PROJECT_DIR$/resources/views/frontend/work/work.blade.php" />
-    </list>
+    <list default="true" id="d85b3d2d-a633-4f4e-9214-e26b96f97cca" name="默认的" comment="" />
     <ignored path="school.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -72,21 +21,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/frontend/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="57">
               <caret line="4" column="21" lean-forward="false" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Controller.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Controller.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="6" column="32" lean-forward="true" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -332,16 +271,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1487846891338</updated>
-      <workItem from="1488972965817" duration="248000" />
+      <workItem from="1488972965817" duration="915000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="248000" />
+    <option name="totallyTimeSpent" value="915000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1" y="2" width="1364" height="727" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25148368" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -716,18 +655,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/frontend/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="4" column="21" lean-forward="false" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Controller.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
           <caret line="6" column="32" lean-forward="true" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/frontend/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="4" column="21" lean-forward="false" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
           <folding />
         </state>
       </provider>

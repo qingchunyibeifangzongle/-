@@ -55,7 +55,9 @@ class FrontendRoutes
     		$router->get('frontend/guanli', 'Frontend\Work\WorkController@guanli');
     		$router->get('frontend/delGuanli', 'Frontend\Work\WorkController@delGuanli');
     		//回复
-    		$router->get('frontend/selectInformation', 'Frontend\Work\WorkController@selectInformation');
+            $router->get('frontend/selectInformation', 'Frontend\Work\WorkController@selectInformation');
+            //点击学校查询
+    		$router->get('frontend/selectWork', 'Frontend\Work\WorkController@selectWork');
 
         });
     }

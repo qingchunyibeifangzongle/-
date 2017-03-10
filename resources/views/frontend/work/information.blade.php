@@ -18,10 +18,10 @@
 <body class="jz-list">
      <div class="header">
         <div class="hd-top clearfix">
-            <img src="images/logo.jpg" class='logo' alt="校园直卖网" style='width:256px;height:78px;'>
+            <img src="images/logo.jpg" class='logo' alt="校园直卖网"  style='width:256px;height:78px;'>
                 <div class="c2city">
                     <a href="javascript:;" class="choose-city" >  
-                        <span>北京市
+                        <span>学校
                             <i>&nbsp;</i>
                         </span>  
                      </a> 
@@ -30,11 +30,11 @@
                     <div class="city-box" id="city-box" >
                         <div class="all-city">
                             <dl>
-                               <dt>A</dt>
+                               <dt>学校名称</dt>
                                <dd>
-                                   <a data-gzlog="tracking_type=click&amp;eventid=0020060000000017&amp;select_city=anshan" baidu_alog="pc_index_city&amp;click&amp;pc_index_all_city_c" href="/anshan/" title="鞍山二手车">鞍山                                            </a>
-                                   <a data-gzlog="tracking_type=click&amp;eventid=0020060000000017&amp;select_city=anyang" baidu_alog="pc_index_city&amp;click&amp;pc_index_all_city_c" href="/anyang/" title="安阳二手车">安阳                                            </a>
-                                   <a data-gzlog="tracking_type=click&amp;eventid=0020060000000017&amp;select_city=anqing" baidu_alog="pc_index_city&amp;click&amp;pc_index_all_city_c" href="/anqing/" title="安庆二手车">安庆                                            </a>
+                               @foreach ($school as $key => $value)
+                                   <a href='{{URL("frontend/work")}}?school_id={{$value['school_id']}}' >{{$value['school_name']}}</a>
+                               @endforeach
                                </dd>
                             </dl>
                         <p class="more-city">更多城市正在加紧筹备，敬请期待。</p>
@@ -66,15 +66,6 @@
                 <!--电话判断，当页面处于校园金融则显示校园金融电话  -->
                 <span><?php echo config('webconfig.tel'); ?></span>
             </div>
-
-            <!--头部搜索框 -->
-            <!-- <div class="search-box">
-                <div class="suggestion_widget" data-default-count="0" style='width:330px;'>
-                    <input type="text" class="search-input js_search_input_index" style='float:left;' style='float:left; width:250px; height:30px; border:1px solid #22ac38;' placeholder="搜索您想要的宝贝"  data-role="keywordInput" name="keyword"  >
-                    <button class="search-btn" data-gzlog="tracking_type=click&eventid=0020070000000022" baidu_alog='pc_index_search&click&pc_index_search_rementuijian_c' style=' float:right;'>搜索</button>
-                    <input type="hidden" value="bj" name="hiddenCity">
-                </div>
-            </div> -->
         </div>
 
         <!-- menu s-->
@@ -96,16 +87,15 @@
                         </div>
                     </div>
                 </a>
-                <a class="fr " baidu_alog="pc_index_top_tab&click&pc_index_top_tab_carfina_c"
-                       href="https://jr.guazi.com/bj/"  data-gzlog="tracking_type=click&eventid=0010000000000011" title="分期付款">分期乐</a>
-                                <a class="fl active" baidu_alog="pc_index_top_tab&click&pc_index_top_tab_index_c"
-                   href="/bj/"  data-gzlog="tracking_type=click&eventid=0010000000000007" title="校园">首页</a>
+                <!-- <a class="fr " baidu_alog="pc_index_top_tab&click&pc_index_top_tab_carfina_c"
+                       href="https://jr.guazi.com/bj/"  data-gzlog="tracking_type=click&eventid=0010000000000011" title="分期付款">分期乐</a> -->
+                                <a class="fl" href="{{URL('frontend/index')}}" title="校园">首页</a>
                 <!-- 循环导航开始 -->
-                <?php foreach ($nav as $key => $value): ?>
-                    <a class="fl "  href="<?php echo $value['url']; ?>"  title="北京个人"  >
+                  @foreach ($nav as $key => $value)
+                    <a class="fl "  href='{{URL("$value[url]")}}' >
                         <?php echo $value['name']; ?>
                     </a>
-                <?php endforeach ?>
+                 @endforeach
                 <!-- 循环导航结束 --> 
             </div>
         </div>
@@ -120,7 +110,6 @@
             $("#city-box").hide();
         });
     </script>
-
     <div class="filterBar w mt10"  style="margin-top:70px;">
         <div class="chkFilter"></div>
         <div class="sortFilter">

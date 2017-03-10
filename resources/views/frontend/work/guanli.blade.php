@@ -9,12 +9,16 @@
     <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
     <script type="text/javascript" src="js/base.aafb2bc1791840d2768b_2.js"></script>
     <script type="text/javascript" src="js/index.366d681c7662a316cf81_3.js"></script>
+    <link href="Content/pub_job.cmb.__1472658423__.css" rel="stylesheet" type="text/css" />
+    <link href="Content/pub_resume.cmb.__1472658507__.css" rel="stylesheet" type="text/css" />
+    <link href="Content/upload-img.__1488362400__.css" rel="stylesheet" type="text/css" />
+    <script src="Scripts/ganji.__1472653905__.js" type="text/javascript"></script>
 
 </head>
 <body class="jz-list">
      <div class="header">
         <div class="hd-top clearfix">
-            <img src="images/logo.jpg" class='logo' alt="校园直卖网"  style='width:256px;height:78px;'>
+            <img src="images/logo.jpg" class='logo' alt="校园直卖网" style='width:256px;height:78px;'>
                 <div class="c2city">
                     <a href="javascript:;" class="choose-city" >  
                         <span>北京市
@@ -22,15 +26,15 @@
                         </span>  
                      </a> 
                     <i class="maskline"></i>
-                    <!-- 加载所有学校信息 -->
+                     <!-- 加载所有学校信息 -->
                     <div class="city-box" id="city-box" >
                         <div class="all-city">
                             <dl>
-                               <dt>A</dt>
+                               <dt>学校名称</dt>
                                <dd>
-                                   <a data-gzlog="tracking_type=click&amp;eventid=0020060000000017&amp;select_city=anshan" baidu_alog="pc_index_city&amp;click&amp;pc_index_all_city_c" href="/anshan/" title="鞍山二手车">鞍山                                            </a>
-                                   <a data-gzlog="tracking_type=click&amp;eventid=0020060000000017&amp;select_city=anyang" baidu_alog="pc_index_city&amp;click&amp;pc_index_all_city_c" href="/anyang/" title="安阳二手车">安阳                                            </a>
-                                   <a data-gzlog="tracking_type=click&amp;eventid=0020060000000017&amp;select_city=anqing" baidu_alog="pc_index_city&amp;click&amp;pc_index_all_city_c" href="/anqing/" title="安庆二手车">安庆                                            </a>
+                               @foreach ($school as $key => $value)
+                                   <a href='{{URL("frontend/work")}}?school_id={{$value['school_id']}}' >{{$value['school_name']}}</a>
+                               @endforeach
                                </dd>
                             </dl>
                         <p class="more-city">更多城市正在加紧筹备，敬请期待。</p>
@@ -97,11 +101,11 @@
                                 <a class="fl active" baidu_alog="pc_index_top_tab&click&pc_index_top_tab_index_c"
                    href="/bj/"  data-gzlog="tracking_type=click&eventid=0010000000000007" title="校园">首页</a>
                 <!-- 循环导航开始 -->
-                <?php foreach ($nav as $key => $value): ?>
-                    <a class="fl "  href="<?php echo $value['url']; ?>"  title="北京个人"  >
+                  @foreach ($nav as $key => $value)
+                    <a class="fl "  href='{{URL("$value[url]")}}' >
                         <?php echo $value['name']; ?>
                     </a>
-                <?php endforeach ?>
+                 @endforeach
                 <!-- 循环导航结束 --> 
             </div>
         </div>
@@ -116,7 +120,6 @@
             $("#city-box").hide();
         });
     </script>
-  
 <div class="filterBar w mt10" style="margin-top:70px;">
     <div class="chkFilter"></div>
     <div class="sortFilter">
