@@ -6,18 +6,18 @@
             <script src="{{ URL::asset('frontend/daigo/plupload.js')}}"></script>
             <script src="{{ URL::asset('frontend/daigo/zh_CN.js')}}"></script>
             <script src="{{ URL::asset('frontend/daigo/qiniu.js')}}"></script>
-            <!-- <script src="{{ URL::asset('frontend/daigo/common.js')}}"></script> -->
+            <script type="text/javascript" src="{{ URL::asset('frontend/js/jquery.validate.js')}}"></script>
              <script src="{{ URL::asset('frontend/daigo/add.js')}}"></script>
     <script src="{{ URL::asset('frontend/daigo/release.js')}}"></script>
      <!-- 发布商品js结束 -->
-     <form action="{{url('frontend/dai')}}" method="post">
+     <form action="{{url('frontend/dai')}}" id="commentForm" method="POST" class="form-horizontal m-t">
      <div class="form-wr">
             <div class="form-must-wr">
                 <div class="form-item l goods-title">
                     <div class="form-key"><span>任务 名称</span></div>
                     <div class="form-value">
                         <div class="form-input-wr">
-                            <input id="title" name="title" placeholder="最多25个字" type="text">
+                            <input id="title" name="title" minlength="2" type="text" class="form-control" required="" aria-required="true">
                         </div>
                     </div>
                 </div>
@@ -25,7 +25,7 @@
                     <div class="form-key"><span>商品详情</span></div>
                     <div class="form-value">
                         <div class="form-input-wr">
-                            <textarea name="details" id="details" placeholder="建议填写物品的详细情况,以及件数,商店名称"></textarea>
+                            <textarea name="details" id="details" minlength="2" type="text" class="form-control" required="" aria-required="true" placeholder="输入商品详情" style="width:600px;margin:0"></textarea>
                         </div>
                     </div>
                 </div>
@@ -33,7 +33,7 @@
                     <div class="form-key"><span>交易地点</span></div>
                     <div class="form-value">
                         <div class="form-input-wr">
-                            <input id="address" name="address" placeholder="宿舍、教学楼、食堂等" value="" type="text">
+                            <input id="address" name="address" minlength="2" type="text" class="form-control" required="" aria-required="true" placeholder="输入交易地点食堂,寝室等">
                         </div>
                     </div>
                 </div>
@@ -41,10 +41,14 @@
                     <div class="form-key"><span>商品价格</span></div>
                     <div class="form-value">
                         <div class="form-input-wr">
-                            <input class="price" id="price" name="price" type="text" placeholder="商品总价格" >
+                            <input name="price" id='price' type="text" class="form-control" value="" >
                         </div>
+   
+                    </div>
+                    <div class="form-value">
+  
                         <div class="form-input-wr">
-                            <input class="price" id="daigo" name="daigo_price" type="text" placeholder="这里是跑路费" >
+                            <input name="daigo_price" id='daigo_price' type="text" placeholder="跑路费" class="form-control" value="" >
                         </div>
                     </div>
                 </div>
@@ -56,26 +60,34 @@
                     <div class="form-key"><span>手机号</span></div>
                     <div class="form-value">
                         <div class="form-input-wr">
-                            <input id="phonee" name="phone" value="" type="text">
+                            <input value="" name="phone" placeholder="手机号" minlength="11" type="text" class="form-control" required="" aria-required="true">
                             <input type="hidden" name="_token" value = "{{ csrf_token() }}"/>
                             <input type="hidden" name="school_id" value = "1"/>
                         </div>
-                    </div>
-                    <button type="button" class="form-submit">马上发布</button>
-                    <div class="form-item m goods-price">
-                    <div class="form-key"></div>
-                    <div class="form-value">
-                       <div><input type="submit" value="马上发布"/></div>
-                    </div>
-                </div>
                     
+                    <br/>
+        <div class="form-item l goods-title">
+                    <div class="form-key"><span></span></div>
+                    <div class="controls">
+                        <div>
+                        <input class="btn btn-primary" type="submit" value="发布"/>
+                      
+                        </div>
+                    </div>
                 </div>
-            </div>
+        </div>
+        </div>
+                </div>
+               </div>    
+         
+                
             </form>
         </div>
-   
+   <script src="{{ URL::asset('frontend/js/daibu.js')}}"></script>
+   <script src="{{ URL::asset('admin/js/validate/jQuery.Form.js')}}"></script>
+   <script src="{{ URL::asset('admin/js/validate/jquery.validate.js')}}"></script>
+   <script src="{{ URL::asset('admin/js/validate/jquery.validate.extend.js')}}"></script>
 
-    <!--首页帖子列表 s-->
 
 
     <!--底部推广 s-->
@@ -340,24 +352,24 @@
             <a rel="nofollow" href="javascript:void(0);" class="close-side"></a>
             <div data-role="left_area">
                 <!--意见反馈 -->
-                <a rel="nofollow" data-gzlog="tracking_type=click&eventid=0200000000000085" href="javascript:void(0);" class="fb-btn feed_back" baidu_alog="xuanfu&click&index_xuanfu_feedback_c" data-role="feed_back">反馈</a>
+                <a rel="nofollow"  href="javascript:void(0);" class="fb-btn feed_back" baidu_alog="xuanfu&click&index_xuanfu_feedback_c" data-role="feed_back">反馈</a>
                 <p style="display: none" class="feed_back_source_url" data-role="feed_back_source_url">https://www.guazi.com:443/bj/</p>
                 <p style="display: none" class="feed_back_source_cityid" data-role="feed_back_source_cityid">12</p>
                 <a rel="nofollow" href="javascript:void(0);" class="call-back" baidu_alog="xuanfu&click&index_xuanfu_freephone_c"></a>
                 <div class="call-back-box">
-                    <input type="text" class="call-back-input" placeholder="填写手机号，座机加区号" data-role="phone_input">
-                    <input type="hidden" data-role="puid" value="0">
-                    <button data-gzlog="tracking_type=click&eventid=0200000000000084" class="call-back-btn" data-role="call_button">免费通话</button>
+                    <input type="text" placeholder="填写手机号，座机加区号">
+                    
+                    <button  class="call-back-btn" >免费通话</button>
                     <i class="icon-arr"></i>
                     <p class="call-back-tip" style="display:none">您输入的手机号码有误</p>
                 </div>
-                <a rel="nofollow" data-gzlog="tracking_type=click&eventid=0200000000000087" href="javascript:void(0);" class="ewm-wx" baidu_alog="xuanfu&click&index_xuanfu_gongzhonghao_c">公众号
+                <a rel="nofollow"  href="javascript:void(0);" class="ewm-wx" baidu_alog="xuanfu&click&index_xuanfu_gongzhonghao_c">公众号
         <span class="ewm-box">
           <img src="picture/weixin.png" alt="">
           <i></i><em></em>
         </span>
                 </a>
-                <a rel="nofollow" data-gzlog="tracking_type=click&eventid=0200190000000086" href="javascript:void(0);" class="ewm-app" baidu_alog="xuanfu&click&index_xuanfu_appdownload_c">APP
+                <a rel="nofollow"  href="javascript:void(0);" class="ewm-app" baidu_alog="xuanfu&click&index_xuanfu_appdownload_c">APP
         <span class="ewm-box">
           <img src="picture/weixin.png" alt="">
           <i></i><em></em>
@@ -367,8 +379,8 @@
         </div>
     
 
-<input type="hidden" class="hide_gich" value="& &pagetype=index&city=bj&currentUrl=https%3A%2F%2Fwww.guazi.com%3A443%2Fbj%2F&puid=&line=c2c&tag=">
-<div style='display:none;' class='js-check-post-code' data-str='c08a691ac3788b1a38babce8bba8a74d' data-time='1487678388'></div><input type="hidden" data-role="dataSource" class="dataSourceButton" data-source='[]' >
+
+<div style='display:none;' class='js-check-post-code' data-str='c08a691ac3788b1a38babce8bba8a74d' data-time='1487678388'></div>
 <!-- 底部  e -->
 
 <!--在线客服-->

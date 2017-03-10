@@ -5,7 +5,8 @@ namespace App\Http\Controllers\Admin\Money;                     //使用命名�
 use Illuminate\Http\Request;
 use App\Http\Requests;                                    // 引用请求插件类
 use App\Http\Controllers\Controller;                      // 引用控制器类
-use DB; 
+use DB;
+use Redirect; 
 //use Latrell\Alipay\AlipayServiceProvider;                                                  // 引用DB类;  可以进行查询
 use App\Model\Replace;
 class BuyotherController extends Controller
@@ -41,7 +42,7 @@ class BuyotherController extends Controller
             //var_dump($data['end']); die;
             $model = new \App\Model\Replace(); //实例化model
             $res = $model->insert($data);
-            return Redirect::to('buyother/buy');
+            return Redirect::to('frontend/buy');
         }
 
 
