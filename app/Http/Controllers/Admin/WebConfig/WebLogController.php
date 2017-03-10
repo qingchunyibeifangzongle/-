@@ -30,7 +30,6 @@
             //获取当前页数据
             $page = !empty($request->input("page")) ? $request->input("page") : 1 ;
 
-
             //查询表中所有的新闻
             $count = Log::count();  //获取数据总条数
 
@@ -52,24 +51,7 @@
                         
             
             return view("admin.webconfig.log",compact("page","data"));
-
-        public function  index()
-        {   
-            var_dump($_SERVER);die;
-            $params = [111,22]; 
-            $sql = "select * from `school_nav` where (`name` = ? and `age`= ?) order by `sort` desc";
-            $sql = str_replace("?", "'%s'", $sql);
-            array_unshift($params, $sql);
-            // var_dump($params);die;
-            $sql = call_user_func_array('sprintf', $params);
-            echo $sql ;die;
+        }
 
 
-            $number = 2;
-            $str = "Shanghai";
-            $txt = sprintf("There are %u million cars in %s.",$number,$str);
-            echo $txt;
-
-        }  
-
-    }
+    }//类结束符

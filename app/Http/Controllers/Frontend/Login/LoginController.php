@@ -43,7 +43,6 @@ class LoginController extends Controller
 			return json_encode($user);
 		}
 
-
         /**
         *前台QQ登录
         *
