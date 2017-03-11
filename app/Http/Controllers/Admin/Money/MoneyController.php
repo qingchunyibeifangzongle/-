@@ -37,7 +37,7 @@ class MoneyController extends Controller
             $model = new \App\Model\Money(); //实例化model
             $where = ['type' => 1,'status'=>0];
             $data = $model->getData($where);
-            //var_dump($data); die;
+            //var_dump($data); die;$this->db->count_all('table_name');
             foreach ($data as $key => $value) {
                     $data[$key]['type'] = '代购资金';
                     $data[$key]['time'] = date("Y-m-d H-i-s",$data[$key]['time']);

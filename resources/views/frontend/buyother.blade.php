@@ -68,8 +68,8 @@
                     <br/>
         <div class="form-item l goods-title">
                     <div class="form-key"><span></span></div>
-                    <div class="controls">
-                        <div>
+                    <div class="form-value">
+                        <div class="form-input-wr">
                         <input class="btn btn-primary" type="submit" value="发布"/>
                       
                         </div>
