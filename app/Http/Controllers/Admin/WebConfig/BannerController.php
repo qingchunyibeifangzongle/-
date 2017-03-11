@@ -27,12 +27,12 @@
 
 					$msg = ["status"=>1,"msg"=>'']; 
 					// 请求数据验证
-					$this->validate($request, [
+					/*$this->validate($request, [
 						'name' => 'required',
 						'url' => 'required|url',
 						'img' => 'required',
 					]);
-
+*/
 				    //添加轮播图数据
 					$data['name'] = $request->input("name");
 					$data['url'] = $request->input("url");
