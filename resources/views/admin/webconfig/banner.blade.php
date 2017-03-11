@@ -111,7 +111,6 @@
 <script src="js/bootstrap.min.js?v=3.3.6"></script>
 <!-- 自定义js -->
 <script src="js/content.js?v=1.0.0"></script>
-<script src= 'js/banner.js'></script>
 <!-- 加载文件上传插件 -->
 <!--引入CSS-->
 <link rel="stylesheet" type="text/css" href="webupload/webuploader.css">
@@ -122,6 +121,7 @@
 <script src="validate/jquery.validate.js"></script>
 <!-- 配置通用错误信息语言包 -->
 <script src="validate/jquery.validate.extend.js"></script>  
+<script src= 'js/banner.js'></script>
 
 <script>
     $(document).ready(function () {
