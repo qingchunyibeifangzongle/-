@@ -1,3 +1,7 @@
 *.js linguist-language=php
 *.css linguist-language=php
 *.html linguist-language=php
+
+*.js linguist-language=Laravel PHP Framework
+*.css linguist-language=Laravel PHP Framework
+*.html linguist-language=Laravel PHP Framework
