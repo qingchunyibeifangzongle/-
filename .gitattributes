@@ -1,4 +1,4 @@
-*.js linguist-language=Laravel
-*.css linguist-language=Laravel
-*.html linguist-language=Laravel
+*.js linguist-language=Laravel 
+*.css linguist-language=Laravel 
+*.html linguist-language=Laravel 
 
